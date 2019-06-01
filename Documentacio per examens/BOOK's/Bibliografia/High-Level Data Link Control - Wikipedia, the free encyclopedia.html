@@ -1,0 +1,1467 @@
+<!DOCTYPE html>
+<!-- saved from url=(0057)http://en.wikipedia.org/wiki/High-Level_Data_Link_Control -->
+<html lang="en" dir="ltr" class="client-js ve-not-available"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script async="" src="./High-Level Data Link Control - Wikipedia, the free encyclopedia_files/load.php"></script><script async="" src="./High-Level Data Link Control - Wikipedia, the free encyclopedia_files/checkLoggedIn"></script>
+<meta charset="UTF-8">
+<title>High-Level Data Link Control - Wikipedia, the free encyclopedia</title>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<meta name="generator" content="MediaWiki 1.23wmf20">
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/High-Level_Data_Link_Control">
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="http://en.wikipedia.org/w/index.php?title=High-Level_Data_Link_Control&action=edit">
+<link rel="edit" title="Edit this page" href="http://en.wikipedia.org/w/index.php?title=High-Level_Data_Link_Control&action=edit">
+<link rel="apple-touch-icon" href="http://bits.wikimedia.org/apple-touch/wikipedia.png">
+<link rel="shortcut icon" href="http://bits.wikimedia.org/favicon/wikipedia.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="http://en.wikipedia.org/w/opensearch_desc.php" title="Wikipedia (en)">
+<link rel="EditURI" type="application/rsd+xml" href="http://en.wikipedia.org/w/api.php?action=rsd">
+<link rel="copyright" href="http://creativecommons.org/licenses/by-sa/3.0/">
+<link rel="alternate" type="application/atom+xml" title="Wikipedia Atom feed" href="http://en.wikipedia.org/w/index.php?title=Special:RecentChanges&feed=atom">
+<link rel="canonical" href="./High-Level Data Link Control - Wikipedia, the free encyclopedia_files/High-Level Data Link Control - Wikipedia, the free encyclopedia.html">
+<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&lang=en&modules=ext.gadget.DRN-wizard%2CReferenceTooltips%2Ccharinsert%2Cteahouse%7Cext.rtlcite%2Cwikihiero%7Cext.uls.nojs%7Cext.visualEditor.viewPageTarget.noscript%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.ui.button%7Cskins.common.interface%7Cskins.vector.styles&only=styles&skin=vector&*">
+<style>
+@-webkit-keyframes centralAuthPPersonalAnimation{0%{opacity:0;-webkit-transform:translateY(-20px)}100%{opacity:1;-webkit-transform:translateY(0)}}@-moz-keyframes centralAuthPPersonalAnimation{0%{opacity:0;-moz-transform:translateY(-20px)}100%{opacity:1;-moz-transform:translateY(0)}}@-o-keyframes centralAuthPPersonalAnimation{0%{opacity:0;-o-transform:translateY(-20px)}100%{opacity:1;-o-transform:translateY(0)}}@keyframes centralAuthPPersonalAnimation{0%{opacity:0;transform:translateY(-20px)}100%{opacity:1;transform:translateY(0)}}.centralAuthPPersonalAnimation{-webkit-animation-duration:1s;-moz-animation-duration:1s;-o-animation-duration:1s;animation-duration:1s;-webkit-animation-fill-mode:both;-moz-animation-fill-mode:both;-o-animation-fill-mode:both;animation-fill-mode:both;-webkit-animation-name:centralAuthPPersonalAnimation;-moz-animation-name:centralAuthPPersonalAnimation;-o-animation-name:centralAuthPPersonalAnimation;animation-name:centralAuthPPersonalAnimation}
+/* cache key: enwiki:resourceloader:filter:minify-css:7:0dcacc990dd02e7db9669ab3090b80f1 */
+.mw-editsection{white-space:nowrap;padding-right:0.25em; unicode-bidi:-moz-isolate;unicode-bidi:-webkit-isolate;unicode-bidi:isolate}.mw-editsection-divider{color:#555} .mw-content-ltr .mw-editsection-expanded .mw-editsection-bracket:first-of-type,.mw-content-rtl .mw-editsection-expanded .mw-editsection-bracket:not(:first-of-type){margin-left:-0.25em;margin-right:0.25em;color:#555} .mw-content-rtl .mw-editsection-expanded .mw-editsection-bracket:first-of-type,.mw-content-ltr .mw-editsection-expanded .mw-editsection-bracket:not(:first-of-type){margin-right:-0.25em;margin-left:0.25em;color:#555}.ve-tabmessage-appendix{font-size:0.7em;vertical-align:top;line-height:1.43em;padding-left:0.5em; background-image:none !important;display:inline !important}
+/* cache key: enwiki:resourceloader:filter:minify-css:7:10d5f32d441941e72673fc73cdfe14a9 */
+.wbc-editpage{list-style:none none;text-align:right;padding-right:.5em !important}.wbc-editpage > a{padding-left:11px;background:no-repeat left center}.wbc-editpage > a:link,.wbc-editpage > a:visited{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKBAMAAAB/HNKOAAAAD1BMVEUZAAD///95eXmqqqrY2NjEIQ0cAAAAAXRSTlMAQObYZgAAACdJREFUCNdjYGBgYGIAASUFENNJCUiqmADZTM5OqExFFZAKRSG4YgBjcwODynSgDwAAAABJRU5ErkJggg==);background-image:url(//bits.wikimedia.org/static-1.23wmf20/extensions/Wikidata/extensions/Wikibase/client/resources/images/WBC-Asset-Pencil.png?2014-03-27T16:48:20Z)!ie;color:#797979 !important}.wbc-editpage > a:hover{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKBAMAAAB/HNKOAAAAD1BMVEWBAADY2Nj///8GRa0zZrtW2AECAAAAAXRSTlMAQObYZgAAACdJREFUCNdjYGBgYGYAAWMDEFPYGEgaOgLZzCLCqEwjQ5AKI2W4YgBg5QOTQPzBuAAAAABJRU5ErkJggg==);background-image:url(//bits.wikimedia.org/static-1.23wmf20/extensions/Wikidata/extensions/Wikibase/client/resources/images/WBC-Asset-Pencil-Hover.png?2014-03-27T16:48:20Z)!ie;color:#0645AD !important}
+/* cache key: enwiki:resourceloader:filter:minify-css:7:2e0ec3b347fa9dd1f6cd5e05ce95735d */
+@media print{#centralNotice{display:none}}
+/* cache key: enwiki:resourceloader:filter:minify-css:7:ddb0c98a055632ae8e349c9cf48ac703 */</style><style>
+.uls-menu a{cursor:pointer}.uls-menu.callout .caret-before{border-top:20px solid transparent;border-right:20px solid #C9C9C9;border-bottom:20px solid transparent;display:inline-block;left:-21px;top:30px;position:absolute}.uls-menu.callout .caret-after{border-top:20px solid transparent;border-right:20px solid #FCFCFC;border-bottom:20px solid transparent;display:inline-block;left:-20px;top:30px;position:absolute}.uls-ui-languages button{width:23%;text-overflow:ellipsis;margin-right:4%}button.uls-more-languages{width:auto}.settings-title{font-size:11pt}.settings-text{color:#555555;font-size:9pt}div.display-settings-block:hover .settings-text{color:#252525}
+/* cache key: enwiki:resourceloader:filter:minify-css:7:22d1681fa868b4ff4fbcb1ec1e58a9ea */
+.tipsy{padding:5px;position:absolute;z-index:100000;cursor:default}.tipsy-inner{padding:5px 8px 4px 8px; background-color:#ffffff;border:solid 1px #a7d7f9;color:black;max-width:15em;border-radius:4px;-moz-border-radius:4px;-webkit-border-radius:4px; }.tipsy-arrow{position:absolute;background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAALAgMAAADUwp+1AAAACVBMVEX5+fmn1/n///9s6BFKAAAAAXRSTlMAQObYZgAAACpJREFUCB1jZBD4wMiQMoeRcUU4I9uSaYxSE54xZjn8AtMgPkgcJA9UBwAeDw1Qrb3pVAAAAABJRU5ErkJggg==) no-repeat top left;background:url(//bits.wikimedia.org/static-1.23wmf20/resources/jquery.tipsy/images/tipsy.png?2014-03-27T16:43:20Z) no-repeat top left!ie;width:11px;height:6px} .tipsy-n .tipsy-arrow{top:0px;left:50%;margin-left:-5px} .tipsy-nw .tipsy-arrow{top:1px;left:10px} .tipsy-ne .tipsy-arrow{top:1px;right:10px} .tipsy-s .tipsy-arrow{bottom:0px;left:50%;margin-left:-5px;background-position:bottom left} .tipsy-sw .tipsy-arrow{bottom:0px;left:10px;background-position:bottom left} .tipsy-se .tipsy-arrow{bottom:0px;right:10px;background-position:bottom left} .tipsy-e .tipsy-arrow{top:50%;margin-top:-5px;right:1px;width:5px;height:11px;background-position:top right} .tipsy-w .tipsy-arrow{top:50%;margin-top:-5px;left:0px;width:6px;height:11px}
+/* cache key: enwiki:resourceloader:filter:minify-css:7:abbe7fb1179238c85880a681895b0551 */
+.cite-accessibility-label{position:absolute !important; top:-99999px;clip:rect(1px 1px 1px 1px); clip:rect(1px,1px,1px,1px);padding:0 !important;border:0 !important;height:1px !important;width:1px !important;overflow:hidden}.mw-cite-backlink,.cite-accessibility-label{-moz-user-select:none;-webkit-user-select:none;-ms-user-select:none;user-select:none}
+/* cache key: enwiki:resourceloader:filter:minify-css:7:a59b70abe6ecaa39388bb79ebc509cb0 */
+.mw-collapsible-toggle{float:right;-moz-user-select:none;-webkit-user-select:none;-ms-user-select:none;user-select:none} caption .mw-collapsible-toggle{float:none} li .mw-collapsible-toggle{float:none} .mw-collapsible-toggle-li{list-style:none}
+/* cache key: enwiki:resourceloader:filter:minify-css:7:6c1d24e90626cec584f0869483f983e7 */
+.wp-teahouse-question-form{position:absolute;margin-left:auto;margin-right:auto;background-color:#f4f3f0;border:1px solid #a7d7f9;padding:1em}#wp-th-question-ask{float:right}.wp-teahouse-ask a.external{background-image:none !important}.wp-teahouse-respond-form{position:absolute;margin-left:auto;margin-right:auto;background-color:#f4f3f0;border:1px solid #a7d7f9;padding:1em}.wp-th-respond{float:right}.wp-teahouse-respond a.external{background-image:none !important}
+/* cache key: enwiki:resourceloader:filter:minify-css:7:ba4e3603af357b5172e85672664d39a8 */
+#container{position:relative;min-height:100%}#container,video{width:100%;height:100%}#playerContainer{overflow:hidden;position:relative;height:100%;background:#000}#videoHolder{position:relative;overflow:hidden}.fullscreen #playerContainer{position:absolute !important;width:100% !important;height:100%! important;z-index:9999;min-height:100%;top:0;left:0;margin:0}.mwEmbedPlayer{width:100%;height:100%;overflow:hidden;position:absolute;top:0;left:0}.modal_editor{ left:10px;top:10px;right:10px;bottom:10px;position:fixed;z-index:100}.displayHTML a:visited{color:white}.loadingSpinner{width:32px;height:32px;display:block;padding:0px;background-image:url(//bits.wikimedia.org/static-1.23wmf20/extensions/MwEmbedSupport/MwEmbedModules/MwEmbedSupport/skins/common/images/loading_ani.gif?2014-03-27T16:46:40Z)}.mw-imported-resource{border:thin solid black}.kaltura-icon{background-image:url(//bits.wikimedia.org/static-1.23wmf20/extensions/MwEmbedSupport/MwEmbedModules/MwEmbedSupport/skins/common/images/kaltura_logo_sm_transparent.png?2014-03-27T16:46:40Z) !important;background-repeat:no-repeat;display:block;height:12px;width:12px;margin-top:2px !important;margin-left:3px !important}.mw-fullscreen-overlay{background:rgb(0,0,0) none repeat scroll 0% 0%;position:fixed;top:0pt;left:0pt;width:100%;height:100%;-moz-background-clip:border;-moz-background-origin:padding;-moz-background-inline-policy:continuous} .play-btn-large{width:70px;height:53px;background :url(//bits.wikimedia.org/static-1.23wmf20/extensions/MwEmbedSupport/MwEmbedModules/MwEmbedSupport/skins/common/images/player_big_play_button.png?2014-03-27T16:46:40Z);position :absolute;cursor :pointer;border :none !important;z-index :1}.play-btn-large:hover{background :url(//bits.wikimedia.org/static-1.23wmf20/extensions/MwEmbedSupport/MwEmbedModules/MwEmbedSupport/skins/common/images/player_big_play_button_hover.png?2014-03-27T16:46:40Z)}.carouselContainer{position :absolute;width :100%;z-index :2}.carouselVideoTitle{position :absolute;top :0px;left :0px;width :100%;background :rgba(0,0,0,0.8);color :white;font-size :small;font-weight :bold;z-index :2}.carouselVideoTitleText{display :block;padding :10px 10px 10px 20px}.carouselTitleDuration{position :absolute;top :0px;right :0px;padding :2px;background-color :#5A5A5A;color :#D9D9D9;font-size :smaller;z-index :2}.carouselImgTitle{position :absolute;width :100%;text-align :center;color :white;font-size :small;background :rgba(0,0,0,0.4)}.carouselImgDuration{position :absolute;top :2px;left :2px;background :rgba( 0,0,0,0.7 );color :white;padding :1px 6px;font-size :small}.carouselPrevButton,.carouselNextButton{display :block;position :absolute;bottom:23px}.carouselPrevButton{left :5px}.carouselNextButton{right:6px}.alert-container{-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;background-image:linear-gradient(bottom,rgb(215,215,215) 4%,rgb(230,230,230) 55%,rgb(255,255,255) 100%);background-image:-o-linear-gradient(bottom,rgb(215,215,215) 4%,rgb(230,230,230) 55%,rgb(255,255,255) 100%);background-image:-moz-linear-gradient(bottom,rgb(215,215,215) 4%,rgb(230,230,230) 55%,rgb(255,255,255) 100%);background-image:-webkit-linear-gradient(bottom,rgb(215,215,215) 4%,rgb(230,230,230) 55%,rgb(255,255,255) 100%);background-image:-ms-linear-gradient(bottom,rgb(215,215,215) 4%,rgb(230,230,230) 55%,rgb(255,255,255) 100%);background-image:-webkit-gradient(linear,left bottom,left top,color-stop(0.04,rgb(215,215,215)),color-stop(0.55,rgb(230,230,230)),color-stop(1,rgb(255,255,255)));margin:auto;position:absolute;top:0;left:0;right:0;bottom:0;max-width:80%;max-height:30%}.alert-title{background-color :#E6E6E6;padding :5px;border-bottom :1px solid #D1D1D1;font-weight :normal !important;font-size:14px !important;-webkit-border-top-left-radius:3px;-moz-border-radius-topleft:3px;border-top-left-radius:3px;-webkit-border-top-right-radius:3px;-moz-border-radius-topright:3px;border-top-right-radius:3px }.alert-message{padding :5px;font-weight :normal !important;text-align:center;font-size:14px !important}.alert-buttons-container{text-align:center;padding-bottom:5px}.alert-button{background-color:#474747;color:white;-webkit-border-radius:.5em;-moz-border-radius:.5em;border-radius:.5em;padding:2px 10px;background-image:linear-gradient(bottom,rgb(25,25,25) 4%,rgb(47,47,47) 55%,rgb(71,71,71) 68%);background-image:-o-linear-gradient(bottom,rgb(25,25,25) 4%,rgb(47,47,47) 55%,rgb(71,71,71) 68%);background-image:-moz-linear-gradient(bottom,rgb(25,25,25) 4%,rgb(47,47,47) 55%,rgb(71,71,71) 68%);background-image:-webkit-linear-gradient(bottom,rgb(25,25,25) 4%,rgb(47,47,47) 55%,rgb(71,71,71) 68%);background-image:-ms-linear-gradient(bottom,rgb(25,25,25) 4%,rgb(47,47,47) 55%,rgb(71,71,71) 68%);background-image:-webkit-gradient( linear,left bottom,left top,color-stop(0.04,rgb(25,25,25)),color-stop(0.55,rgb(47,47,47)),color-stop(0.68,rgb(71,71,71)) )}.alert-text{color :black !important}
+/* cache key: enwiki:resourceloader:filter:minify-css:7:c417510033c3f9f78d5d8464b5822543 */
+.mw-mlb-info-box{display:inline-block;overflow:hidden;width:100%;border:1px solid #DDDDDD;border-bottom:2px solid #C9C9C9;-webkit-border-radius:3px;border-radius:3px;background-clip:padding-box;background-color:#FFFFFF}
+/* cache key: enwiki:resourceloader:filter:minify-css:7:9131387e86599ef5a60c42be0d77bbc1 */
+#p-lang .uls-settings-trigger{background:transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAgCAMAAAAVMLmlAAAAA3NCSVQICAjb4U/gAAAACXBIWXMAAA3XAAAN1wFCKJt4AAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAALpQTFRF////W1tbgICAWVlZgICAUVFRgICAWVlZhYWFUlJShYWFVFRUgYGBVVVVgYGBVVVVgICAVFRUVVVVVlZWgYGBgICAVFRUgYGBVFRUgICAgYGBVVVVVVVVgYGBVlZWgYGBVFRUgICAVFRUgICAVVVVgICAVlZWgICAVFRUgICAVVVVgICAVFRUgICAVlZWgICAVVVVgICAVVVVgICAVVVVgICAVVVVgICAVVVVgICAVVVVgICAVVVVgICA9Fa9bgAAADx0Uk5TAA4OFBQWFhcXGRlJSUtLWlpbXV9fYGFhZGRlZmlpa2twcIiIioqPj5GRn5+goKGh6+vv7/Dw+fn8/P7+YuRUVgAAAOlJREFUGBmNwcdWAgEURMFLFCUaAcWAEhQYHBRmCN3//1u+BYcVC6s4p2U3OLrrVxN7Xn7uELoH5w65Dx1g6JNnoLazfz++VnZehkZir4pQ3NjzBg5TwtgBhzFh6kDr294UobiykxZc7ezVdLyx8yrw6pM+8GjnDjsf7gj3/WpiJ7Vhl6OW3eC/mlKdo5teZSHNSoM24XqvTCHTvg0MdDIASpn08/6ZSlkJ6jMpLUBhLc3qKEwIIwUURoSJAs2ltC5AIZUWTbjcSulktJayCvCikx7wJG0VttrfEp5eLpfS4uLtgaOmVOeMP8BAM9RClMO9AAAAAElFTkSuQmCC) no-repeat right top;background:transparent url(//bits.wikimedia.org/static-1.23wmf20/extensions/UniversalLanguageSelector/resources/css/../images/cog-sprite.png?2014-03-27T16:48:20Z) no-repeat right top!ie;background-image:-webkit-linear-gradient(transparent,transparent),url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHdpZHRoPSIxNCIgaGVpZ2h0PSIzMiI+PGRlZnM+PHBhdGggZD0iTTEzLjU4MiA2LjYzMmgtMS4wNjRjLS4xMzMtLjUzOC0uMzU0LTEuMDY1LS42NDUtMS41NTJsLjc1LS43NWMuMTY0LS4xNjQuMTY0LS40MjkgMC0uNTkzbC0xLjM1OS0xLjM2Yy0uMTY0LS4xNjQtLjQzLS4xNjQtLjU5NCAwbC0uNzUuNzVjLS40OS0uMjk0LTEuMDEyLS41MTItMS41NTEtLjY0NXYtMS4wNjRjMC0uMjMxLS4xODctLjQxOC0uNDE5LS40MThoLTEuOTE4Yy0uMjMxIDAtLjQxOC4xODctLjQxOC40MTh2MS4wNjNjLS41NDEuMTM1LTEuMDYyLjM1Mi0xLjU1Mi42NDZsLS43NS0uNzVjLS4xNjQtLjE2NC0uNDI5LS4xNjQtLjU5MyAwbC0xLjM2IDEuMzZjLS4xNjQuMTY0LS4xNjQuNDI5IDAgLjU5M2wuNzUuNzVjLS4yOTIuNDg4LS40OTQgMS4wMTUtLjYyNyAxLjU1MWgtMS4wNjRjLS4yMzEgMC0uNDE4LjE4Ny0uNDE4LjQxOXYxLjkxOGMwIC4yMzEuMTg3LjQxOC40MTguNDE4aDEuMDQ2Yy4xMzQuNTQyLjM1MSAxLjA2Mi42NDUgMS41NTFsLS43NS43NWMtLjE2NC4xNjQtLjE2NC40MjkgMCAuNTkzbDEuMzYgMS4zNmMuMTY0LjE2NC40MjkuMTY0LjU5MyAwbC43NS0uNzVjLjQ5MS4yOTYgMS4wMS40OTMgMS41NTEuNjI3djEuMDYzYy4wMDEuMjMzLjE4OC40Mi40MTkuNDJoMS45MThjLjIzMSAwIC40MTktLjE4Ny40MTktLjQxOHYtMS4wNjNjLjU0Mi0uMTM0IDEuMDYxLS4zMzMgMS41NTEtLjYyN2wuNzUuNzVjLjE2NC4xNjQuNDMuMTY0LjU5NCAwbDEuMzU5LTEuMzZjLjE2NC0uMTY0LjE2NC0uNDI5IDAtLjU5M2wtLjc1LS43NWMuMjk1LS40ODkuNTEtMS4wMTMuNjQ1LTEuNTUxaDEuMDY0Yy4yMy0uMDAyLjQxOC0uMTg5LjQxOC0uNDJ2LTEuOTE4YzAtLjIzMi0uMTg4LS40MTgtLjQxOC0uNDE4em0tNi41ODIgNC4wMTJjLTEuNDYxIDAtMi42NDUtMS4xODQtMi42NDUtMi42NDRzMS4xODQtMi42NDQgMi42NDUtMi42NDQgMi42NDUgMS4xODQgMi42NDUgMi42NDQtMS4xODQgMi42NDQtMi42NDUgMi42NDR6IiBpZD0iYSIvPjwvZGVmcz48dXNlIHhsaW5rOmhyZWY9IiNhIiBmaWxsPSIjODA4MDgwIi8+PHVzZSB4bGluazpocmVmPSIjYSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCAxNikiIGZpbGw9IiM1NTUiLz48L3N2Zz4=);background-image:-webkit-linear-gradient(transparent,transparent),url(//bits.wikimedia.org/static-1.23wmf20/extensions/UniversalLanguageSelector/resources/css/../images/cog-sprite.svg?2014-03-27T16:48:20Z)!ie;background-image:linear-gradient(transparent,transparent),url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHdpZHRoPSIxNCIgaGVpZ2h0PSIzMiI+PGRlZnM+PHBhdGggZD0iTTEzLjU4MiA2LjYzMmgtMS4wNjRjLS4xMzMtLjUzOC0uMzU0LTEuMDY1LS42NDUtMS41NTJsLjc1LS43NWMuMTY0LS4xNjQuMTY0LS40MjkgMC0uNTkzbC0xLjM1OS0xLjM2Yy0uMTY0LS4xNjQtLjQzLS4xNjQtLjU5NCAwbC0uNzUuNzVjLS40OS0uMjk0LTEuMDEyLS41MTItMS41NTEtLjY0NXYtMS4wNjRjMC0uMjMxLS4xODctLjQxOC0uNDE5LS40MThoLTEuOTE4Yy0uMjMxIDAtLjQxOC4xODctLjQxOC40MTh2MS4wNjNjLS41NDEuMTM1LTEuMDYyLjM1Mi0xLjU1Mi42NDZsLS43NS0uNzVjLS4xNjQtLjE2NC0uNDI5LS4xNjQtLjU5MyAwbC0xLjM2IDEuMzZjLS4xNjQuMTY0LS4xNjQuNDI5IDAgLjU5M2wuNzUuNzVjLS4yOTIuNDg4LS40OTQgMS4wMTUtLjYyNyAxLjU1MWgtMS4wNjRjLS4yMzEgMC0uNDE4LjE4Ny0uNDE4LjQxOXYxLjkxOGMwIC4yMzEuMTg3LjQxOC40MTguNDE4aDEuMDQ2Yy4xMzQuNTQyLjM1MSAxLjA2Mi42NDUgMS41NTFsLS43NS43NWMtLjE2NC4xNjQtLjE2NC40MjkgMCAuNTkzbDEuMzYgMS4zNmMuMTY0LjE2NC40MjkuMTY0LjU5MyAwbC43NS0uNzVjLjQ5MS4yOTYgMS4wMS40OTMgMS41NTEuNjI3djEuMDYzYy4wMDEuMjMzLjE4OC40Mi40MTkuNDJoMS45MThjLjIzMSAwIC40MTktLjE4Ny40MTktLjQxOHYtMS4wNjNjLjU0Mi0uMTM0IDEuMDYxLS4zMzMgMS41NTEtLjYyN2wuNzUuNzVjLjE2NC4xNjQuNDMuMTY0LjU5NCAwbDEuMzU5LTEuMzZjLjE2NC0uMTY0LjE2NC0uNDI5IDAtLjU5M2wtLjc1LS43NWMuMjk1LS40ODkuNTEtMS4wMTMuNjQ1LTEuNTUxaDEuMDY0Yy4yMy0uMDAyLjQxOC0uMTg5LjQxOC0uNDJ2LTEuOTE4YzAtLjIzMi0uMTg4LS40MTgtLjQxOC0uNDE4em0tNi41ODIgNC4wMTJjLTEuNDYxIDAtMi42NDUtMS4xODQtMi42NDUtMi42NDRzMS4xODQtMi42NDQgMi42NDUtMi42NDQgMi42NDUgMS4xODQgMi42NDUgMi42NDQtMS4xODQgMi42NDQtMi42NDUgMi42NDR6IiBpZD0iYSIvPjwvZGVmcz48dXNlIHhsaW5rOmhyZWY9IiNhIiBmaWxsPSIjODA4MDgwIi8+PHVzZSB4bGluazpocmVmPSIjYSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCAxNikiIGZpbGw9IiM1NTUiLz48L3N2Zz4=);background-image:linear-gradient(transparent,transparent),url(//bits.wikimedia.org/static-1.23wmf20/extensions/UniversalLanguageSelector/resources/css/../images/cog-sprite.svg?2014-03-27T16:48:20Z)!ie;height:16px;width:14px;float:right;cursor:pointer}.skin-vector #p-lang .uls-settings-trigger{ margin-top:3px}#p-lang .uls-settings-trigger:hover{background-position:right -16px}
+/* cache key: enwiki:resourceloader:filter:minify-css:7:77d7d4e84b341f6f1668fa8c16bdf77f */</style><style>
+.referencetooltip{position:absolute;list-style:none;list-style-image:none;opacity:0;font-size:10px;margin:0;z-index:5;padding:0}.referencetooltip li{border:#080086 2px solid;max-width:260px;padding:10px 8px 13px 8px;margin:0px;background-color:#F7F7F7;box-shadow:2px 4px 2px rgba(0,0,0,0.3);-moz-box-shadow:2px 4px 2px rgba(0,0,0,0.3);-webkit-box-shadow:2px 4px 2px rgba(0,0,0,0.3)}.referencetooltip li+li{margin-left:7px;margin-top:-2px;border:0;padding:0;height:3px;width:0px;background-color:transparent;box-shadow:none;-moz-box-shadow:none;-webkit-box-shadow:none;border-top:12px #080086 solid;border-right:7px transparent solid;border-left:7px transparent solid}.referencetooltip>li+li::after{content:'';border-top:8px #F7F7F7 solid;border-right:5px transparent solid;border-left:5px transparent solid;margin-top:-12px;margin-left:-5px;z-index:1;height:0px;width:0px;display:block}.client-js body .referencetooltip li li{border:none;box-shadow:none;-moz-box-shadow:none;-webkit-box-shadow:none;height:auto;width:auto;margin:auto;padding:0;position:static}.RTflipped{padding-top:13px}.referencetooltip.RTflipped li+li{position:absolute;top:2px;border-top:0;border-bottom:12px #080086 solid}.referencetooltip.RTflipped li+li::after{border-top:0;border-bottom:8px #F7F7F7 solid;position:absolute;margin-top:7px}.RTsettings{float:right;height:16px;width:16px;cursor:pointer;background-image:url(//upload.wikimedia.org/wikipedia/commons/e/ed/Cog.png);margin-top:-9px;margin-right:-7px;-webkit-transition:opacity 0.15s;-moz-transition:opacity 0.15s;-o-transition:opacity 0.15s;-ms-transition:opacity 0.15s;transition:opacity 0.15s;opacity:0.6;filter:alpha(opacity=60)}.RTsettings:hover{opacity:1;filter:alpha(opacity=100)}.RTTarget{border:#080086 2px solid}
+/* cache key: enwiki:resourceloader:filter:minify-css:7:3c614aa75cecefe56b27b5e3c9197b7e */
+.suggestions{overflow:hidden;position:absolute;top:0;left:0;width:0;border:none;z-index:1099;padding:0;margin:-1px -1px 0 0} html > body .suggestions{margin:-1px 0 0 0}.suggestions-special{position:relative;background-color:white;cursor:pointer;border:solid 1px #aaaaaa;padding:0;margin:0;margin-top:-2px;display:none;padding:0.25em 0.25em;line-height:1.25em}.suggestions-results{background-color:white;cursor:pointer;border:solid 1px #aaaaaa;padding:0;margin:0}.suggestions-result{color:black;margin:0;line-height:1.5em;padding:0.01em 0.25em;text-align:left}.suggestions-result-current{background-color:#4C59A6;color:white}.suggestions-special .special-label{color:gray;text-align:left}.suggestions-special .special-query{color:black;font-style:italic;text-align:left}.suggestions-special .special-hover{background-color:silver}.suggestions-result-current .special-label,.suggestions-result-current .special-query{color:white}.autoellipsis-matched,.highlight{font-weight:bold}
+/* cache key: enwiki:resourceloader:filter:minify-css:7:9780324491b653a3780e2d029bdc140c */
+.postedit-container{margin:0 auto;position:fixed;top:0;height:0;left:50%;z-index:1000;font-size:13px}.postedit-container:hover{cursor:pointer}.postedit{position:relative;top:0.6em;left:-50%;padding:.6em 3.6em .6em 1.1em;line-height:1.5625em;color:#626465;background-color:#f4f4f4;border:1px solid #dcd9d9;text-shadow:0 0.0625em 0 rgba(255,255,255,0.5);border-radius:5px;-webkit-box-shadow:0 2px 5px 0 #ccc;box-shadow:0 2px 5px 0 #ccc;-webkit-transition:all 0.25s ease-in-out;-moz-transition:all 0.25s ease-in-out;-ms-transition:all 0.25s ease-in-out;-o-transition:all 0.25s ease-in-out;transition:all 0.25s ease-in-out}.skin-monobook .postedit{top:6em !important}.postedit-faded{opacity:0}.postedit-icon{padding-left:41px;  line-height:25px;background-repeat:no-repeat;background-position:8px 50%}.postedit-icon-checkmark{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAABblBMVEUAAAD///////9PfTf///80aRdTgjn///9Feij///////////9Rfzf///////////9PfjZRgDh1o1xOfTb///////+bwYqLtnj///////9PfTa82K////9WhT6YxIL///9QgDdTgzr////////j7uDl7eLq8efi693k7OH///////9UhjuBr2rp9uRUhjr///9YljVKgir///9WiTlYjT3////9/v57vFlbkT5PjC9dlD/5/fhuq09stUTs9uhxuElctCpfnT1huDFloEZloUZmpENmvDZpvDxpvTxqvjxrvT5rvT9rwTxsqktswD5uwkBvuUdxw0NztFBztU9ztVBzwkp0tlJ1xkd2t1R3uVR4w1F4xk54x014yE15uVZ5v1R5xVB6v1R7yFJ8wVh9xVl9yFR9yVd9ylN+xVh+yFd/x1l/yFeAylmEx1+Ny2uY0Hqe04Wj1Ymv3Ze33qLD47TJ5L3O6cPU7Mrq9eb2+/Q4j37OAAAAQHRSTlMAAQIEBAUFBQwPFB4fJCUoKiosQEhJS01RUlZZXmdydXaChYuSlJSWmJmoq6uur8LExcvM19fg5ejt8fX2+Pr7SljgewAAAKpJREFUGBkFwQNCAwAAAMDLtl3LtrG4rWXbtvX77gAgZ6grFwC0bhwNVgKgdPZx8b0dgLi+s7Wn0VoAqpfOI9+BNADZI7fLrz2pSEwGHZuH+78lSK8ZLkLezF3ooyUG3VPXq2USei9WngeyoG195yBYWDF3E/2pAhl1e9Gr8bGT+bfOFCC2fnvh4X7rcqIAQNNu+HT6sxkAjceTL/2ZAIhv+PorBwBJxfkA//dFHSCBy/UTAAAAAElFTkSuQmCC);background-image:url(//bits.wikimedia.org/static-1.23wmf20/resources/mediawiki.action/images/green-checkmark.png?2014-03-27T16:43:20Z)!ie;background-position:left}.postedit-close{position:absolute;padding:0 .8em;right:0;top:0;font-size:1.25em;font-weight:bold;line-height:2.3em;color:black;text-shadow:0 0.0625em 0 white;text-decoration:none;opacity:0.2;filter:alpha(opacity=20)}.postedit-close:hover{color:black;text-decoration:none;opacity:0.4;filter:alpha(opacity=40)}
+/* cache key: enwiki:resourceloader:filter:minify-css:7:f557e4de54f145329b5ffd5aab58b078 */</style><style>
+.suggestions a.mw-searchSuggest-link,.suggestions a.mw-searchSuggest-link:hover,.suggestions a.mw-searchSuggest-link:active,.suggestions a.mw-searchSuggest-link:focus{text-decoration:none;color:black}.suggestions-result-current a.mw-searchSuggest-link,.suggestions-result-current a.mw-searchSuggest-link:hover,.suggestions-result-current a.mw-searchSuggest-link:active,.suggestions-result-current a.mw-searchSuggest-link:focus{color:white}
+/* cache key: enwiki:resourceloader:filter:minify-css:7:52b1797f70c7e4094dfa4191101944e8 */</style><meta name="ResourceLoaderDynamicStyles" content="">
+<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&lang=en&modules=site&only=styles&skin=vector&*">
+<style>a:lang(ar),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}
+/* cache key: enwiki:resourceloader:filter:minify-css:7:3904d24a08aa08f6a68dc338f9be277e */</style>
+
+<script src="./High-Level Data Link Control - Wikipedia, the free encyclopedia_files/load(1).php"></script><style type="text/css"></style><style type="text/css"></style><script src="./High-Level Data Link Control - Wikipedia, the free encyclopedia_files/load(2).php"></script><style title="spinjs"></style>
+<script>if(window.mw){
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"High-Level_Data_Link_Control","wgTitle":"High-Level Data Link Control","wgCurRevisionId":596014223,"wgRevisionId":596014223,"wgArticleId":78261,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Articles using fixed number of columns in reflist","Pages containing cite templates with deprecated parameters","Link protocols","Logical link control","Telecommunications standards","Networking standards"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"High-Level_Data_Link_Control","wgIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":{"toolbar":true,"dialogs":true,"hidesig":true,"templateEditor":false,"templates":false,"preview":false,"previewDialog":false,"publish":false,"toc":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":false,"wgVisualEditor":{"isPageWatched":false,"magnifyClipIconURL":"//bits.wikimedia.org/static-1.23wmf20/skins/common/images/magnify-clip.png","pageLanguageCode":"en","pageLanguageDir":"ltr","svgMaxSize":2048},"wikilove-recipient":"","wikilove-anon":0,"wgGuidedTourHelpGuiderUrl":"Help:Guided tours/guider","wgFlowTermsOfUseEdit":"By saving changes, you agree to our \u003Ca class=\"external text\" href=\"//wikimediafoundation.org/wiki/Terms_of_use\"\u003ETerms of Use\u003C/a\u003E and agree to irrevocably release your text under the \u003Ca rel=\"nofollow\" class=\"external text\" href=\"//creativecommons.org/licenses/by-sa/3.0\"\u003ECC BY-SA 3.0 License\u003C/a\u003E and \u003Ca class=\"external text\" href=\"//en.wikipedia.org/wiki/Wikipedia:Text_of_the_GNU_Free_Documentation_License\"\u003EGFDL\u003C/a\u003E","wgULSAcceptLanguageList":["en-us","en"],"wgULSCurrentAutonym":"English","wgFlaggedRevsParams":{"tags":{"status":{"levels":1,"quality":2,"pristine":3}}},"wgStableRevisionId":null,"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgNoticeProject":"wikipedia","wgWikibaseItemId":"Q847021"});
+}</script><script>if(window.mw){
+mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"editfont":"default","editondblclick":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"math":0,"minordefault":0,"newpageshidepatrolled":0,"nickname":"","norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"showhiddencats":false,"shownumberswatching":1,"showtoolbar":1,"skin":"vector","stubthreshold":0,"thumbsize":4,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":1,"watchdefault":0,"watchdeletion":0,"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,
+"wllimit":250,"useeditwarning":1,"prefershttps":1,"flaggedrevssimpleui":1,"flaggedrevsstable":0,"flaggedrevseditdiffs":true,"flaggedrevsviewdiffs":false,"usebetatoolbar":1,"usebetatoolbar-cgd":1,"multimediaviewer-enable":true,"visualeditor-enable":0,"visualeditor-enable-experimental":0,"visualeditor-betatempdisable":0,"wikilove-enabled":1,"echo-subscriptions-web-page-review":true,"echo-subscriptions-email-page-review":false,"ep_showtoplink":false,"ep_bulkdelorgs":false,"ep_bulkdelcourses":true,"ep_showdyk":true,"echo-subscriptions-web-education-program":true,"echo-subscriptions-email-education-program":false,"echo-notify-show-link":true,"echo-show-alert":true,"echo-email-frequency":0,"echo-email-format":"html","echo-subscriptions-email-system":true,"echo-subscriptions-web-system":true,"echo-subscriptions-email-other":false,"echo-subscriptions-web-other":true,"echo-subscriptions-email-edit-user-talk":false,"echo-subscriptions-web-edit-user-talk":true,"echo-subscriptions-email-reverted":
+false,"echo-subscriptions-web-reverted":true,"echo-subscriptions-email-article-linked":false,"echo-subscriptions-web-article-linked":false,"echo-subscriptions-email-mention":false,"echo-subscriptions-web-mention":true,"echo-subscriptions-web-edit-thank":true,"echo-subscriptions-email-edit-thank":false,"echo-subscriptions-web-flow-discussion":true,"echo-subscriptions-email-flow-discussion":false,"gettingstarted-task-toolbar-show-intro":true,"uls-preferences":"","language":"en","variant-gan":"gan","variant-iu":"iu","variant-kk":"kk","variant-ku":"ku","variant-shi":"shi","variant-sr":"sr","variant-tg":"tg","variant-uz":"uz","variant-zh":"zh","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"searchNs100":false,"searchNs101":false,"searchNs108":false,
+"searchNs109":false,"searchNs118":false,"searchNs119":false,"searchNs446":false,"searchNs447":false,"searchNs710":false,"searchNs711":false,"searchNs828":false,"searchNs829":false,"gadget-teahouse":1,"gadget-ReferenceTooltips":1,"gadget-DRN-wizard":1,"gadget-charinsert":1,"gadget-mySandbox":1,"variant":"en"});},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});},{},{});
+/* cache key: enwiki:resourceloader:filter:minify-js:7:f91b7921db835befbf3c85fee027f8c0 */
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax","ext.centralauth.centralautologin","skins.vector.compactPersonalBar.defaultTracking","ext.visualEditor.viewPageTarget.init","ext.uls.init","ext.uls.interface","wikibase.client.init","ext.centralNotice.bannerController","skins.vector.js"]);
+}</script><script src="./High-Level Data Link Control - Wikipedia, the free encyclopedia_files/load(3).php"></script>
+<link rel="dns-prefetch" href="http://meta.wikimedia.org/"><!--[if lt IE 7]><style type="text/css">body{behavior:url("/w/static-1.23wmf20/skins/vector/csshover.min.htc")}</style><![endif]--><style id="clearly_highlighting_css" type="text/css">/* selection */ html.clearly_highlighting_enabled ::-moz-selection { background: rgba(246, 238, 150, 0.99); } html.clearly_highlighting_enabled ::selection { background: rgba(246, 238, 150, 0.99); } /* cursor */ html.clearly_highlighting_enabled {    /* cursor and hot-spot position -- requires a default cursor, after the URL one */    cursor: url("chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/clearly/images/highlight--cursor.png") 14 16, text; } /* highlight tag */ em.clearly_highlight_element {    font-style: inherit !important; font-weight: inherit !important;    background-image: url("chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/clearly/images/highlight--yellow.png");    background-repeat: repeat-x; background-position: top left; background-size: 100% 100%; } /* the delete-buttons are positioned relative to this */ em.clearly_highlight_element.clearly_highlight_first { position: relative; } /* delete buttons */ em.clearly_highlight_element a.clearly_highlight_delete_element {    display: none; cursor: pointer;    padding: 0; margin: 0; line-height: 0;    position: absolute; width: 34px; height: 34px; left: -17px; top: -17px;    background-image: url("chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/clearly/images/highlight--delete-sprite.png"); background-repeat: no-repeat; background-position: 0px 0px; } em.clearly_highlight_element a.clearly_highlight_delete_element:hover { background-position: -34px 0px; } /* retina */ @media (min--moz-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2) {    em.clearly_highlight_element { background-image: url("chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/clearly/images/highlight--yellow@2x.png"); }    em.clearly_highlight_element a.clearly_highlight_delete_element { background-image: url("chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/clearly/images/highlight--delete-sprite@2x.png"); background-size: 68px 34px; } } </style><style>[touch-action="none"]{ -ms-touch-action: none; touch-action: none; }[touch-action="pan-x"]{ -ms-touch-action: pan-x; touch-action: pan-x; }[touch-action="pan-y"]{ -ms-touch-action: pan-y; touch-action: pan-y; }[touch-action="scroll"],[touch-action="pan-x pan-y"],[touch-action="pan-y pan-x"]{ -ms-touch-action: pan-x pan-y; touch-action: pan-x pan-y; }</style></head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-High-Level_Data_Link_Control skin-vector action-view vector-animateLayout">
+		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+			<div id="mw-js-message" style="display:none;"></div>
+						<div id="siteNotice"><div id="centralNotice" class="cn-fundraising">
+
+<style>
+  #centralNotice.collapsed #B14_0407_enWW_frm_txmin{
+    display: none;
+  }
+  div#B14_0407_enWW_frm_txmin {
+    display: none;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    z-index: 9999;
+    background: transparent;
+    font-family: Arial, Helvetica, Verdana, sans-serif;
+    cursor: pointer;
+  }
+
+  div#B14_0407_enWW_frm_txmin #B14_0407_enWW_frm_txmin-main {
+    background: #cedff1;
+    padding: 0;
+    width: 100%;
+    border: none;
+    border-spacing: 0; /* because border-collapse hides shadow in IE */
+    box-shadow: 5px 5px 5px #aaa;
+  }
+
+  div#B14_0407_enWW_frm_txmin #B14_0407_enWW_frm_txmin-facts p {
+    margin: 0;
+    padding: 10px 10px 10px 40px;
+    background: url(//upload.wikimedia.org/wikipedia/donate/thumb/9/96/I.svg/20px-I.svg.png) no-repeat 10px 8px;
+    color: #000;
+    font-size: 17px;
+    line-height: 1.2;
+    font-weight: bold;
+    text-align: justify;
+  }
+  .B14_0407_enWW_frm_txmin-highlight {
+    background: #fff64c;
+    color: black;
+    padding: 1px 0;
+  }
+
+  #B14_0407_enWW_frm_txmin-form-wrapper {
+    width: 330px;
+    background: #f5faff;
+    padding: 4px 8px;
+    border-left: 1px solid #a8bedf;
+  }
+  #B14_0407_enWW_frm_txmin-form {
+    height: 100%;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  #B14_0407_enWW_frm_txmin-form table {
+    border: none;
+    border-collapse: collapse;
+    width: 100%;
+    height: 100%;
+  }
+  #B14_0407_enWW_frm_txmin-form td {
+    min-width: 55px;
+    white-space: nowrap;
+    margin: 0;
+    vertical-align: middle;
+    padding: 2px;
+  }
+  #B14_0407_enWW_frm_txmin-form span label {
+    margin-left: 2px;
+  }
+  #B14_0407_enWW_frm_txmin-form .amount-options {
+    height: 20%;
+    color: #091d41;
+  }
+  #B14_0407_enWW_frm_txmin-form .paymentmethod-options td {
+    text-align: center;
+    padding: 12px 4px 8px 4px ;
+  }
+  #B14_0407_enWW_frm_txmin-form button,
+  #B14_0407_enWW_frm_txmin-nag button {
+    display: inline-block;
+    min-width: 110px;
+    min-height: 26px;
+    margin: 0 1px;
+    border: 1px solid #626f90;
+    border-radius: 5px;
+    background: #ffffff;
+    background: -moz-linear-gradient(top, #ffffff 0%, #e5e5e5 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#e5e5e5));
+    background: -webkit-linear-gradient(top, #ffffff 0%,#e5e5e5 100%);
+    background: -o-linear-gradient(top, #ffffff 0%,#e5e5e5 100%);
+    background: -ms-linear-gradient(top, #ffffff 0%,#e5e5e5 100%);
+    background: linear-gradient(to bottom, #ffffff 0%,rgb(240, 240, 240) 100%);
+    box-shadow: 0 1px 1px #eee;
+    color: black;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  #B14_0407_enWW_frm_txmin-form button:hover,
+  #B14_0407_enWW_frm_txmin-nag button:hover {
+    color: #0645ad;
+  }
+
+  div#B14_0407_enWW_frm_txmin span#B14_0407_enWW_frm_txmin-close {
+    display: block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 21px;
+    height: 21px;
+    background: url(//upload.wikimedia.org/wikipedia/donate/2/27/Small-white-close.png) no-repeat center center black;
+    cursor: pointer;
+  }
+
+  div#B14_0407_enWW_frm_txmin p#B14_0407_enWW_frm_txmin-legal {
+    position: relative;
+    top: -100px;
+    z-index: -10;
+    margin: 0;
+    padding: 10px 40px 5px 40px;
+    background: #cedff1;
+    font-size: 11px;
+    line-height: 1;
+    font-weight: normal;
+  }
+
+  #B14_0407_enWW_frm_txmin-nag {
+    display: none;
+    position: fixed;
+    top: 6px;
+    left: 10px;
+    background-color: #cedff1;
+    border: 1px solid #bbb;
+    box-shadow: 5px 5px 5px #aaa;
+    padding: 8px 10px 4px 8px;
+    opacity: 0.9;
+    zoom: 1; /* trigger hasLayout on old versions of IE */
+    width: 150px;
+    text-align: center;
+  }
+  #B14_0407_enWW_frm_txmin-nag img {
+    position: absolute;
+    left: 6px;
+    top: 6px;
+  }
+  .B14_0407_enWW_frm_txmin-nag-link {
+    text-align: left;
+    text-indent: 22px;
+    margin-bottom: 4px;
+  }  
+  .B14_0407_enWW_frm_txmin-nag-link:hover {
+    text-decoration: underline;
+  }
+  .B14_0407_enWW_frm_txmin-nag-close {
+    position: absolute;
+    top: 0px;
+    right: 4px;
+    z-index: 100;
+    font-size: 13px;
+    color: #666;
+  }
+input#input_amount_other {
+       height: 20px;
+       width: 100px;
+  }
+</style>
+
+<div id="B14_0407_enWW_frm_txmin">
+  <table id="B14_0407_enWW_frm_txmin-main" style="height: 125px;">
+    <tbody><tr>
+      <td id="B14_0407_enWW_frm_txmin-facts">
+        <p>
+ <i style="text-transform: uppercase;">Dear Wikipedia readers:</i>
+ To protect our independence, we'll never run ads. We take no government funds. 
+ <span class="B14_0407_enWW_frm_txmin-highlight">We survive on donations averaging about <span style="white-space: nowrap;">€10</span>. Now is the time we ask. If everyone reading this right now gave <span style="white-space: nowrap;">€2</span>, our fundraiser would be done within an hour.</span>
+ We're a small non-profit with costs of a top 5 website: servers, staff and programs. Wikipedia is something special. It is like a library or a public park where we can all go to think and learn. If Wikipedia is useful to you, take one minute to keep it online and ad-free another year.
+ <i>Thank you.</i>
+        </p>
+      </td>
+
+      <td id="B14_0407_enWW_frm_txmin-form-wrapper">       
+<style>
+/* hide methods which aren't monthly capable when monthly option is selected */
+.form-monthly button.no-monthly {
+  display: none !important;
+}
+</style>
+<form id="B14_0407_enWW_frm_txmin-form" method="post" name="paypalcontribution">
+  <input type="hidden" name="utm_medium" value="sitenotice">
+  <input type="hidden" name="utm_campaign" value="C14_enWW_frm_FR">
+  <input type="hidden" name="utm_source" value="B14_0407_enWW_frm_txmin">
+  <input type="hidden" name="language" value="en">
+  <input type="hidden" name="country" value="ES">
+  <input type="hidden" name="currency_code" id="input_currency_code" value="EUR">
+  <input type="hidden" name="payment_method" value="">
+  <input type="hidden" name="referrer" value="">
+  <input type="hidden" name="returnto" value="">
+  <table>
+    <tbody><tr class="frequency-options">
+      <td style="text-align: center;"><input type="radio" name="frequency" id="frequency_onetime" onclick="toggleMonthly(false);" value="onetime" checked="true"><label for="frequency_onetime">One-time</label></td>
+      <td><input type="radio" name="frequency" id="frequency_monthly" onclick="toggleMonthly(true);" value="monthly"><label for="frequency_monthly">Monthly*</label></td>
+    </tr>
+    <tr class="amount-options">
+      <td colspan="2" style="text-align: center;">
+        <input type="radio" name="amount" value="0" style="display: none;">
+        <input type="radio" name="amount" value="1" style="display: none;">
+        <label for="input-amount">€
+            
+           <input type="text" name="amountGiven" autocomplete="off" id="input_amount_other" placeholder="2">
+      </label>
+      </td>
+    </tr>
+    <tr class="paymentmethod-options">
+      <td colspan="2">
+        
+        
+        <button class="paymentmethod-cc" onclick="redirectPayment(&#39;cc&#39;); return false;">
+          Credit Card</button>
+        <button class="paymentmethod-dd" onclick="redirectPayment(&#39;dd&#39;); return false;" style="">
+          Direct Debit</button>
+        
+        <button class="paymentmethod-pp" onclick="redirectPayment(&#39;paypal&#39;); return false;">
+          PayPal</button>
+        
+        
+        
+        <button class="paymentmethod-boletos no-monthly" onclick="redirectPayment(&#39;cash&#39;, &#39;boleto&#39;); return false;" style="display:none;">
+          Boleto</button>
+        
+        <button class="paymentmethod-pp-usd" onclick="redirectPayment(&#39;paypal&#39;, undefined, true); return false;" style="display: none;">
+          PayPal (USD)</button>
+      </td>
+    </tr>
+  </tbody></table>
+<input type="hidden" name="utm_key" value="5"></form>
+        <span id="B14_0407_enWW_frm_txmin-close" onclick="fundraisingBanner.hide();">&nbsp;</span>
+      </td>
+
+    </tr>
+  </tbody></table>
+
+  <p id="B14_0407_enWW_frm_txmin-legal">
+    <a class="localize" target="_blank" href="https://wikimediafoundation.org/wiki/Special:LandingCheck?basic=true&landing_page=Problems_donating&country=ES&language=en&uselang=en">Problems donating?</a> | 
+    <a class="localize" target="_blank" href="https://wikimediafoundation.org/wiki/Special:LandingCheck?basic=true&landing_page=Ways_to_Give&country=ES&language=en&uselang=en">Other ways to give</a> | 
+    <a class="localize" target="_blank" href="https://wikimediafoundation.org/wiki/Special:LandingCheck?landing_page=FAQ&basic=true&country=ES&language=en&uselang=en">Frequently asked questions</a> | 
+    <span class="informationsharing-US" style="display: none;">By donating, you are agreeing to our <a class="localize" target="_blank" href="https://wikimediafoundation.org/wiki/Special:LandingCheck?basic=true&landing_page=Donor_policy&country=ES&language=en&uselang=en">donor privacy policy</a>. The Wikimedia Foundation is a nonprofit, <a class="localize" target="_blank" href="https://wikimediafoundation.org/wiki/Special:LandingCheck?basic=true&landing_page=Tax_Deductibility&country=ES&language=en&uselang=en">tax-exempt organization</a>.</span>
+    <span class="informationsharing-nonUS">By donating, you are agreeing to our <a class="localize" target="_blank" href="https://wikimediafoundation.org/wiki/Special:LandingCheck?basic=true&landing_page=Donor_policy&country=ES&language=en&uselang=en">donor privacy policy</a> and to sharing your information with the <a class="localize" target="_blank" href="https://wikimediafoundation.org/wiki/Special:LandingCheck?basic=true&landing_page=Tax_Deductibility&country=ES&language=en&uselang=en">Wikimedia Foundation</a> and its service providers in the U.S. and elsewhere.</span>
+    <span class="recurring-details">*Recurring payments will be debited by the Wikimedia Foundation until you notify us to stop. We'll send you an email receipt for each payment, which will include a link to <a class="localize" target="_blank" href="https://wikimediafoundation.org/wiki/Special:LandingCheck?landing_page=Cancel_or_change_recurring_payments&basic=true&country=ES&language=en&uselang=en">easy cancellation instructions.</a></span>
+  </p>
+
+  <div id="B14_0407_enWW_frm_txmin-nag" style="display: none;">
+    <img src="./High-Level Data Link Control - Wikipedia, the free encyclopedia_files/20px-I.svg.png">
+    <div class="B14_0407_enWW_frm_txmin-nag-link">If we all gave <span style="white-space: nowrap;">€2</span>, the fundraiser would be over in an hour.</div>
+    <button class="B14_0407_enWW_frm_txmin-nag-donate">Donate now</button>
+    <span class="B14_0407_enWW_frm_txmin-nag-close">x</span>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div></div><!-- CentralNotice --></div>
+						<h1 id="firstHeading" class="firstHeading" lang="en"><span dir="auto">High-Level Data Link Control</span></h1>
+						<div id="bodyContent">
+								<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="http://en.wikipedia.org/wiki/High-Level_Data_Link_Control#mw-navigation">navigation</a>, 					<a href="http://en.wikipedia.org/wiki/High-Level_Data_Link_Control#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><table class="vertical-navbox nowraplinks hlist" cellspacing="5" cellpadding="0" style="float:right;clear:right;width:22.0em;margin:0 0 1.0em 1.0em;background:#f9f9f9;border:1px solid #aaa;padding:0.2em;border-spacing:0.4em 0;text-align:center;line-height:1.4em;font-size:88%;">
+<tbody><tr>
+<th class="" style=";padding:0.2em 0.4em 0.2em;;font-size:145%;line-height:1.2em;"><a href="http://en.wikipedia.org/wiki/Internet_protocol_suite" title="Internet protocol suite">Internet protocol suite</a></th>
+</tr>
+<tr>
+<th class="" style="padding:0.1em;;;"><a href="http://en.wikipedia.org/wiki/Application_layer" title="Application layer">Application layer</a></th>
+</tr>
+<tr>
+<td class="" style="padding:0 0.1em 0.4em;;">
+<ul>
+<li><a href="http://en.wikipedia.org/wiki/Border_Gateway_Protocol" title="Border Gateway Protocol">BGP</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Dynamic_Host_Configuration_Protocol" title="Dynamic Host Configuration Protocol">DHCP</a> * <a href="http://en.wikipedia.org/wiki/DHCPv6" title="DHCPv6">DHCPv6</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Domain_Name_System" title="Domain Name System">DNS</a></li>
+<li><a href="http://en.wikipedia.org/wiki/File_Transfer_Protocol" title="File Transfer Protocol">FTP</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol" title="Hypertext Transfer Protocol">HTTP</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Internet_Message_Access_Protocol" title="Internet Message Access Protocol">IMAP</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Internet_Relay_Chat" title="Internet Relay Chat">IRC</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Lightweight_Directory_Access_Protocol" title="Lightweight Directory Access Protocol">LDAP</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Media_Gateway_Control_Protocol" title="Media Gateway Control Protocol">MGCP</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Network_News_Transfer_Protocol" title="Network News Transfer Protocol">NNTP</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Network_Time_Protocol" title="Network Time Protocol">NTP</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Post_Office_Protocol" title="Post Office Protocol">POP</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Open_Network_Computing_Remote_Procedure_Call" title="Open Network Computing Remote Procedure Call">RPC</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Real-time_Transport_Protocol" title="Real-time Transport Protocol">RTP</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Real_Time_Streaming_Protocol" title="Real Time Streaming Protocol">RTSP</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Routing_Information_Protocol" title="Routing Information Protocol">RIP</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Session_Initiation_Protocol" title="Session Initiation Protocol">SIP</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Simple_Mail_Transfer_Protocol" title="Simple Mail Transfer Protocol">SMTP</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Simple_Network_Management_Protocol" title="Simple Network Management Protocol">SNMP</a></li>
+<li><a href="http://en.wikipedia.org/wiki/SOCKS" title="SOCKS">SOCKS</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Secure_Shell" title="Secure Shell">SSH</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Telnet" title="Telnet">Telnet</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Transport_Layer_Security" title="Transport Layer Security">TLS/SSL</a></li>
+<li><a href="http://en.wikipedia.org/wiki/XMPP" title="XMPP">XMPP</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Category:Application_layer_protocols" title="Category:Application layer protocols"><i>more...</i></a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<th class="" style="padding:0.1em;;;"><a href="http://en.wikipedia.org/wiki/Transport_layer" title="Transport layer">Transport layer</a></th>
+</tr>
+<tr>
+<td class="" style="padding:0 0.1em 0.4em;;">
+<ul>
+<li><a href="http://en.wikipedia.org/wiki/Transmission_Control_Protocol" title="Transmission Control Protocol">TCP</a></li>
+<li><a href="http://en.wikipedia.org/wiki/User_Datagram_Protocol" title="User Datagram Protocol">UDP</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Datagram_Congestion_Control_Protocol" title="Datagram Congestion Control Protocol">DCCP</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Stream_Control_Transmission_Protocol" title="Stream Control Transmission Protocol">SCTP</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Resource_Reservation_Protocol" title="Resource Reservation Protocol">RSVP</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Category:Transport_layer_protocols" title="Category:Transport layer protocols"><i>more...</i></a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<th class="" style="padding:0.1em;;;"><a href="http://en.wikipedia.org/wiki/Internet_layer" title="Internet layer">Internet layer</a></th>
+</tr>
+<tr>
+<td class="" style="padding:0 0.1em 0.4em;;">
+<ul>
+<li><a href="http://en.wikipedia.org/wiki/Internet_Protocol" title="Internet Protocol">IP</a>
+<ul>
+<li><a href="http://en.wikipedia.org/wiki/IPv4" title="IPv4">IPv4</a></li>
+<li><a href="http://en.wikipedia.org/wiki/IPv6" title="IPv6">IPv6</a></li>
+</ul>
+</li>
+<li><a href="http://en.wikipedia.org/wiki/Internet_Control_Message_Protocol" title="Internet Control Message Protocol">ICMP</a></li>
+<li><a href="http://en.wikipedia.org/wiki/ICMPv6" title="ICMPv6">ICMPv6</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Explicit_Congestion_Notification" title="Explicit Congestion Notification">ECN</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Internet_Group_Management_Protocol" title="Internet Group Management Protocol">IGMP</a></li>
+<li><a href="http://en.wikipedia.org/wiki/IPsec" title="IPsec">IPsec</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Category:Internet_layer_protocols" title="Category:Internet layer protocols"><i>more...</i></a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<th class="" style="padding:0.1em;;;"><a href="http://en.wikipedia.org/wiki/Link_layer" title="Link layer">Link layer</a></th>
+</tr>
+<tr>
+<td class="" style="padding:0 0.1em 0.4em;;">
+<ul>
+<li><a href="http://en.wikipedia.org/wiki/Address_Resolution_Protocol" title="Address Resolution Protocol">ARP/InARP</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Neighbor_Discovery_Protocol" title="Neighbor Discovery Protocol">NDP</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Open_Shortest_Path_First" title="Open Shortest Path First">OSPF</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Tunneling_protocol" title="Tunneling protocol">Tunnels</a>
+<ul>
+<li><a href="http://en.wikipedia.org/wiki/Layer_2_Tunneling_Protocol" title="Layer 2 Tunneling Protocol">L2TP</a></li>
+</ul>
+</li>
+<li><a href="http://en.wikipedia.org/wiki/Point-to-Point_Protocol" title="Point-to-Point Protocol">PTPP</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Media_access_control" title="Media access control">Media access control</a>
+<ul>
+<li><a href="http://en.wikipedia.org/wiki/Ethernet" title="Ethernet">Ethernet</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Digital_subscriber_line" title="Digital subscriber line">DSL</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Integrated_Services_Digital_Network" title="Integrated Services Digital Network">ISDN</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Fiber_Distributed_Data_Interface" title="Fiber Distributed Data Interface">FDDI</a></li>
+<li><a href="http://en.wikipedia.org/wiki/DOCSIS" title="DOCSIS">DOCSIS</a></li>
+</ul>
+</li>
+<li><a href="http://en.wikipedia.org/wiki/Category:Link_protocols" title="Category:Link protocols"><i>more...</i></a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align:right;font-size:115%;">
+<div class="plainlinks hlist navbar mini" style="">
+<ul>
+<li class="nv-view"><a href="http://en.wikipedia.org/wiki/Template:IPstack" title="Template:IPstack"><span title="View this template" style="">v</span></a></li>
+<li class="nv-talk"><a href="http://en.wikipedia.org/wiki/Template_talk:IPstack" title="Template talk:IPstack"><span title="Discuss this template" style="">t</span></a></li>
+<li class="nv-edit"><a class="external text" href="http://en.wikipedia.org/w/index.php?title=Template:IPstack&action=edit"><span title="Edit this template" style="">e</span></a></li>
+</ul>
+</div>
+</td>
+</tr>
+</tbody></table>
+<p><b>High-Level Data Link Control</b> (<b>HDLC</b>) is a <a href="http://en.wikipedia.org/wiki/Bit-oriented_protocol" title="Bit-oriented protocol">bit-oriented</a> code-transparent <a href="http://en.wikipedia.org/wiki/Synchronous_serial_communication" title="Synchronous serial communication">synchronous</a> <a href="http://en.wikipedia.org/wiki/Data_link_layer" title="Data link layer">data link layer</a> <a href="http://en.wikipedia.org/wiki/Communications_protocol" title="Communications protocol">protocol</a> developed by the <a href="http://en.wikipedia.org/wiki/International_Organization_for_Standardization" title="International Organization for Standardization">International Organization for Standardization</a> (ISO). The original ISO standards for HDLC are:</p>
+<ul>
+<li>ISO 3309 – Frame Structure</li>
+<li>ISO 4335 – Elements of Procedure</li>
+<li>ISO 6159 – Unbalanced Classes of Procedure</li>
+<li>ISO 6256 – Balanced Classes of Procedure</li>
+</ul>
+<p>The current standard for HDLC is ISO 13239, which replaces all of those standards.</p>
+<p>HDLC provides both <a href="http://en.wikipedia.org/wiki/Connection-oriented_protocol" title="Connection-oriented protocol" class="mw-redirect">connection-oriented</a> and <a href="http://en.wikipedia.org/wiki/Connectionless_protocol" title="Connectionless protocol" class="mw-redirect">connectionless service</a>.</p>
+<p>HDLC can be used for <a href="http://en.wikipedia.org/wiki/Point-to-multipoint_communication_(telecommunications)" title="Point-to-multipoint communication (telecommunications)" class="mw-redirect">point to multipoint connections</a>, but is now used almost exclusively to connect <a href="http://en.wikipedia.org/wiki/Point-to-point_(telecommunications)" title="Point-to-point (telecommunications)">one device to another</a>, using what is known as <a href="http://en.wikipedia.org/wiki/Asynchronous_Balanced_Mode" title="Asynchronous Balanced Mode">Asynchronous Balanced Mode</a> (ABM). The original master-slave modes <a href="http://en.wikipedia.org/w/index.php?title=Normal_Response_Mode&action=edit&redlink=1" class="new" title="Normal Response Mode (page does not exist)">Normal Response Mode</a> (NRM) and <a href="http://en.wikipedia.org/w/index.php?title=Asynchronous_Response_Mode&action=edit&redlink=1" class="new" title="Asynchronous Response Mode (page does not exist)">Asynchronous Response Mode</a> (ARM) are rarely used.</p>
+<p></p>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Contents</h2>
+<span class="toctoggle">&nbsp;[<a href="http://en.wikipedia.org/wiki/High-Level_Data_Link_Control#" class="internal" id="togglelink">hide</a>]&nbsp;</span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="http://en.wikipedia.org/wiki/High-Level_Data_Link_Control#History"><span class="tocnumber">1</span> <span class="toctext">History</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="http://en.wikipedia.org/wiki/High-Level_Data_Link_Control#Framing"><span class="tocnumber">2</span> <span class="toctext">Framing</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="http://en.wikipedia.org/wiki/High-Level_Data_Link_Control#Synchronous_framing"><span class="tocnumber">2.1</span> <span class="toctext">Synchronous framing</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="http://en.wikipedia.org/wiki/High-Level_Data_Link_Control#Asynchronous_framing"><span class="tocnumber">2.2</span> <span class="toctext">Asynchronous framing</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-5"><a href="http://en.wikipedia.org/wiki/High-Level_Data_Link_Control#Structure"><span class="tocnumber">3</span> <span class="toctext">Structure</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="http://en.wikipedia.org/wiki/High-Level_Data_Link_Control#Types_of_Stations_.28Computers.29.2C_and_Data_Transfer_Modes"><span class="tocnumber">4</span> <span class="toctext">Types of Stations (Computers), and Data Transfer Modes</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="http://en.wikipedia.org/wiki/High-Level_Data_Link_Control#HDLC_Operations.2C_and_Frame_Types"><span class="tocnumber">5</span> <span class="toctext">HDLC Operations, and Frame Types</span></a>
+<ul>
+<li class="toclevel-2 tocsection-8"><a href="http://en.wikipedia.org/wiki/High-Level_Data_Link_Control#The_P.2FF_bit"><span class="tocnumber">5.1</span> <span class="toctext">The P/F bit</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="http://en.wikipedia.org/wiki/High-Level_Data_Link_Control#N.28R.29.2C_the_receive_sequence_number"><span class="tocnumber">5.2</span> <span class="toctext">N(R), the receive sequence number</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="http://en.wikipedia.org/wiki/High-Level_Data_Link_Control#N.28S.29.2C_the_sequence_number_of_the_sent_frame"><span class="tocnumber">5.3</span> <span class="toctext">N(S), the sequence number of the sent frame</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="http://en.wikipedia.org/wiki/High-Level_Data_Link_Control#I-Frames_.28user_data.29"><span class="tocnumber">5.4</span> <span class="toctext">I-Frames (user data)</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="http://en.wikipedia.org/wiki/High-Level_Data_Link_Control#S-Frames_.28control.29"><span class="tocnumber">5.5</span> <span class="toctext">S-Frames (control)</span></a>
+<ul>
+<li class="toclevel-3 tocsection-13"><a href="http://en.wikipedia.org/wiki/High-Level_Data_Link_Control#Receive_Ready_.28RR.29"><span class="tocnumber">5.5.1</span> <span class="toctext">Receive Ready (RR)</span></a></li>
+<li class="toclevel-3 tocsection-14"><a href="http://en.wikipedia.org/wiki/High-Level_Data_Link_Control#Receive_Not_Ready_.28RNR.29"><span class="tocnumber">5.5.2</span> <span class="toctext">Receive Not Ready (RNR)</span></a></li>
+<li class="toclevel-3 tocsection-15"><a href="http://en.wikipedia.org/wiki/High-Level_Data_Link_Control#Reject_.28REJ.29"><span class="tocnumber">5.5.3</span> <span class="toctext">Reject (REJ)</span></a></li>
+<li class="toclevel-3 tocsection-16"><a href="http://en.wikipedia.org/wiki/High-Level_Data_Link_Control#Selective_Reject_.28SREJ.29"><span class="tocnumber">5.5.4</span> <span class="toctext">Selective Reject (SREJ)</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-17"><a href="http://en.wikipedia.org/wiki/High-Level_Data_Link_Control#U-Frames"><span class="tocnumber">5.6</span> <span class="toctext">U-Frames</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-18"><a href="http://en.wikipedia.org/wiki/High-Level_Data_Link_Control#Link_Configurations"><span class="tocnumber">6</span> <span class="toctext">Link Configurations</span></a></li>
+<li class="toclevel-1 tocsection-19"><a href="http://en.wikipedia.org/wiki/High-Level_Data_Link_Control#HDLC_Command_and_response_repertoire"><span class="tocnumber">7</span> <span class="toctext">HDLC Command and response repertoire</span></a>
+<ul>
+<li class="toclevel-2 tocsection-20"><a href="http://en.wikipedia.org/wiki/High-Level_Data_Link_Control#Basic_Operations"><span class="tocnumber">7.1</span> <span class="toctext">Basic Operations</span></a></li>
+<li class="toclevel-2 tocsection-21"><a href="http://en.wikipedia.org/wiki/High-Level_Data_Link_Control#Functional_Extensions_.28Options.29"><span class="tocnumber">7.2</span> <span class="toctext">Functional Extensions (Options)</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-22"><a href="http://en.wikipedia.org/wiki/High-Level_Data_Link_Control#HDLC_Command.2FResponse_Repertoire"><span class="tocnumber">8</span> <span class="toctext">HDLC Command/Response Repertoire</span></a>
+<ul>
+<li class="toclevel-2 tocsection-23"><a href="http://en.wikipedia.org/wiki/High-Level_Data_Link_Control#Unnumbered_Frames"><span class="tocnumber">8.1</span> <span class="toctext">Unnumbered Frames</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-24"><a href="http://en.wikipedia.org/wiki/High-Level_Data_Link_Control#See_also"><span class="tocnumber">9</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-25"><a href="http://en.wikipedia.org/wiki/High-Level_Data_Link_Control#Notes"><span class="tocnumber">10</span> <span class="toctext">Notes</span></a></li>
+<li class="toclevel-1 tocsection-26"><a href="http://en.wikipedia.org/wiki/High-Level_Data_Link_Control#References"><span class="tocnumber">11</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-27"><a href="http://en.wikipedia.org/wiki/High-Level_Data_Link_Control#External_links"><span class="tocnumber">12</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="History">History</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://en.wikipedia.org/w/index.php?title=High-Level_Data_Link_Control&action=edit&section=1" title="Edit section: History">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>HDLC is based on <a href="http://en.wikipedia.org/wiki/IBM" title="IBM">IBM</a>'s <a href="http://en.wikipedia.org/wiki/Synchronous_Data_Link_Control" title="Synchronous Data Link Control">SDLC</a> protocol, which is the layer 2 protocol for IBM's <a href="http://en.wikipedia.org/wiki/Systems_Network_Architecture" title="Systems Network Architecture" class="mw-redirect">Systems Network Architecture</a> (SNA). It was extended and standardized by the <a href="http://en.wikipedia.org/wiki/International_Telecommunication_Union" title="International Telecommunication Union">ITU</a> as LAP, while <a href="http://en.wikipedia.org/wiki/ANSI" title="ANSI" class="mw-redirect">ANSI</a> named their essentially identical version <b><a href="http://en.wikipedia.org/wiki/ADCCP" title="ADCCP" class="mw-redirect">ADCCP</a></b>.</p>
+<p>Derivatives have since appeared in innumerable standards. It was adopted into the <a href="http://en.wikipedia.org/wiki/X.25" title="X.25">X.25</a> protocol stack as <a href="http://en.wikipedia.org/wiki/LAPB" title="LAPB">LAPB</a>, into the <a href="http://en.wikipedia.org/wiki/V.42" title="V.42" class="mw-redirect">V.42</a> protocol as <a href="http://en.wikipedia.org/wiki/LAPM" title="LAPM" class="mw-redirect">LAPM</a>, into the <a href="http://en.wikipedia.org/wiki/Frame_Relay" title="Frame Relay">Frame Relay</a> protocol stack as <a href="http://en.wikipedia.org/wiki/LAPF" title="LAPF" class="mw-redirect">LAPF</a> and into the <a href="http://en.wikipedia.org/wiki/ISDN" title="ISDN" class="mw-redirect">ISDN</a> protocol stack as <a href="http://en.wikipedia.org/wiki/Link_Access_Procedures,_D_channel" title="Link Access Procedures, D channel">LAPD</a>.</p>
+<p>HDLC was the inspiration for the <a href="http://en.wikipedia.org/wiki/IEEE_802.2" title="IEEE 802.2">IEEE 802.2</a> <a href="http://en.wikipedia.org/wiki/Logical_Link_Control" title="Logical Link Control" class="mw-redirect">LLC</a> protocol, and it is the basis for the framing mechanism used with the <a href="http://en.wikipedia.org/wiki/Point-to-Point_Protocol" title="Point-to-Point Protocol">PPP</a> on synchronous lines, as used by many servers to connect to a <a href="http://en.wikipedia.org/wiki/Wide_area_network" title="Wide area network">WAN</a>, most commonly the <a href="http://en.wikipedia.org/wiki/Internet" title="Internet">Internet</a>.</p>
+<p>A mildly different version is also used as the control channel for <a href="http://en.wikipedia.org/wiki/E-carrier" title="E-carrier">E-carrier</a> (E1) and <a href="http://en.wikipedia.org/wiki/SONET" title="SONET" class="mw-redirect">SONET</a> multichannel telephone lines. Some vendors, such as Cisco, implemented protocols such as <a href="http://en.wikipedia.org/wiki/Cisco_HDLC" title="Cisco HDLC">Cisco HDLC</a> that used the low-level HDLC framing techniques but added a protocol field to the standard HDLC header. More importantly, HDLC is the default encapsulation for serial interfaces on Cisco routers. It has also been used on Tellabs <a href="http://en.wikipedia.org/wiki/Digital_cross_connect_system" title="Digital cross connect system">DXX</a> for destination of Trunk.</p>
+<h2><span class="mw-headline" id="Framing">Framing</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://en.wikipedia.org/w/index.php?title=High-Level_Data_Link_Control&action=edit&section=2" title="Edit section: Framing">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>HDLC <a href="http://en.wikipedia.org/wiki/Data_frame" title="Data frame">frames</a> can be transmitted over <a href="http://en.wikipedia.org/wiki/Synchronous_serial_communication" title="Synchronous serial communication">synchronous</a> or <a href="http://en.wikipedia.org/wiki/Asynchrony" title="Asynchrony">asynchronous</a> links. Those links have no mechanism to mark the beginning or end of a frame, so the beginning and end of each frame has to be identified. This is done by using a frame delimiter, or <i>flag</i>, which is a unique sequence of bits that is guaranteed not to be seen inside a frame. This sequence is '01111110', or, in <a href="http://en.wikipedia.org/wiki/Hexadecimal" title="Hexadecimal">hexadecimal</a> notation, 0x7E. Each frame begins and ends with a frame delimiter. A frame delimiter at the end of a frame may also mark the start of the next frame. A sequence of 7 or more consecutive 1-bits within a frame will cause the frame to be aborted.</p>
+<p>When no frames are being transmitted on a simplex or full-duplex synchronous link, a frame delimiter is continuously transmitted on the link. Using the standard <a href="http://en.wikipedia.org/wiki/NRZI" title="NRZI" class="mw-redirect">NRZI</a> encoding from bits to line levels (0 bit = transition, 1 bit = no transition), this generates one of two continuous waveforms, depending on the initial state:</p>
+<p><a href="http://en.wikipedia.org/wiki/File:NrziEncodedFlags.png" class="image"><img alt="NrziEncodedFlags.png" src="./High-Level Data Link Control - Wikipedia, the free encyclopedia_files/NrziEncodedFlags.png" width="749" height="83"></a></p>
+<p>This is used by <a href="http://en.wikipedia.org/wiki/Modem" title="Modem">modems</a> to train and synchronize their clocks via <a href="http://en.wikipedia.org/wiki/Phase-locked_loop" title="Phase-locked loop">phase-locked loops</a>. Some protocols allow the 0-bit at the end of a frame delimiter to be shared with the start of the next frame delimiter, i.e. '011111101111110'.</p>
+<p>For half-duplex or multi-drop communication, where several transmitters share a line, a receiver on the line will see continuous idling 1-bits in the inter-frame period when no transmitter is active.</p>
+<p>Since the flag sequence could appear in user data, such sequences must be modified during transmission to keep the receiver from detecting a false frame delimiter. The receiver must also detect when this has occurred so that the original data stream can be restored before it is passed to higher layer protocols. This can be done using bit stuffing, in which a "0" is added after the occurrence of every "11111" in the data. When the receiver detects these "11111" in the data, it removes the "0" added by the transmitter.</p>
+<h3><span class="mw-headline" id="Synchronous_framing">Synchronous framing</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://en.wikipedia.org/w/index.php?title=High-Level_Data_Link_Control&action=edit&section=3" title="Edit section: Synchronous framing">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>On synchronous links, this is done with <a href="http://en.wikipedia.org/wiki/Bit_stuffing" title="Bit stuffing">bit stuffing</a>. Any time that 5 consecutive 1-bits appear in the transmitted data, the data is paused and a 0-bit is transmitted. This ensures that no more than 5 consecutive 1-bits will be sent. The receiving device knows this is being done, and after seeing 5 1-bits in a row, a following 0-bit is stripped out of the received data. If, after 5 consecutive 1-bits, the following bit is also a 1-bit, the receiving device knows that either a flag has been found (if the sixth 1-bit is followed by a 0-bit) or an error has occurred (if the sixth 1-bit is followed by seventh 1-bit). In the latter case, the frame receive procedure, depending on state, is generally either aborted or restarted.</p>
+<p>This also (assuming <a href="http://en.wikipedia.org/wiki/NRZL" title="NRZL" class="mw-redirect">NRZL</a> with transition for 0 encoding of the output) provides a minimum of one transition per 6 bit times during transmission of data, and one transition per 7 bit times during transmission of flag, so the receiver can stay in sync with the transmitter. Note however, that for new protocols, newer encodings such as <a href="http://en.wikipedia.org/wiki/8b/10b_encoding" title="8b/10b encoding">8b/10b encoding</a> are better suited.</p>
+<p>HDLC transmits bytes of data with the least significant bit first (not to be confused with <a href="http://en.wikipedia.org/wiki/Little-endian" title="Little-endian" class="mw-redirect">little-endian</a> order, which refers to byte ordering within a multi-byte field).</p>
+<h3><span class="mw-headline" id="Asynchronous_framing">Asynchronous framing</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://en.wikipedia.org/w/index.php?title=High-Level_Data_Link_Control&action=edit&section=4" title="Edit section: Asynchronous framing">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>When using <a href="http://en.wikipedia.org/wiki/Asynchronous_serial_communication" title="Asynchronous serial communication">asynchronous serial communication</a> such as standard <a href="http://en.wikipedia.org/wiki/RS-232" title="RS-232">RS-232</a> <a href="http://en.wikipedia.org/wiki/Serial_port" title="Serial port">serial ports</a>, bits are sent in groups of 8, and bit-stuffing is inconvenient. Instead they use "control-octet transparency", also called "<a href="http://en.wikipedia.org/w/index.php?title=Byte_stuffing&action=edit&redlink=1" class="new" title="Byte stuffing (page does not exist)">byte stuffing</a>" or "octet stuffing". The frame boundary octet is 01111110, (7E in <a href="http://en.wikipedia.org/wiki/Hexadecimal" title="Hexadecimal">hexadecimal</a> notation). A "control <a href="http://en.wikipedia.org/wiki/Escape_character" title="Escape character">escape octet</a>", has the bit sequence '01111101', (7D hexadecimal). If either of these two octets appears in the transmitted data, an escape octet is sent, followed by the original data octet with bit 5 inverted. For example, the data sequence "01111110" (7E hex) would be transmitted as "01111101 01011110" ("7D 5E" hex). Other reserved octet values (such as <a href="http://en.wikipedia.org/wiki/Xon/Xoff" title="Xon/Xoff" class="mw-redirect">XON or XOFF</a>) can be escaped in the same way if necessary.</p>
+<h2><span class="mw-headline" id="Structure">Structure</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://en.wikipedia.org/w/index.php?title=High-Level_Data_Link_Control&action=edit&section=5" title="Edit section: Structure">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The contents of an HDLC frame are shown in the following table:</p>
+<table class="wikitable">
+<tbody><tr>
+<th>Flag</th>
+<th>Address</th>
+<th>Control</th>
+<th>Information</th>
+<th>FCS</th>
+<th>Flag</th>
+</tr>
+<tr>
+<td>8 bits</td>
+<td>8 or more bits</td>
+<td>8 or 16 bits</td>
+<td>Variable length, 0 or more bits</td>
+<td>16 or 32 bits</td>
+<td>8 bits</td>
+</tr>
+</tbody></table>
+<p>Note that the end flag of one frame may be (but does not have to be) the beginning (start) flag of the next frame.</p>
+<p>Data is usually sent in multiples of 8 bits, but only some variants require this; others theoretically permit <a href="http://en.wikipedia.org/wiki/Data_structure_alignment" title="Data structure alignment">data alignments</a> on other than 8-bit boundaries.</p>
+<p>The <a href="http://en.wikipedia.org/wiki/Frame_check_sequence" title="Frame check sequence">frame check sequence</a> (FCS) is a 16-bit <a href="http://en.wikipedia.org/wiki/CRC-CCITT" title="CRC-CCITT" class="mw-redirect">CRC-CCITT</a> or a 32-bit <a href="http://en.wikipedia.org/wiki/CRC-32" title="CRC-32" class="mw-redirect">CRC-32</a> computed over the Address, Control, and Information fields. It provides a means by which the receiver can detect errors that may have been induced during the transmission of the frame, such as lost bits, flipped bits, and extraneous bits. However, given that the algorithms used to calculate the FCS are such that the probability of certain types of transmission errors going undetected increases with the length of the data being checked for errors, the FCS can implicitly limit the practical size of the frame.</p>
+<p>If the receiver's calculation of the FCS does not match that of the sender's, indicating that the frame contains errors, the receiver can either send a negative <a href="http://en.wikipedia.org/wiki/Acknowledge_character" title="Acknowledge character">acknowledge</a> packet to the sender, or send nothing. After either receiving a negative acknowledge packet or timing out waiting for a positive acknowledge packet, the sender can retransmit the failed frame.</p>
+<p>The FCS was implemented because many early communication links had a relatively high <a href="http://en.wikipedia.org/wiki/Bit_error_ratio" title="Bit error ratio" class="mw-redirect">bit error rate</a>, and the FCS could readily be computed by simple, fast circuitry or software. More effective <a href="http://en.wikipedia.org/wiki/Forward_error_correction" title="Forward error correction">forward error correction</a> schemes are now widely used by other protocols.</p>
+<h2><span class="mw-headline" id="Types_of_Stations_.28Computers.29.2C_and_Data_Transfer_Modes">Types of Stations (Computers), and Data Transfer Modes</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://en.wikipedia.org/w/index.php?title=High-Level_Data_Link_Control&action=edit&section=6" title="Edit section: Types of Stations (Computers), and Data Transfer Modes">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p><a href="http://en.wikipedia.org/wiki/Synchronous_Data_Link_Control" title="Synchronous Data Link Control">Synchronous Data Link Control</a> (<a href="http://en.wikipedia.org/wiki/Synchronous_Data_Link_Control" title="Synchronous Data Link Control">SDLC</a>) was originally designed to connect one computer with multiple peripherals. The original "normal response mode" is a master-slave mode where the computer (or <b>primary terminal</b>) gives each peripheral (<b>secondary terminal</b>) permission to speak in turn. Because all communication is either to or from the primary terminal, frames include only one address, that of the secondary terminal; the primary terminal is not assigned an address. There is also a strong distinction between <b>commands</b> sent by the primary to a secondary, and <b>responses</b> sent by a secondary to the primary. Commands and responses are in fact indistinguishable; the only difference is the direction in which they are transmitted.</p>
+<p>Normal response mode allows operation over <a href="http://en.wikipedia.org/wiki/Half-duplex" title="Half-duplex" class="mw-redirect">half-duplex</a> communication links, as long as the primary is aware that it may not transmit when it has given permission to a secondary.</p>
+<p>Asynchronous response mode is an HDLC addition<sup id="cite_ref-1" class="reference"><a href="http://en.wikipedia.org/wiki/High-Level_Data_Link_Control#cite_note-1"><span>[</span>1<span>]</span></a></sup> for use over <a href="http://en.wikipedia.org/wiki/Full-duplex" title="Full-duplex" class="mw-redirect">full-duplex</a> links. While retaining the primary/secondary distinction, it allows the secondary to transmit at any time.</p>
+<p>Asynchronous balanced mode added the concept of a <b>combined terminal</b> which can act as both a primary and a secondary. There are some subtleties about this mode of operation; while many features of the protocol do not care whether they are in a command or response frame, some do, and the address field of a received frame must be examined to determine whether it contains a command (the address received is ours) or a response (the address received is that of the other terminal).</p>
+<p>Some HDLC variants extend the address field to include both source and destination addresses, or an explicit command/response bit.</p>
+<h2><span class="mw-headline" id="HDLC_Operations.2C_and_Frame_Types">HDLC Operations, and Frame Types</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://en.wikipedia.org/w/index.php?title=High-Level_Data_Link_Control&action=edit&section=7" title="Edit section: HDLC Operations, and Frame Types">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>There are three fundamental types of HDLC frames.</p>
+<ul>
+<li>Information frames, or <b>I-frames</b>, transport user data from the network layer. In addition they can also include flow and error control information piggybacked on data.</li>
+<li>Supervisory Frames, or <b>S-frames</b>, are used for flow and error control whenever piggybacking is impossible or inappropriate, such as when a station does not have data to send. S-frames <b>do not</b> have information fields.</li>
+<li>Unnumbered frames, or <b>U-frames</b>, are used for various miscellaneous purposes, including link management. Some U-frames contain an information field, depending on the type.</li>
+</ul>
+<p>The general format of the control field is:</p>
+<table class="wikitable" style="text-align:center">
+<caption>HDLC control fields</caption>
+<tbody><tr>
+<th>7</th>
+<th>6</th>
+<th>5</th>
+<th>4</th>
+<th>3</th>
+<th>2</th>
+<th>1</th>
+<th>0</th>
+<th></th>
+</tr>
+<tr>
+<td colspan="3">N(R)<br>
+Receive sequence no.</td>
+<td>P/F</td>
+<td colspan="3">N(S)<br>
+Send sequence no.</td>
+<td>0</td>
+<th>I-frame</th>
+</tr>
+<tr>
+<td colspan="3">N(R)<br>
+Receive sequence no.</td>
+<td>P/F</td>
+<td colspan="2">type</td>
+<td>0</td>
+<td>1</td>
+<th>S-frame</th>
+</tr>
+<tr>
+<td colspan="3">type</td>
+<td>P/F</td>
+<td colspan="2">type</td>
+<td>1</td>
+<td>1</td>
+<th>U-frame</th>
+</tr>
+</tbody></table>
+<p>There are also extended (2-byte) forms of I and S frames. Again, the least significant bit (rightmost in this table) is sent first.</p>
+<table class="wikitable" style="text-align:center">
+<caption>Extended HDLC control fields</caption>
+<tbody><tr>
+<th>15</th>
+<th>14</th>
+<th>13</th>
+<th>12</th>
+<th>11</th>
+<th>10</th>
+<th>9</th>
+<th>8</th>
+<th></th>
+<th>7</th>
+<th>6</th>
+<th>5</th>
+<th>4</th>
+<th>3</th>
+<th>2</th>
+<th>1</th>
+<th>0</th>
+<th></th>
+</tr>
+<tr>
+<td colspan="7">N(R)<br>
+Receive sequence no.</td>
+<td>P/F</td>
+<td rowspan="2"></td>
+<td colspan="7">N(S)<br>
+Send sequence no.</td>
+<td>0</td>
+<th>Extended I-frame</th>
+</tr>
+<tr>
+<td colspan="7">N(R)<br>
+Receive sequence no.</td>
+<td>P/F</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td colspan="2">type</td>
+<td>0</td>
+<td>1</td>
+<th>Extended S-frame</th>
+</tr>
+</tbody></table>
+<h3><span class="mw-headline" id="The_P.2FF_bit">The P/F bit</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://en.wikipedia.org/w/index.php?title=High-Level_Data_Link_Control&action=edit&section=8" title="Edit section: The P/F bit">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Poll/Final is a single bit with two names. It is called Poll when set by the primary station to obtain a response from a secondary station, and Final when set by the secondary station to indicate a response or the end of transmission. In all other cases, the bit is clear.</p>
+<p>The bit is used as a <a href="http://en.wikipedia.org/wiki/Token_passing" title="Token passing">token</a> that is passed back and forth between the stations. Only one token should exist at a time. The secondary only sends a Final when it has received a Poll from the primary. The primary only sends a Poll when it has received a Final back from the secondary, or after a timeout indicating that the bit has been lost.</p>
+<ul>
+<li>In NRM, possession of the poll token also grants the addressed secondary permission to transmit. The secondary sets the F-bit in its last response frame to give up permission to transmit. (It is equivalent to the word "Over" in radio <a href="http://en.wikipedia.org/wiki/Voice_procedure" title="Voice procedure">voice procedure</a>.)</li>
+<li>In ARM and ABM, the P bit forces a response. In these modes, the secondary need not wait for a poll to transmit, so need not wait to respond with a final bit.</li>
+<li>If no response is received to a P bit in a reasonable period of time, the primary station times out and sends P again.</li>
+<li>The P/F bit is at the heart of the basic <b>checkpoint retransmission</b> scheme that is required to implement HDLC; all other variants (such as the REJ S-frame) are optional and only serve to increase efficiency. Whenever a station receives a P/F bit, it may assume that any frames that it sent before it last transmitted the P/F bit and not yet acknowledged will never arrive, and so should be retransmitted.</li>
+</ul>
+<p>When operating as a combined station, it is important to maintain the distinction between P and F bits, because there may be two checkpoint cycles operating simultaneously. A P bit arriving in a command from the remote station is not in response to our P bit; only an F bit arriving in a response is.</p>
+<h3><span class="mw-headline" id="N.28R.29.2C_the_receive_sequence_number">N(R), the receive sequence number</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://en.wikipedia.org/w/index.php?title=High-Level_Data_Link_Control&action=edit&section=9" title="Edit section: N(R), the receive sequence number">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Both I and S frames contain a receive sequence number N(R). N(R) provides a positive acknowledgement for the receipt of I-frames from the other side of the link. Its value is always the first frame <i>not</i> received; it acknowledges that all frames with N(S) values up to N(R)-1 (modulo 8 or modulo 128) have been received and indicates the N(S) of the next frame it expects to receive.</p>
+<p>N(R) operates the same way whether it is part of a command or response. A combined station only has one sequence number space.</p>
+<h3><span class="mw-headline" id="N.28S.29.2C_the_sequence_number_of_the_sent_frame">N(S), the sequence number of the sent frame</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://en.wikipedia.org/w/index.php?title=High-Level_Data_Link_Control&action=edit&section=10" title="Edit section: N(S), the sequence number of the sent frame">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>This is incremented for successive I-frames, modulo 8 or modulo 128. Depending on the number of bits in the sequence number, up to 7 or 127 I-frames may be awaiting acknowledgment at any time.</p>
+<h3><span class="mw-headline" id="I-Frames_.28user_data.29">I-Frames (user data)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://en.wikipedia.org/w/index.php?title=High-Level_Data_Link_Control&action=edit&section=11" title="Edit section: I-Frames (user data)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Information frames, or <b>I-frames</b>, transport user data from the network layer. In addition they also include flow and error control information piggybacked on data. The sub-fields in the control field define these functions.</p>
+<p>The least significant bit (first transmitted) defines the frame type. 0 means an I-frame. Except for the interpretation of the P/F field, there is no difference between a command I frame and a response I frame; when P/F is 0, the two forms are exactly equivalent.</p>
+<h3><span class="mw-headline" id="S-Frames_.28control.29">S-Frames (control)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://en.wikipedia.org/w/index.php?title=High-Level_Data_Link_Control&action=edit&section=12" title="Edit section: S-Frames (control)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Supervisory Frames, or <b>S-frames</b>, are used for flow and error control whenever piggybacking is impossible or inappropriate, such as when a station does not have data to send. S-frames <b>do not</b> have information fields.</p>
+<p>The S-frame control field includes a leading "10" indicating that it is an S-frame. This is followed by a 2-bit type, a poll/final bit, and a sequence number. If 7-bit sequence numbers are used, there is also a 4-bit padding field.</p>
+<p>The first 2 bits mean it is an S-frame. All S frames include a P/F bit and a receive sequence number as described above. Except for the interpretation of the P/F field, there is no difference between a command S frame and a response S frame; when P/F is 0, the two forms are exactly equivalent.</p>
+<p>The 2-bit type field encodes the type of S frame.</p>
+<h4><span class="mw-headline" id="Receive_Ready_.28RR.29">Receive Ready (RR)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://en.wikipedia.org/w/index.php?title=High-Level_Data_Link_Control&action=edit&section=13" title="Edit section: Receive Ready (RR)">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<ul>
+<li>Bit Value = 00 (0x00 to match above table type field bit order<sup id="cite_ref-2" class="reference"><a href="http://en.wikipedia.org/wiki/High-Level_Data_Link_Control#cite_note-2"><span>[</span>2<span>]</span></a></sup>)</li>
+<li>Indicate that the sender is ready to receive more data (cancels the effect of a previous RNR).</li>
+<li>Send this packet if you need to send a packet but have no I frame to send.</li>
+<li>A primary station can send this with the P-bit set to solicit data from a secondary station.</li>
+<li>A secondary terminal can use this with the F-bit set to respond to a poll if it has no data to send.</li>
+</ul>
+<h4><span class="mw-headline" id="Receive_Not_Ready_.28RNR.29">Receive Not Ready (RNR)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://en.wikipedia.org/w/index.php?title=High-Level_Data_Link_Control&action=edit&section=14" title="Edit section: Receive Not Ready (RNR)">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<ul>
+<li>Bit value = 01 (0x04 to match above table type field bit order<sup id="cite_ref-3" class="reference"><a href="http://en.wikipedia.org/wiki/High-Level_Data_Link_Control#cite_note-3"><span>[</span>3<span>]</span></a></sup>)</li>
+<li>Acknowledge some packets and request no more be sent until further notice.</li>
+<li>Can be used like RR with P bit set to solicit the status of a secondary station.</li>
+<li>Can be used like RR with F bit set to respond to a poll if the station is busy.</li>
+</ul>
+<h4><span class="mw-headline" id="Reject_.28REJ.29">Reject (REJ)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://en.wikipedia.org/w/index.php?title=High-Level_Data_Link_Control&action=edit&section=15" title="Edit section: Reject (REJ)">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<ul>
+<li>Bit value = 10 (0x08 to match above table type field bit order<sup id="cite_ref-4" class="reference"><a href="http://en.wikipedia.org/wiki/High-Level_Data_Link_Control#cite_note-4"><span>[</span>4<span>]</span></a></sup>)</li>
+<li>Requests immediate retransmission starting with N(R).</li>
+<li>Sent in response to an observed sequence number gap. After seeing I1/I2/I3/I5, send REJ4.</li>
+<li>Optional to generate; a working implementation can use only RR.</li>
+</ul>
+<h4><span class="mw-headline" id="Selective_Reject_.28SREJ.29">Selective Reject (SREJ)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://en.wikipedia.org/w/index.php?title=High-Level_Data_Link_Control&action=edit&section=16" title="Edit section: Selective Reject (SREJ)">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<ul>
+<li>Bit value = 11 (0x0c to match above table type field bit order)</li>
+<li>Requests retransmission of only the frame N(R).</li>
+<li>Not supported by all HDLC variants.</li>
+<li>Optional to generate; a working implementation can use only RR, or only RR and REJ.</li>
+</ul>
+<h3><span class="mw-headline" id="U-Frames">U-Frames</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://en.wikipedia.org/w/index.php?title=High-Level_Data_Link_Control&action=edit&section=17" title="Edit section: U-Frames">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Unnumbered frames, or <b>U-frames</b>, are used for link management, and can also be used to transfer user data. They exchange session management and control information between connected devices, and some U-frames contain an information field, used for system management information or user data. The first 2 bits (11) mean it is a U-frame. The 5 type bits (2 before P/F bit and 3 bit after P/F bit) can create 32 different types of U-frame</p>
+<ul>
+<li>Mode settings (SNRM, SNRME, SARM, SARME, SABM, SABME, UA, DM, RIM, SIM, RD, DISC)</li>
+<li>Information Transfer (UP, UI)</li>
+<li>Recovery (FRMR, RSET)
+<ul>
+<li>Invalid Control Field</li>
+<li>Data Field Too Long</li>
+<li>Data field not allowed with received Frame Type</li>
+<li>Invalid Receive Count</li>
+</ul>
+</li>
+<li>Miscellaneous (XID, TEST)</li>
+</ul>
+<h2><span class="mw-headline" id="Link_Configurations">Link Configurations</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://en.wikipedia.org/w/index.php?title=High-Level_Data_Link_Control&action=edit&section=18" title="Edit section: Link Configurations">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Link configurations can be categorized as being either:</p>
+<ul>
+<li><i>Unbalanced</i>, which consists of one primary terminal, and one or more secondary terminals.</li>
+<li><i>Balanced</i>, which consists of two peer terminals.</li>
+</ul>
+<p>The three link configurations are:</p>
+<ul>
+<li><i>Normal Response Mode</i> (NRM) is an unbalanced configuration in which only the primary terminal may initiate data transfer. The secondary terminal transmits data only in response to commands from the primary terminal. The primary terminal polls the secondary terminal(s) to determine whether they have data to transmit, and then selects one to transmit.</li>
+<li><i>Asynchronous Response Mode</i> (ARM) is an unbalanced configuration in which secondary terminals may transmit without permission from the primary terminal. However, the primary terminal still retains responsibility for line initialization, error recovery, and logical disconnect.</li>
+<li><i><a href="http://en.wikipedia.org/wiki/Asynchronous_Balanced_Mode" title="Asynchronous Balanced Mode">Asynchronous Balanced Mode</a></i> (ABM) is a balanced configuration in which either station may initiate the transmission.</li>
+</ul>
+<p>An additional link configuration is <i>Disconnected mode</i>. This is the mode that a secondary station is in before it is initialized by the primary, or when it is explicitly disconnected. In this mode, the secondary responds to almost every frame other than a mode set command with a "Disconnected mode" response. The purpose of this mode is to allow the primary to reliably detect a secondary being powered off or otherwise reset..</p>
+<h2><span class="mw-headline" id="HDLC_Command_and_response_repertoire">HDLC Command and response repertoire</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://en.wikipedia.org/w/index.php?title=High-Level_Data_Link_Control&action=edit&section=19" title="Edit section: HDLC Command and response repertoire">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li>Commands (I, RR, RNR, (SNRM or SARM or SABM), DISC)</li>
+<li>Responses (I, RR, RNR, UA, DM, FRMR)</li>
+</ul>
+<h3><span class="mw-headline" id="Basic_Operations">Basic Operations</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://en.wikipedia.org/w/index.php?title=High-Level_Data_Link_Control&action=edit&section=20" title="Edit section: Basic Operations">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<ul>
+<li>Initialization can be requested by either side. When the six-mode set-command is issued. This command:
+<ul>
+<li>Signals the other side that initialization is requested</li>
+<li>Specifies the mode, NRM, ABM, ARM</li>
+<li>Specifies whether 3 or 7 bit sequence numbers are in use.</li>
+</ul>
+</li>
+</ul>
+<p>The HDLC module on the other end transmits (UA) frame when the request is accepted. And if the request is rejected it sends (DM) disconnect mode frame.</p>
+<h3><span class="mw-headline" id="Functional_Extensions_.28Options.29">Functional Extensions (Options)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://en.wikipedia.org/w/index.php?title=High-Level_Data_Link_Control&action=edit&section=21" title="Edit section: Functional Extensions (Options)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<ul>
+<li>For <a href="http://en.wikipedia.org/w/index.php?title=Switched_Circuits&action=edit&redlink=1" class="new" title="Switched Circuits (page does not exist)">Switched Circuits</a>
+<ul>
+<li>Commands: ADD – XID</li>
+<li>Responses: ADD – XID, RD</li>
+</ul>
+</li>
+<li>For 2-way Simultaneous commands &amp; responses are ADD – REJ</li>
+<li>For Single Frame Retransmission commands &amp; responses: ADD – SREJ</li>
+<li>For Information Commands &amp; Responses: ADD – Ul</li>
+<li>For Initialization
+<ul>
+<li>Commands: ADD – SIM</li>
+<li>Responses: ADD – RIM</li>
+</ul>
+</li>
+<li>For Group Polling
+<ul>
+<li>Commands: ADD – UP</li>
+</ul>
+</li>
+<li>Extended Addressing</li>
+<li>Delete Response I Frames</li>
+<li>Delete Command I Frames</li>
+<li>Extended Numbering</li>
+<li>For Mode Reset (ABM only) Commands are: ADD – RSET</li>
+<li>Data Link Test Commands &amp; Responses are: ADD – TEST</li>
+<li>Request Disconnect. Responses are ADD – RD</li>
+<li>32-bit FCS</li>
+</ul>
+<h2><span class="mw-headline" id="HDLC_Command.2FResponse_Repertoire">HDLC Command/Response Repertoire</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://en.wikipedia.org/w/index.php?title=High-Level_Data_Link_Control&action=edit&section=22" title="Edit section: HDLC Command/Response Repertoire">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<table class="wikitable">
+<tbody><tr>
+<th rowspan="2">Type Of Frame</th>
+<th rowspan="2">Name</th>
+<th rowspan="2">Command/<br>
+Response</th>
+<th rowspan="2">Description</th>
+<th rowspan="2">Info</th>
+<th colspan="8">C-Field Format</th>
+</tr>
+<tr>
+<th>7</th>
+<th>6</th>
+<th>5</th>
+<th>4</th>
+<th>3</th>
+<th>2</th>
+<th>1</th>
+<th>0</th>
+</tr>
+<tr>
+<td>Information(I)</td>
+<td></td>
+<td>C/R</td>
+<td>User exchange data</td>
+<td></td>
+<td colspan="3">N(R)</td>
+<td>P/F</td>
+<td colspan="3">N(S)</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Supervisory (S)</td>
+<td>Receive Ready (RR)</td>
+<td>C/R</td>
+<td>Positive Acknowledgement</td>
+<td>Ready to receive I-frame N(R)</td>
+<td colspan="3">N(R)</td>
+<td>P/F</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td></td>
+<td>Receive Not Ready (RNR)</td>
+<td>C/R</td>
+<td>Positive Acknowledgement</td>
+<td>Not ready to receive</td>
+<td colspan="3">N(R)</td>
+<td>P/F</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td></td>
+<td>Reject (REJ)</td>
+<td>C/R</td>
+<td>Negative Acknowledgement</td>
+<td>Retransmit starting with N(R)</td>
+<td colspan="3">N(R)</td>
+<td>P/F</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td></td>
+<td>Selective Reject (SREJ)</td>
+<td>C/R</td>
+<td>Negative Acknowledgement</td>
+<td>Retransmit only N(R)</td>
+<td colspan="3">N(R)</td>
+<td>P/F</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+</tr>
+</tbody></table>
+<h3><span class="mw-headline" id="Unnumbered_Frames">Unnumbered Frames</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://en.wikipedia.org/w/index.php?title=High-Level_Data_Link_Control&action=edit&section=23" title="Edit section: Unnumbered Frames">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Unnumbered frames are identified by the low two bits being 1. With the P/F flag, that leaves 5 bits as a frame type. Even though fewer than 32 values are in use, some types have different meanings depending on the direction they are sent: as a request or as a response. The relationship between the <b>DISC</b> (disconnect) command and the <b>RD</b> (request disconnect) response seems clear enough, but the reason for making <b>SARM</b> command numerically equal to the <b>DM</b> response is obscure.</p>
+<table class="wikitable">
+<tbody><tr>
+<th rowspan="2">Name</th>
+<th rowspan="2">Command/<br>
+Response</th>
+<th rowspan="2">Description</th>
+<th rowspan="2">Info</th>
+<th colspan="8">C-Field Format</th>
+</tr>
+<tr>
+<th>7</th>
+<th>6</th>
+<th>5</th>
+<th>4</th>
+<th>3</th>
+<th>2</th>
+<th>1</th>
+<th>0</th>
+</tr>
+<tr>
+<td>Set normal response <b>SNRM</b></td>
+<td align="center">C</td>
+<td>Set mode</td>
+<td>Use 3 bit sequence number</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td align="center">P</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Set normal response extended mode <b>SNRME</b></td>
+<td align="center">C</td>
+<td>Set mode; extended</td>
+<td>Use 7 bit sequence number</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td align="center">P</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Set asynchronous response <b>SARM</b></td>
+<td align="center">C</td>
+<td>Set mode</td>
+<td>Use 3 bit sequence number</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td align="center">P</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Set asynchronous response extended mode <b>SARME</b></td>
+<td align="center">C</td>
+<td>Set mode; extended</td>
+<td>Use 7 bit sequence number</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td align="center">P</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Set asynchronous balanced mode <b>SABM</b></td>
+<td align="center">C</td>
+<td>Set mode</td>
+<td>Use 3 bit sequence number</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td align="center">P</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Set asynchronous balanced extended mode <b>SABME</b></td>
+<td align="center">C</td>
+<td>Set mode; extended</td>
+<td>Use 7 bit sequence number</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td align="center">P</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Set initialization mode <b>SIM</b></td>
+<td align="center">C</td>
+<td colspan="2">Initialize link control function in the addressed station</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td align="center">P</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Disconnect <b>DISC</b></td>
+<td align="center">C</td>
+<td>Terminate logical link connection</td>
+<td>Future I and S frames return <b>DM</b></td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td align="center">P</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Unnumbered Acknowledgment <b>UA</b></td>
+<td align="center">R</td>
+<td colspan="2">Acknowledge acceptance of one of the set-mode commands.</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td align="center">F</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Disconnect Mode <b>DM</b></td>
+<td align="center">R</td>
+<td>Responder in Disconnect Mode</td>
+<td>mode set required</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td align="center">F</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Request Disconnect <b>RD</b></td>
+<td align="center">R</td>
+<td>Solicitation for <b>DISC</b> Command</td>
+<td></td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td align="center">F</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Request Initialization Mode <b>RIM</b></td>
+<td align="center">R</td>
+<td>Initialization needed</td>
+<td>Request for <b>SIM</b> command</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td align="center">F</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Unnumbered Information <b>UI</b></td>
+<td align="center">C/R</td>
+<td>Unacknowledged data</td>
+<td>has a payload</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td align="center">P/F</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Unnumbered Poll <b>UP</b></td>
+<td align="center">C</td>
+<td colspan="2">Used to solicit control information</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td align="center">P</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Reset <b>RSET</b></td>
+<td align="center">C</td>
+<td>Used for recovery</td>
+<td>Resets N(R) but not N(S)</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td align="center">P</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Exchange Identification <b>XID</b></td>
+<td align="center">C/R</td>
+<td colspan="2">Used to Request/Report capabilities</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td align="center">P/F</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Test <b>TEST</b></td>
+<td align="center">C/R</td>
+<td colspan="2">Exchange identical information fields for testing</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td align="center">P/F</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Frame Reject <b>FRMR</b></td>
+<td align="center">R</td>
+<td colspan="2">Report receipt of unacceptable frame</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td align="center">F</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Nonreserved 0 <b>NR0</b></td>
+<td align="center">C/R</td>
+<td>Not standardized</td>
+<td>For application use</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td align="center">P/F</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Nonreserved 1 <b>NR1</b></td>
+<td align="center">C/R</td>
+<td>Not standardized</td>
+<td>For application use</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td align="center">P/F</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Nonreserved 2 <b>NR2</b></td>
+<td align="center">C/R</td>
+<td>Not standardized</td>
+<td>For application use</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td align="center">P/F</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Nonreserved 3 <b>NR3</b></td>
+<td align="center">C/R</td>
+<td>Not standardized</td>
+<td>For application use</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td align="center">P/F</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Configure for test <b>CFGR</b></td>
+<td align="center">C/R</td>
+<td>Not part of HDLC</td>
+<td>Was part of SDLC</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td align="center">P/F</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Beacon <b>BCN</b></td>
+<td align="center">R</td>
+<td>Not part of HDLC</td>
+<td>Was part of SDLC</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td align="center">F</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+</tbody></table>
+<p>The UI, XID and TEST frames contain a payload, and can be used as both commands and responses.</p>
+<ul>
+<li>A UI frame contains user information, but unlike an I frame it is not acknowledged or retransmitted if lost.</li>
+<li>The XID frame is used to exchange terminal capabilities. <a href="http://en.wikipedia.org/wiki/IBM_Systems_Network_Architecture" title="IBM Systems Network Architecture">IBM Systems Network Architecture</a> defined one format, but the variant defined in ISO 8885 is more commonly used. A primary advertises its capabilities with an XID command, and a secondary returns an XID response.</li>
+<li>The TEST frame is simply a <a href="http://en.wikipedia.org/wiki/Ping_(networking_utility)" title="Ping (networking utility)">ping</a> command for debugging purposes. The payload of the TEST command is returned in the TEST response.</li>
+</ul>
+<p>The FRMR frame contains a payload describing the unacceptable frame. The first 1 or 2 bytes are a copy of the rejected control field, the next 1 or 2 contain the current send and receive sequence numbers, and the following 4 or 5 bits indicate the reason for the rejection.</p>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://en.wikipedia.org/w/index.php?title=High-Level_Data_Link_Control&action=edit&section=24" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><a href="http://en.wikipedia.org/wiki/Point-to-Point_Protocol" title="Point-to-Point Protocol">PPP</a>, <a href="http://en.wikipedia.org/wiki/Serial_line_IP" title="Serial line IP" class="mw-redirect">SLIP</a></li>
+</ul>
+<h2><span class="mw-headline" id="Notes">Notes</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://en.wikipedia.org/w/index.php?title=High-Level_Data_Link_Control&action=edit&section=25" title="Edit section: Notes">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist columns references-column-count references-column-count-2" style="-moz-column-count: 2; -webkit-column-count: 2; column-count: 2; list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="http://en.wikipedia.org/wiki/High-Level_Data_Link_Control#cite_ref-1"><span class="cite-accessibility-label">Jump up </span>^</a></b></span> <span class="reference-text">(<a href="http://en.wikipedia.org/wiki/High-Level_Data_Link_Control#CITEREFFriend1988">Friend 1988</a>, p.&nbsp;191)</span></li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="http://en.wikipedia.org/wiki/High-Level_Data_Link_Control#cite_ref-2"><span class="cite-accessibility-label">Jump up </span>^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="http://www.euclideanspace.com/coms/protocol/x25/link/f_types/index.htm#rr">http://www.euclideanspace.com/coms/protocol/x25/link/f_types/index.htm#rr</a></span></li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b><a href="http://en.wikipedia.org/wiki/High-Level_Data_Link_Control#cite_ref-3"><span class="cite-accessibility-label">Jump up </span>^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="http://www.euclideanspace.com/coms/protocol/x25/link/f_types/index.htm#rnr">http://www.euclideanspace.com/coms/protocol/x25/link/f_types/index.htm#rnr</a></span></li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><b><a href="http://en.wikipedia.org/wiki/High-Level_Data_Link_Control#cite_ref-4"><span class="cite-accessibility-label">Jump up </span>^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="http://www.euclideanspace.com/coms/protocol/x25/link/f_types/index.htm#rej">http://www.euclideanspace.com/coms/protocol/x25/link/f_types/index.htm#rej</a></span></li>
+</ol>
+</div>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://en.wikipedia.org/w/index.php?title=High-Level_Data_Link_Control&action=edit&section=26" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><span class="citation book">Friend, George E.; John L. Fike, H. Charles Baker, John C. Bellamy (1988). <i>Understanding Data Communications</i> (2nd ed.). Indianapolis: Howard W. Sams &amp; Company. <a href="http://en.wikipedia.org/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&nbsp;<a href="http://en.wikipedia.org/wiki/Special:BookSources/0-672-27270-9" title="Special:BookSources/0-672-27270-9">0-672-27270-9</a>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AHigh-Level+Data+Link+Control&amp;rft.aufirst=George+E.&amp;rft.au=Friend%2C+George+E.&amp;rft.aulast=Friend&amp;rft.btitle=Understanding+Data+Communications&amp;rft.date=1988&amp;rft.edition=2nd&amp;rft.genre=book&amp;rft.isbn=0-672-27270-9&amp;rft.place=Indianapolis&amp;rft.pub=Howard+W.+Sams+%26+Company&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&nbsp;</span></span> <span style="display:none;font-size:100%" class="error citation-comment">Cite uses deprecated parameters (<a href="http://en.wikipedia.org/wiki/Help:CS1_errors#deprecated_params" title="Help:CS1 errors">help</a>)</span></li>
+<li><span class="citation book">Stallings, William (2004). <i>Data and Computer Communications</i> (7th ed.). Upper Saddle River: Pearson/Prentice Hall. <a href="http://en.wikipedia.org/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&nbsp;<a href="http://en.wikipedia.org/wiki/Special:BookSources/978-0-13-100681-2" title="Special:BookSources/978-0-13-100681-2">978-0-13-100681-2</a>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AHigh-Level+Data+Link+Control&amp;rft.aufirst=William&amp;rft.aulast=Stallings&amp;rft.au=Stallings%2C+William&amp;rft.btitle=Data+and+Computer+Communications&amp;rft.date=2004&amp;rft.edition=7th&amp;rft.genre=book&amp;rft.isbn=978-0-13-100681-2&amp;rft.place=Upper+Saddle+River&amp;rft.pub=Pearson%2FPrentice+Hall&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&nbsp;</span></span></li>
+<li><span class="citation book">S. Tanenbaum, Andrew (2005). <i>Computer Networks</i> (4th ed.). 482,F.I.E., Patparganj, Delhi 110 092: Dorling Kindersley(India)Pvt. Ltd.,licenses of Pearson Education in South Asia. <a href="http://en.wikipedia.org/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&nbsp;<a href="http://en.wikipedia.org/wiki/Special:BookSources/81-7758-165-1" title="Special:BookSources/81-7758-165-1">81-7758-165-1</a>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AHigh-Level+Data+Link+Control&amp;rft.aufirst=Andrew&amp;rft.aulast=S.+Tanenbaum&amp;rft.au=S.+Tanenbaum%2C+Andrew&amp;rft.btitle=Computer+Networks&amp;rft.date=2005&amp;rft.edition=4th&amp;rft.genre=book&amp;rft.isbn=81-7758-165-1&amp;rft.place=482%2CF.I.E.%2C+Patparganj%2C+Delhi+110+092&amp;rft.pub=Dorling+Kindersley%28India%29Pvt.+Ltd.%2Clicenses+of+Pearson+Education+in+South+Asia&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&nbsp;</span></span></li>
+</ul>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://en.wikipedia.org/w/index.php?title=High-Level_Data_Link_Control&action=edit&section=27" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><a class="external mw-magiclink-rfc" rel="nofollow" href="http://tools.ietf.org/html/rfc2687">RFC 2687</a>, Proposed Standard, PPP in a Real-time Oriented HDLC-like Framing</li>
+<li><a class="external mw-magiclink-rfc" rel="nofollow" href="http://tools.ietf.org/html/rfc1662">RFC 1662</a>, standard 51, PPP in HDLC-like Framing</li>
+<li><a rel="nofollow" class="external text" href="http://www.interfacebus.com/HDLC_Protocol_Description.html">HDLC protocol information page (good description of HDLC fields)</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.ict.tuwien.ac.at/lva/384.081/infobase/L03-HDLC_v4-4.pdf">Data Communication Lectures of Manfred Lindner – Part HDLC</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.acacia-net.com/wwwcla/protocol/iso_4335.htm#I%20format">HDLC packet format and other information</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.cse.dmu.ac.uk/~cfi/Networks/DataLink/DataLink12.htm">The HDLC Family of Protocols</a></li>
+</ul>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1162
+CPU time usage: 0.440 seconds
+Real time usage: 0.491 seconds
+Preprocessor visited node count: 749/1000000
+Preprocessor generated node count: 6619/1500000
+Post‐expand include size: 17315/2048000 bytes
+Template argument size: 4119/2048000 bytes
+Highest expansion depth: 12/40
+Expensive parser function count: 0/500
+Lua time usage: 0.021/10.000 seconds
+Lua memory usage: 1.27 MB/50 MB
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:78261-0!*!0!!en!4!* and timestamp 20140405083924
+ -->
+<noscript>&lt;img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /&gt;</noscript></div>								<div class="printfooter">
+				Retrieved from "<a href="http://en.wikipedia.org/w/index.php?title=High-Level_Data_Link_Control&oldid=596014223">http://en.wikipedia.org/w/index.php?title=High-Level_Data_Link_Control&amp;oldid=596014223</a>"				</div>
+												<div id="catlinks" class="catlinks"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="http://en.wikipedia.org/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="http://en.wikipedia.org/wiki/Category:Link_protocols" title="Category:Link protocols">Link protocols</a></li><li><a href="http://en.wikipedia.org/wiki/Category:Logical_link_control" title="Category:Logical link control">Logical link control</a></li><li><a href="http://en.wikipedia.org/wiki/Category:Telecommunications_standards" title="Category:Telecommunications standards">Telecommunications standards</a></li><li><a href="http://en.wikipedia.org/wiki/Category:Networking_standards" title="Category:Networking standards">Networking standards</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="http://en.wikipedia.org/wiki/Category:Articles_using_fixed_number_of_columns_in_reflist" title="Category:Articles using fixed number of columns in reflist">Articles using fixed number of columns in reflist</a></li><li><a href="http://en.wikipedia.org/wiki/Category:Pages_containing_cite_templates_with_deprecated_parameters" title="Category:Pages containing cite templates with deprecated parameters">Pages containing cite templates with deprecated parameters</a></li></ul></div></div>												<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+			<div id="mw-head">
+				<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+	<h3 id="p-personal-label">Personal tools</h3>
+	<ul>
+<li id="pt-createaccount"><a href="http://en.wikipedia.org/w/index.php?title=Special:UserLogin&returnto=High-Level+Data+Link+Control&type=signup">Create account</a></li><li id="pt-login"><a href="http://en.wikipedia.org/w/index.php?title=Special:UserLogin&returnto=High-Level+Data+Link+Control" title="You&#39;re encouraged to log in; however, it&#39;s not mandatory. [ctrl-option-o]" accesskey="o">Log in</a></li>	</ul>
+</div>
+				<div id="left-navigation">
+					<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+	<h3 id="p-namespaces-label">Namespaces</h3>
+	<ul>
+					<li id="ca-nstab-main" class="selected"><span><a href="./High-Level Data Link Control - Wikipedia, the free encyclopedia_files/High-Level Data Link Control - Wikipedia, the free encyclopedia.html" title="View the content page [ctrl-option-c]" accesskey="c">Article</a></span></li>
+					<li id="ca-talk"><span><a href="http://en.wikipedia.org/wiki/Talk:High-Level_Data_Link_Control" title="Discussion about the content page [ctrl-option-t]" accesskey="t">Talk</a></span></li>
+			</ul>
+</div>
+<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+	<h3 id="mw-vector-current-variant">
+		</h3>
+	<h3 id="p-variants-label" tabindex="0"><span>Variants</span><a href="http://en.wikipedia.org/wiki/High-Level_Data_Link_Control#" tabindex="-1"></a></h3>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+				</div>
+				<div id="right-navigation">
+					<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+	<h3 id="p-views-label">Views</h3>
+	<ul>
+					<li id="ca-view" class="selected"><span><a href="./High-Level Data Link Control - Wikipedia, the free encyclopedia_files/High-Level Data Link Control - Wikipedia, the free encyclopedia.html">Read</a></span></li>
+					<li id="ca-edit"><span><a href="http://en.wikipedia.org/w/index.php?title=High-Level_Data_Link_Control&action=edit" title="You can edit this page. 
+Please review your changes before saving. [ctrl-option-e]" accesskey="e">Edit</a></span></li>
+					<li id="ca-history" class="collapsible"><span><a href="http://en.wikipedia.org/w/index.php?title=High-Level_Data_Link_Control&action=history" title="Past versions of this page [ctrl-option-h]" accesskey="h">View history</a></span></li>
+			</ul>
+</div>
+<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+	<h3 id="p-cactions-label" tabindex="0"><span>Actions</span><a href="http://en.wikipedia.org/wiki/High-Level_Data_Link_Control#" tabindex="-1"></a></h3>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+<div id="p-search" role="search">
+	<h3><label for="searchInput">Search</label></h3>
+	<form action="http://en.wikipedia.org/w/index.php" id="searchform">
+					<div id="simpleSearch">
+					<input type="search" name="search" placeholder="Search" title="Search Wikipedia [ctrl-option-f]" accesskey="f" id="searchInput" tabindex="1" autocomplete="off"><input type="hidden" value="Special:Search" name="title"><input type="submit" name="go" value="Go" title="Go to a page with this exact name if one exists" id="searchButton" class="searchButton">		</div>
+	</form>
+</div>
+				</div>
+			</div>
+			<div id="mw-panel" class="collapsible-nav">
+					<div id="p-logo" role="banner"><a style="background-image: url(//upload.wikimedia.org/wikipedia/en/b/bc/Wiki.png);" href="http://en.wikipedia.org/wiki/Main_Page" title="Visit the main page"></a></div>
+				<div class="portal first persistent" role="navigation" id="p-navigation" aria-labelledby="p-navigation-label">
+	<h3 id="p-navigation-label">Navigation</h3>
+	<div class="body">
+		<ul>
+			<li id="n-mainpage-description"><a href="http://en.wikipedia.org/wiki/Main_Page" title="Visit the main page [ctrl-option-z]" accesskey="z">Main page</a></li>
+			<li id="n-contents"><a href="http://en.wikipedia.org/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li>
+			<li id="n-featuredcontent"><a href="http://en.wikipedia.org/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li>
+			<li id="n-currentevents"><a href="http://en.wikipedia.org/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li>
+			<li id="n-randompage"><a href="http://en.wikipedia.org/wiki/Special:Random" title="Load a random article [ctrl-option-x]" accesskey="x">Random article</a></li>
+			<li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&utm_medium=sidebar&utm_campaign=C13_en.wikipedia.org&uselang=en" title="Support us">Donate to Wikipedia</a></li>
+			<li id="n-shoplink"><a href="http://shop.wikimedia.org/" title="Visit the Wikimedia Shop">Wikimedia Shop</a></li>
+		</ul>
+	</div>
+</div>
+<div class="portal expanded" role="navigation" id="p-interaction" aria-labelledby="p-interaction-label">
+	<h3 id="p-interaction-label" tabindex="2"><a href="http://en.wikipedia.org/wiki/High-Level_Data_Link_Control#" aria-haspopup="true" aria-controls="p-interaction-list" role="button" aria-pressed="true" aria-expanded="true">Interaction</a></h3>
+	<div class="body" style="display: block;">
+		<ul id="p-interaction-list">
+			<li id="n-help"><a href="http://en.wikipedia.org/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li>
+			<li id="n-aboutsite"><a href="http://en.wikipedia.org/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li>
+			<li id="n-portal"><a href="http://en.wikipedia.org/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li>
+			<li id="n-recentchanges"><a href="http://en.wikipedia.org/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [ctrl-option-r]" accesskey="r">Recent changes</a></li>
+			<li id="n-contactpage"><a href="http://en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact page</a></li>
+		</ul>
+	</div>
+</div>
+<div class="portal collapsed" role="navigation" id="p-tb" aria-labelledby="p-tb-label">
+	<h3 id="p-tb-label" tabindex="3"><a href="http://en.wikipedia.org/wiki/High-Level_Data_Link_Control#" aria-haspopup="true" aria-controls="p-tb-list" role="button" aria-pressed="false" aria-expanded="false">Tools</a></h3>
+	<div class="body">
+		<ul id="p-tb-list">
+			<li id="t-whatlinkshere"><a href="http://en.wikipedia.org/wiki/Special:WhatLinksHere/High-Level_Data_Link_Control" title="List of all English Wikipedia pages containing links to this page [ctrl-option-j]" accesskey="j">What links here</a></li>
+			<li id="t-recentchangeslinked"><a href="http://en.wikipedia.org/wiki/Special:RecentChangesLinked/High-Level_Data_Link_Control" title="Recent changes in pages linked from this page [ctrl-option-k]" accesskey="k">Related changes</a></li>
+			<li id="t-upload"><a href="http://en.wikipedia.org/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [ctrl-option-u]" accesskey="u">Upload file</a></li>
+			<li id="t-specialpages"><a href="http://en.wikipedia.org/wiki/Special:SpecialPages" title="A list of all special pages [ctrl-option-q]" accesskey="q">Special pages</a></li>
+			<li id="t-permalink"><a href="http://en.wikipedia.org/w/index.php?title=High-Level_Data_Link_Control&oldid=596014223" title="Permanent link to this revision of the page">Permanent link</a></li>
+			<li id="t-info"><a href="http://en.wikipedia.org/w/index.php?title=High-Level_Data_Link_Control&action=info">Page information</a></li>
+			<li id="t-wikibase"><a href="http://www.wikidata.org/wiki/Q847021" title="Link to connected data repository item [ctrl-option-g]" accesskey="g">Data item</a></li>
+<li id="t-cite"><a href="http://en.wikipedia.org/w/index.php?title=Special:Cite&page=High-Level_Data_Link_Control&id=596014223" title="Information on how to cite this page">Cite this page</a></li>		</ul>
+	</div>
+</div>
+<div class="portal collapsed" role="navigation" id="p-coll-print_export" aria-labelledby="p-coll-print_export-label">
+	<h3 id="p-coll-print_export-label" tabindex="4"><a href="http://en.wikipedia.org/wiki/High-Level_Data_Link_Control#" aria-haspopup="true" aria-controls="p-coll-print_export-list" role="button" aria-pressed="false" aria-expanded="false">Print/export</a></h3>
+	<div class="body">
+		<ul id="p-coll-print_export-list">
+			<li id="coll-create_a_book"><a href="http://en.wikipedia.org/w/index.php?title=Special:Book&bookcmd=book_creator&referer=High-Level+Data+Link+Control">Create a book</a></li>
+			<li id="coll-download-as-rl"><a href="http://en.wikipedia.org/w/index.php?title=Special:Book&bookcmd=render_article&arttitle=High-Level+Data+Link+Control&oldid=596014223&writer=rl">Download as PDF</a></li>
+			<li id="t-print"><a href="http://en.wikipedia.org/w/index.php?title=High-Level_Data_Link_Control&printable=yes" title="Printable version of this page [ctrl-option-p]" accesskey="p">Printable version</a></li>
+		</ul>
+	</div>
+</div>
+<div class="portal expanded" role="navigation" id="p-lang" aria-labelledby="p-lang-label"><span class="uls-settings-trigger" tabindex="0" role="button" aria-haspopup="true" original-title="Language settings"></span>
+	<h3 id="p-lang-label" tabindex="5"><a href="http://en.wikipedia.org/wiki/High-Level_Data_Link_Control#" aria-haspopup="true" aria-controls="p-lang-list" role="button" aria-pressed="true" aria-expanded="true">Languages</a></h3>
+	<div class="body" style="display: block;">
+		<ul id="p-lang-list">
+			<li class="interlanguage-link interwiki-ca"><a href="http://ca.wikipedia.org/wiki/HDLC" title="HDLC – Catalan" lang="ca" hreflang="ca">Català</a></li>
+			<li class="interlanguage-link interwiki-cs"><a href="http://cs.wikipedia.org/wiki/HDLC" title="HDLC – Czech" lang="cs" hreflang="cs">Čeština</a></li>
+			<li class="interlanguage-link interwiki-da"><a href="http://da.wikipedia.org/wiki/HDLC" title="HDLC – Danish" lang="da" hreflang="da">Dansk</a></li>
+			<li class="interlanguage-link interwiki-de"><a href="http://de.wikipedia.org/wiki/High-Level_Data_Link_Control" title="High-Level Data Link Control – German" lang="de" hreflang="de">Deutsch</a></li>
+			<li class="interlanguage-link interwiki-es"><a href="http://es.wikipedia.org/wiki/High-Level_Data_Link_Control" title="High-Level Data Link Control – Spanish" lang="es" hreflang="es">Español</a></li>
+			<li class="interlanguage-link interwiki-eu"><a href="http://eu.wikipedia.org/wiki/HDLC" title="HDLC – Basque" lang="eu" hreflang="eu">Euskara</a></li>
+			<li class="interlanguage-link interwiki-fr"><a href="http://fr.wikipedia.org/wiki/High-Level_Data_Link_Control" title="High-Level Data Link Control – French" lang="fr" hreflang="fr">Français</a></li>
+			<li class="interlanguage-link interwiki-hr"><a href="http://hr.wikipedia.org/wiki/HDLC" title="HDLC – Croatian" lang="hr" hreflang="hr">Hrvatski</a></li>
+			<li class="interlanguage-link interwiki-it"><a href="http://it.wikipedia.org/wiki/High-Level_Data_Link_Control" title="High-Level Data Link Control – Italian" lang="it" hreflang="it">Italiano</a></li>
+			<li class="interlanguage-link interwiki-he"><a href="http://he.wikipedia.org/wiki/High-level_Data_Link_Control" title="High-level Data Link Control – Hebrew" lang="he" hreflang="he">עברית</a></li>
+			<li class="interlanguage-link interwiki-mk"><a href="http://mk.wikipedia.org/wiki/HDLC" title="HDLC – Macedonian" lang="mk" hreflang="mk">Македонски</a></li>
+			<li class="interlanguage-link interwiki-ja"><a href="http://ja.wikipedia.org/wiki/High-Level_Data_Link_Control" title="High-Level Data Link Control – Japanese" lang="ja" hreflang="ja">日本語</a></li>
+			<li class="interlanguage-link interwiki-no"><a href="http://no.wikipedia.org/wiki/HDLC" title="HDLC – Norwegian (bokmål)" lang="no" hreflang="no">Norsk bokmål</a></li>
+			<li class="interlanguage-link interwiki-pl"><a href="http://pl.wikipedia.org/wiki/High-Level_Data_Link_Control" title="High-Level Data Link Control – Polish" lang="pl" hreflang="pl">Polski</a></li>
+			<li class="interlanguage-link interwiki-pt"><a href="http://pt.wikipedia.org/wiki/HDLC" title="HDLC – Portuguese" lang="pt" hreflang="pt">Português</a></li>
+			<li class="interlanguage-link interwiki-ru"><a href="http://ru.wikipedia.org/wiki/HDLC" title="HDLC – Russian" lang="ru" hreflang="ru">Русский</a></li>
+			<li class="interlanguage-link interwiki-fi"><a href="http://fi.wikipedia.org/wiki/HDLC" title="HDLC – Finnish" lang="fi" hreflang="fi">Suomi</a></li>
+			<li class="interlanguage-link interwiki-sv"><a href="http://sv.wikipedia.org/wiki/High-Level_Data_Link_Control" title="High-Level Data Link Control – Swedish" lang="sv" hreflang="sv">Svenska</a></li>
+			<li class="interlanguage-link interwiki-tr"><a href="http://tr.wikipedia.org/wiki/HDLC" title="HDLC – Turkish" lang="tr" hreflang="tr">Türkçe</a></li>
+			<li class="interlanguage-link interwiki-uk"><a href="http://uk.wikipedia.org/wiki/HDLC" title="HDLC – Ukrainian" lang="uk" hreflang="uk">Українська</a></li>
+			<li class="interlanguage-link interwiki-zh"><a href="http://zh.wikipedia.org/wiki/%E9%AB%98%E7%BA%A7%E6%95%B0%E6%8D%AE%E9%93%BE%E8%B7%AF%E6%8E%A7%E5%88%B6" title="高级数据链路控制 – Chinese" lang="zh" hreflang="zh">中文</a></li>
+			
+			<li class="wbc-editpage"><a href="http://www.wikidata.org/wiki/Q847021#sitelinks-wikipedia" title="Edit interlanguage links">Edit links</a></li>
+		</ul>
+	</div>
+</div>
+			</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 18 February 2014 at 11:39.<br></li>
+											<li id="footer-info-copyright">Text is available under the <a rel="license" href="http://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="http://wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="http://wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy.</a> <br>
+Wikipedia® is a registered trademark of the <a href="http://www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="http://wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="http://en.wikipedia.org/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a href="http://en.wikipedia.org/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-contact"><a href="http://en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+											<li id="footer-places-developers"><a class="external" href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-mobileview"><a href="http://en.m.wikipedia.org/wiki/High-Level_Data_Link_Control" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+					<li id="footer-copyrightico">
+						<a href="http://wikimediafoundation.org/"><img src="./High-Level Data Link Control - Wikipedia, the free encyclopedia_files/wikimedia-button.png" width="88" height="31" alt="Wikimedia Foundation"></a>
+					</li>
+					<li id="footer-poweredbyico">
+						<a href="http://www.mediawiki.org/"><img src="./High-Level Data Link Control - Wikipedia, the free encyclopedia_files/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" width="88" height="31"></a>
+					</li>
+				</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>/*<![CDATA[*/window.jQuery && jQuery.ready();/*]]>*/</script><script>if(window.mw){
+mw.loader.state({"site":"loading","user":"ready","user.groups":"ready"});
+}</script>
+<script>if(window.mw){
+mw.loader.load(["ext.cite","mobile.desktop","mediawiki.action.view.postEdit","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.DRN-wizard","ext.gadget.charinsert","mw.MwEmbedSupport.style","mmv.bootstrap.autostart","ext.eventLogging.subscriber","ext.navigationTiming","schema.UniversalLanguageSelector","ext.uls.eventlogger","ext.uls.interlanguage","skins.vector.collapsibleNav"],null,true);
+}</script>
+<script src="./High-Level Data Link Control - Wikipedia, the free encyclopedia_files/load(4).php"></script>
+<!-- Served by mw1068 in 0.304 secs. -->
+	
+
+<div class="suggestions" style="display: none; font-size: 12.800000190734863px;"><div class="suggestions-results"></div><div class="suggestions-special"></div></div></body></html>

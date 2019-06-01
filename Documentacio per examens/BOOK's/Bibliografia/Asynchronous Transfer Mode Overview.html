@@ -1,0 +1,388 @@
+
+<!-- saved from url=(0046)http://www.techfest.com/networking/atm/atm.htm -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"><title>Asynchronous Transfer Mode Overview</title><style type="text/css"></style><style type="text/css"></style><style>[touch-action="none"]{ -ms-touch-action: none; touch-action: none; }[touch-action="pan-x"]{ -ms-touch-action: pan-x; touch-action: pan-x; }[touch-action="pan-y"]{ -ms-touch-action: pan-y; touch-action: pan-y; }[touch-action="scroll"],[touch-action="pan-x pan-y"],[touch-action="pan-y pan-x"]{ -ms-touch-action: pan-x pan-y; touch-action: pan-x pan-y; }</style><style id="clearly_highlighting_css" type="text/css">/* selection */ html.clearly_highlighting_enabled ::-moz-selection { background: rgba(246, 238, 150, 0.99); } html.clearly_highlighting_enabled ::selection { background: rgba(246, 238, 150, 0.99); } /* cursor */ html.clearly_highlighting_enabled {    /* cursor and hot-spot position -- requires a default cursor, after the URL one */    cursor: url("chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/clearly/images/highlight--cursor.png") 14 16, text; } /* highlight tag */ em.clearly_highlight_element {    font-style: inherit !important; font-weight: inherit !important;    background-image: url("chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/clearly/images/highlight--yellow.png");    background-repeat: repeat-x; background-position: top left; background-size: 100% 100%; } /* the delete-buttons are positioned relative to this */ em.clearly_highlight_element.clearly_highlight_first { position: relative; } /* delete buttons */ em.clearly_highlight_element a.clearly_highlight_delete_element {    display: none; cursor: pointer;    padding: 0; margin: 0; line-height: 0;    position: absolute; width: 34px; height: 34px; left: -17px; top: -17px;    background-image: url("chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/clearly/images/highlight--delete-sprite.png"); background-repeat: no-repeat; background-position: 0px 0px; } em.clearly_highlight_element a.clearly_highlight_delete_element:hover { background-position: -34px 0px; } /* retina */ @media (min--moz-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2) {    em.clearly_highlight_element { background-image: url("chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/clearly/images/highlight--yellow@2x.png"); }    em.clearly_highlight_element a.clearly_highlight_delete_element { background-image: url("chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/clearly/images/highlight--delete-sprite@2x.png"); background-size: 68px 34px; } } </style></head>
+<body bgcolor="#FFFFFF">
+
+<!-- BEGIN LINKSHARE CODE -->
+<a href="http://www.amazon.com/exec/obidos/redirect?tag=techfestcom&path=tg/browse/-/229534"><img src="./Asynchronous Transfer Mode Overview_files/swsc468.gif" border="0" width="468" height="60"></a>
+<!-- END LINKSHARE CODE -->
+<br>
+
+<h1>Asynchronous Transfer Mode Overview</h1>
+
+<h2>Introduction</h2>
+<p>
+Asynchronous Transfer Mode (ATM) is a technology that has the
+potential of revolutionizing data communications and
+telecommunications.  Based on the emerging standards for
+Broadband Integrated Services Digital Networks (B-ISDN), ATM
+offers the economically sound "bandwidth on demand" features of
+packet-switching technology at the high speeds required for
+today's LAN and WAN networks -- and tomorrow's.
+</p><p>
+ATM is a cell-relay technology that divides upper-level data
+units into 53-byte cells for transmission over the physical
+medium.  It operates independently of the type of transmission
+being generated at the upper layers AND of the type and speed of
+the physical-layer medium below it.
+</p><p>
+This allows the ATM technology to transport all kinds of
+transmissions (e.g, data, voice, video, etc.) in a single
+integrated data stream over any medium, ranging from existing
+T1/E1 lines, to SONET OC-3 at speeds of 155 Mbps, and beyond.
+</p><p>
+</p><h2>ATM Standards</h2>
+<p>
+The following are some of the basic ATM standards documents available
+from the
+<a href="http://www.itu.int/">International Telecommunications Union (ITU)</a>.
+</p><p>
+</p><dl>
+<dt>ITU-T I.361
+</dt><dd>Defines the ATM Layer functions.
+</dd><dt>ITU-T I.363
+</dt><dd>Defines the ATM Adaptation Layer protocols.
+</dd><dt>ITU-T I.610
+</dt><dd>Defines the ATM Operation and Maintenance (OAM) functions.
+</dd></dl>
+<p>
+</p><h2>The ATM Network</h2>
+<p>
+The technology allows both public (i.e., RBOC or carrier) and
+private (i.e., LAN or LAN-to-internal switch) ATM networks.
+This capability gives a seamless and transparent (to the user)
+connection from one end user to another end user, whether in the
+same building or across two continents.  The basic network
+structure is as shown on the following page.
+</p><p>
+</p><pre>
+                  .^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^.
+.-----------.     | .--------.   2   .--------.   |
+|End User 1 |-----|-|  ATM   |-------|  ATM   |   |
+`-----------'   1 | | Switch |       | Switch |---|-------+
+                  | `--------'       `--------'   |       |
+                  |        ATM Network  1         |       |
+                  `vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv'       |
+                                                        3 |
+                                                          |
+                  .^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^.        |
+.-------------.   | .--------.   2   .--------.  |        |
+| Private ATM |---|-|  ATM   |-------|  ATM   |  |        |
+|    Switch   | 1 | | Switch |       | Switch |--|--------+
+`------+------'   | `--------'       `--------'  |
+     1 |          |         ATM Network 2        |
+ .-----+------.   `vvvvvvvvvvvvvvvvvvvvvvvvvvvvvv'
+ | End User 2 |
+ `------------'
+</pre>
+<p>
+Three types of interfaces exist in this diagram:
+</p><ol>
+<li>User-to-Network Interface (UNI)
+</li><li>Network-to-Network Interface (NNI)
+</li><li>Inter-Carrier Interface (ICI)
+</li></ol>
+<p>
+The UNI exists between a single end user and a public ATM
+network, between a single end user and a private ATM switch, or
+between a private ATM switch and the public ATM network of an
+RBOC.
+</p><p>
+The NNI exists between switches in a single public ATM
+network.  NNIs may also exist between two private ATM switches.
+</p><p>
+The ICI is located between two public ATM networks (an RBOC and
+an interexchange carrier).
+</p><p>
+All of these interfaces are very similar.  The major differences
+between these types of interfaces are administrative and
+signalling related.  The only type of signalling exchanged
+across the UNI is that required to set up a VIRTUAL CHANNEL for
+the transmission.
+</p><p>
+Communication across the NNI and the ICI will require
+signalling for virtual-path and virtual-channel establishment
+together with various exchange mechanisms for the exchange of
+information such as routing tables, etc.
+</p><p>
+The network functions as follows:  End User 1 in Chicago wishes
+to transfer a data file to End User 2 in Los Angeles.  A virtual
+channel is created and a virtual path is established from switch
+to switch within the public ATM network in Chicago (ATM Network
+1).  The Chicago RBOC, in turn, establishes contact with the
+public ATM network in Los Angeles (ATM Network 2).
+</p><p>
+ATM Network 2 also establishes a virtual path from switch to
+switch within the network and with the Private ATM Switch at the
+destination.  The private ATM network completes the virtual
+path by establishing a virtual channel with End User 2.
+</p><p>
+At each interface in this network, a unique virtual path
+identifier (VPI) and virtual channel identifier (VCI) are
+established for this transmission.  These identifiers are of
+local significance ONLY:  the identifier is significant only for
+a specific switch and the two nodes adjacent to it in the
+virtual path.  Each node within the virtual path (including both
+the end users and the switches) maintain a pool of inactive
+identifiers to be used as needed.
+</p><p>
+End User 2 encapsulates the file in 53-byte cells, each with its
+unique VPI/VCI "destination address" in the header.  These cells
+are streamed and sent across the UNI to the ATM network switch.
+This switch reads the ATM header, consults the routing table
+created during the virtual path setup, changes the VPI/VCI as
+necessary, and sends each cell in the stream out of the
+appropriate port and across the NNI to the next switch in the
+virtual path.
+</p><p>
+The last switch within the virtual path for ATM Network 1
+repeats this process and sends the cell out through the ICI to
+ATM Network 2.
+</p><p>
+ATM Network 2 continues the process in a similar manner until
+the cell is carried through the UNI to the Private ATM Switch
+which, in turn, sends the cell to End User 2.  End User 2 then
+reconstructs the file from the sequential cells, stripping the
+5-byte header from each cell.
+</p><p>
+End User 1 or End User 2 terminates the call, i.e., "hangs up,"
+and the virtual path is dismantled.  The VCI and VPI values
+are returned to the pool of available values for each switch.
+</p><p>
+Notice that only the End Users at either end of the transmission
+deal with the 48-byte information load within the cell.  At each
+stage of the transmission, the switch is only concerned with
+accepting the cell from one port, changing the VPI/VCI according
+to its tables, and routing the cell out the appropriate switch
+port.
+</p><p>
+</p><h2>ATM Layered Architecture</h2>
+<p>
+At the End User sites, ATM operates with a layered structure
+that is similar to the OSI 7-layered model.  However, ATM only
+addresses the functionality of the two lowest layers of the OSI
+model:  the physical layer (Layer 1) and the data link layer
+(Layer 2).
+</p><p>
+All other layers are irrelevant in ATM, as these layers are only
+part of the encapsulated information portion of the cell which
+is not used by the ATM network.
+</p><p>
+In ATM, the functionality of the two lower OSI layers are
+handled by three layers (shown here below the double line):
+</p><p>
+</p><pre>.--------------------------------------------------------------,
+|   Application Layer                                          |
++--------------------------------------------------------------+
+|   User Layers                                                |
++==============================================================+
+|   ATM Adaptation Layer :      Convergence Sublayer           |
+|                           -----------------------------------|
+|                           Segmentation &amp; Reassembly Sublayer |
++--------------------------------------------------------------+
+|   ATM Layer                                                  |
++--------------------------------------------------------------+
+|   Physical Layer :   Transmission Convergence Sublayer       |
+|                      ----------------------------------------|
+|                      Physical Medium Dependent Sublayer      |
++--------------------------------------------------------------+
+</pre>
+<p>
+The Physical Layer defines the medium for transmission, any
+medium-dependent parameters (e.g., rate, quality of service
+required), and framing used to find the data contained within
+the medium.
+</p><p>
+The ATM Layer provides the basic 53-byte cell format, by
+defining the 5-byte ATM header for each 48-byte payload segment
+handed down by the AAL.
+</p><p>
+The ATM Adaptation Layer (AAL) adapts the higher-level data into
+formats compatible with the ATM Layer requirements, i.e., this
+layer segments the data and adds appropriate error control
+information as necessary.  It is dependent on the type of
+services (voice, data, etc.) being transported by the higher
+layer.
+</p><p>
+Several AAL protocols have been defined for specific types of
+data.  These are loosely associated with various classes of
+data.  However, no AAL is restricted to a specific data class or
+type; all types of data could conceivable be handled by any of
+the AALs.
+</p><dl>
+<dt>AAL 1
+</dt><dd>Constant bit rate, connection-oriented,
+synchronous traffic (e.g., uncompressed voice)
+</dd><dt>AAL 2
+</dt><dd>Definition never completed undefined, but envisioned to be
+for variable bit rate, connection-oriented,
+synchronous traffic (e.g., compressed video)
+</dd><dt>AAL 3/4
+</dt><dd>Variable bit rate, connection-
+oriented, asynchronous traffic (e.g., X.25 data)
+or connectionless packet data (e.g., SMDS traffic)
+with an additional 4-byte header in the
+information payload of the cell
+</dd><dt>AAL 5
+</dt><dd>Similar to AAL 3/4 with a simplified
+information header scheme that requires only one
+header per data unit and uses the PTI bit (see
+below) to indicate the last cell in a transmission
+Examples of services that use AAL 5 are
+Classic IP over ATM, and LAN Emulation (LANE).
+AAL 5 is the most widely used ATM Adaptation Layer Protocol.
+</dd></dl>
+<p>
+See the <a href="http://www.techfest.com/networking/atm/atmaal.htm"> ATM Adaptation Layer Protocols Overview</a>
+for more details.
+</p><p>
+When the End User sends traffic over the ATM network, the
+higher-level data unit is passed down to the Convergence
+Sublayer of the AAL Layer, which prepares the data for the ATM
+Layer according to the designated AAL protocol (when
+appropriate).  The data is then passed down to the Segmentation
+and Reassembly Sublayer of the AAL Layer, which divides the
+prepared data unit into appropriately sized segments.
+</p><p>
+These segments are then passed down to the ATM Layer, which
+defines an appropriate cell header for each segment and
+encapsulates the header and payload segment into a 53-byte ATM
+cell.
+</p><p>
+The cells are then passed down to the Physical Layer, which
+streams the cells at an appropriate pace for the transmission
+medium being used, adding empty cells as needed.
+</p><p>
+</p><h2>The ATM Cell</h2>
+<p>
+Each individual ATM cell consists of a 5-byte cell header and 48
+bytes of information encapsulated within its payload.  The ATM
+network uses the header to support the virtual path and the
+virtual channel routing, and to perform a quick error check for
+corrupted cells.
+</p><p>
+The 5-byte header is structured as shown below:
+</p><p>
+</p><pre>|  8   |  7   |  6   |  5   |  4   |  3   |  2   |  1   |   bits
++------+------+------+------+------+------+------+------+
+|  Generic Flow Control*    |  Virtual Path Identifier  |
++---------------------------+---------------------------+
+| Virtual Path Identifier   | Virtual Channel Identifier|
++---------------------------+---------------------------+
+|               Virtual Channel Identifier              |
++---------------------------+--------------------+------+
+|Virtual Channel Identifier |   Payload Type ID  |  CLP |
++---------------------------+--------------------+------+
+|                 Header Error Control                  |
++-------------------------------------------------------+
+|                  INFORMATION PAYLOAD                  |
+
+
+  *  For the UNI header only.  The NNI header contains an
+     additional 4 bytes of VPI information here instead.
+</pre>
+<p>
+</p><h3>Generic Flow Control (GFC)</h3>
+<p>
+The GFC field of the header is only defined across the UNI.  It
+is intended to control the traffic flow across the UNI and to
+alleviate short-term overload conditions.  It is currently
+undefined and these 4 bits must be set to 0's.
+</p><p>
+</p><h3>Virtual Path Identifier (VPI)</h3>
+<p>
+The VPI, an 8-bit field for the UNI and a 12-bit field for the
+NNI, is used to identify virtual paths.  In an idle cell, the
+VPI is set to all 0's. (Together with the Virtual Channel
+Identifier, the VPI provides a unique local identification for
+the transmission.)
+</p><p>
+</p><h3>Virtual Channel Identifier (VCI)</h3>
+<p>
+This 16-bit field is used to identify a virtual channel.  For
+idle cells, the VCI is set to all 0's.  (Together with the
+Virtual Path Identifier, the VCI provides a unique local
+identification for the transmission.)
+</p><p>
+</p><h3>Payload Type Identifier (PTI)</h3>
+<p>
+The three bits of the PTI are used for different purposes.  Bit
+4 is set to 1 to identify operation, administration, or
+maintenance cells (i.e., anything other than data cells).
+</p><p>
+Bit 3 is set to 1 to indicate that congestion was experienced by
+a data cell in transmission and is only valid when bit 4 is set
+to 0.
+</p><p>
+Bit 2 is used by AAL 5 to identify the data as Type 0 (beginning
+of message, continuation of message; bit = 0) or Type 1 (end of
+message, single-cell message; bit = 1) when bit 4 is set to 0.
+It may also be used for management functions when bit 4 is set
+to 1.
+This bit is currently carried transparently through the network
+and has no meaning to the end user when AAL 5 is NOT in use.
+</p><p>
+</p><h3>Cell Loss Priority (CLP)</h3>
+<p>
+The 1-bit CLP field is used for explicit indication of the
+priority of the cell.  It may be set by the AAL Layer to
+indicate cells to discard in cases of congestion, or by the
+network as part of the traffic management on commercial
+subscriber networks.
+</p><p>
+</p><h3>Header Error Control (HEC)</h3>
+<p>
+This is an 8-bit cyclical redundancy check computed for all
+fields of the first 4 bytes of the ATM cell header ONLY.  It is
+capable of detecting all single-bit errors and some multiple-bit
+errors.
+</p><p>
+The HEC is compared by each switch as the ATM cell is received
+and all cells with HEC discrepancies (errors) are discarded.
+Cells with single-bit errors may be subject to error correction
+(if supported or discarded.
+</p><p>
+When a cell is passed through the switch and the VPI/VCI values
+are altered, the HEC is recalculated for the cell prior to being
+passed out the port.
+</p><p>
+</p><h2>Operations and Maintenance Cells (OAM)</h2>
+<p>
+The Operations and Maintenance (OAM) cells are used to provide
+various maintenance functions within the ATM network, including
+connectivity verification and alarm surveillance.  These cells
+consist of a single segment with an ATM header (as described
+above).
+</p><p>
+The following format for the 48-byte payload:
+</p><p>
+</p><pre>+----------+----------+-----------------------------+--------+
+| OAM Cell | Function |  Function-Specific Fields   | CRC-10 |
+|  Type    |   Type   |        (45 Bytes)           |        |
++----------+----------+-----------------------------+--------+
+</pre>
+<p>
+</p><dl>
+<dt>OAM Cell Type
+</dt><dd>This is a 4-bit indicator of the type of OAM
+cell (e.g., 0001 to indicate Fault Management).
+</dd><dt>Function Type
+</dt><dd>This 4-bit indicator gives the purpose of this
+particular OAM cell (i.e., Alarm Indication Signal, Far
+End Receive Failure, Loopback).
+</dd><dt>Function-Specific Fields
+</dt><dd>The 45-bytes of this field are used
+specify the functions and information for this particular
+cell and to denote destination and failure information.
+</dd><dt>CRC-10
+</dt><dd>This 2-byte field consists of a 10-bit Cyclical
+Redundancy Check for the previous 46 bytes and 6 bits of PAD.
+The CRC-10 generating polynomial is:
+x<sup>10</sup> + x<sup>9</sup> + x<sup>5</sup> + x<sup>4</sup> +
+x + 1.
+</dd></dl>
+<p>
+</p><hr>
+
+
+</body></html>

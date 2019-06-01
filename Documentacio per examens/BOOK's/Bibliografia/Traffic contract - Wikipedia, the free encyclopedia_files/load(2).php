@@ -1,0 +1,2 @@
+mw.loader.implement("wikibase.client.nolanglinks",function(){},{"css":["#p-lang{display:none}\n/* cache key: enwiki:resourceloader:filter:minify-css:7:574d2bd01a9683e43c047957feae2e97 */"]},{});
+/* cache key: enwiki:resourceloader:filter:minify-js:7:907f2ea09838286f8aaab470a64935b2 */

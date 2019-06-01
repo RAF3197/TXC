@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Strict//EN">
+<!-- saved from url=(0066)http://docwiki.cisco.com/w/portkeyWidgets/widgets/relateddisc.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+        
+                <meta http-equiv="CACHE-CONTROL" content="NO-CACHE">
+                <title>Related Discussions from the Cisco Support Community</title>
+
+        <link href="relatedCSS.css" rel="stylesheet" type="text/css">
+
+        <script src="jquery-1.7.1.min.js"></script><style type="text/css"></style><style type="text/css"></style>
+
+        <script src="generic.js"></script>
+
+        <script src="relatedJS.js"></script>
+
+    </head>
+
+
+
+    <body>
+
+        <div class="container">
+
+            <div class="top_bar_CSC">
+
+                <div id="toolTipLayer"></div>
+
+                                        <span id="widgetTitleRelatedDisc">Related Discussions from the Cisco Support Community</span>
+
+                    <a href="javascript:void(0)"><img id="tooltip" src="info_21x.png"></a>
+
+                </div>
+
+                <div class="nav_area"> </div>
+
+
+     <div class="content">
+
+                        <img id="ajaxLoaderImg" src="ajax_loader.gif" style="display: none;">
+
+                    <div id="cscResultserr"></div>
+
+                    <div class="content_results">
+
+                        <div class="content_label" align="right">
+<script>
+function readTagsFromParent(numberOfResultsValue) {
+        var  searchValue = jQuery('meta[name=keywords]', top.document).attr('content');
+//      alert("Search Value " + searchValue);
+        if(!searchValue){
+                searchValue =  jQuery('title', top.document).text();
+        }
+searchValue = searchValue.replace(/,/g,' OR ');
+//      alert("Search Value 2" + searchValue);
+//      showResults(numberOfResultsValue, searchValue);
+defaultSearchParam  = searchValue;
+showResults(numberOfResultsValue);
+}
+
+</script>
+                                <select id="select" name="select" onchange="readTagsFromParent(this.value);">
+
+                                <option selected="selected" value="5">Show 5</option>
+
+                                <option value="10">Show 10</option>
+
+                            </select>
+
+                        </div>
+
+                        <div id="cscResults"><span> Sorry you have encountered a temporary system error.</span></div>
+
+                    </div>
+
+                </div>
+
+                <div id="tooltipDiv">
+
+                    <div id="tooltipHeader"></div>
+<!--                    <div class="tooltipBody">Displays relevant discussions tied to a keyword or phrase. Visit our <a href=Javascript:newPopup("http://www.cisco.com/web/communities/ondemand/index.html");>Community on Demand</a> website for more information.</div> -->
+<div class="tooltipBody">Displays relevant discussions tied to a keyword or phrase. <span class="versioningClass">Version 1.0</span>
+</div>
+
+
+                </div>
+
+            </div>
+
+        
+
+    
+
+
+
+
+</body></html>

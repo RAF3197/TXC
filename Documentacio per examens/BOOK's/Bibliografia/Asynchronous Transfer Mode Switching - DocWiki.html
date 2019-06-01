@@ -1,0 +1,670 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- saved from url=(0066)http://docwiki.cisco.com/wiki/Asynchronous_Transfer_Mode_Switching -->
+<html lang="en" dir="ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Asynchronous Transfer Mode Switching - DocWiki</title>
+<meta name="accessLevel" content="Guest">
+<meta name="accessLevel" content="Customer">
+<meta name="accessLevel" content="Partner">
+<meta name="country" content="US">
+<meta name="language" content="en">
+<meta name="keywords" content="atm switching, internetworking">
+
+<meta name="generator" content="MediaWiki 1.16.0">
+<link rel="shortcut icon" href="http://docwiki.cisco.com/favicon.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="http://docwiki.cisco.com/w/opensearch_desc.php" title="DocWiki (en)">
+<link rel="copyright" href="http://www.cisco.com/en/US/swassets/sw293/trademark_statement.html">
+<link rel="alternate" type="application/atom+xml" title="DocWiki Atom feed" href="http://docwiki.cisco.com/w/index.php?title=Special:RecentChanges&feed=atom">
+<link rel="stylesheet" href="http://docwiki.cisco.com/w/skins/common/shared.css?270" media="screen">
+<link rel="stylesheet" href="http://docwiki.cisco.com/w/skins/common/commonPrint.css?270" media="print">
+<link rel="stylesheet" href="http://docwiki.cisco.com/w/skins/monobook/main.css?270" media="screen">
+<!--[if lt IE 5.5000]><link rel="stylesheet" href="/w/skins/monobook/IE50Fixes.css?270" media="screen" /><![endif]-->
+<!--[if IE 5.5000]><link rel="stylesheet" href="/w/skins/monobook/IE55Fixes.css?270" media="screen" /><![endif]-->
+<!--[if IE 6]><link rel="stylesheet" href="/w/skins/monobook/IE60Fixes.css?270" media="screen" /><![endif]-->
+<!--[if IE 7]><link rel="stylesheet" href="/w/skins/monobook/IE70Fixes.css?270" media="screen" /><![endif]-->
+<link rel="stylesheet" href="http://docwiki.cisco.com/w/index.php?title=MediaWiki:Common.css&usemsgcache=yes&ctype=text%2Fcss&smaxage=18000&action=raw&maxage=18000">
+<link rel="stylesheet" href="http://docwiki.cisco.com/w/index.php?title=MediaWiki:Print.css&usemsgcache=yes&ctype=text%2Fcss&smaxage=18000&action=raw&maxage=18000" media="print">
+<link rel="stylesheet" href="http://docwiki.cisco.com/w/index.php?title=MediaWiki:Monobook.css&usemsgcache=yes&ctype=text%2Fcss&smaxage=18000&action=raw&maxage=18000">
+<link rel="stylesheet" href="http://docwiki.cisco.com/w/index.php?title=-&action=raw&maxage=18000&gen=css">
+<script>
+var skin="monobook",
+stylepath="/w/skins",
+wgUrlProtocols="http\\:\\/\\/|https\\:\\/\\/|ftp\\:\\/\\/|irc\\:\\/\\/|gopher\\:\\/\\/|telnet\\:\\/\\/|nntp\\:\\/\\/|worldwind\\:\\/\\/|mailto\\:|news\\:|svn\\:\\/\\/",
+wgArticlePath="/wiki/$1",
+wgScriptPath="/w",
+wgScriptExtension=".php",
+wgScript="/w/index.php",
+wgVariantArticlePath=false,
+wgActionPaths={},
+wgServer="http://docwiki.cisco.com",
+wgCanonicalNamespace="",
+wgCanonicalSpecialPageName=false,
+wgNamespaceNumber=0,
+wgPageName="Asynchronous_Transfer_Mode_Switching",
+wgTitle="Asynchronous Transfer Mode Switching",
+wgAction="view",
+wgArticleId=7070,
+wgIsArticle=true,
+wgUserName=null,
+wgUserGroups=null,
+wgUserLanguage="en",
+wgContentLanguage="en",
+wgBreakFrames=false,
+wgCurRevisionId=49094,
+wgVersion="1.16.0",
+wgEnableAPI=true,
+wgEnableWriteAPI=true,
+wgSeparatorTransformTable=["", ""],
+wgDigitTransformTable=["", ""],
+wgMainPageTitle="Main Page",
+wgFormattedNamespaces={"-2": "Media", "-1": "Special", "0": "", "1": "Talk", "2": "User", "3": "User talk", "4": "DocWiki", "5": "DocWiki talk", "6": "File", "7": "File talk", "8": "MediaWiki", "9": "MediaWiki talk", "10": "Template", "11": "Template talk", "12": "Help", "13": "Help talk", "14": "Category", "15": "Category talk", "274": "Widget", "275": "Widget talk"},
+wgNamespaceIds={"media": -2, "special": -1, "": 0, "talk": 1, "user": 2, "user_talk": 3, "docwiki": 4, "docwiki_talk": 5, "file": 6, "file_talk": 7, "mediawiki": 8, "mediawiki_talk": 9, "template": 10, "template_talk": 11, "help": 12, "help_talk": 13, "category": 14, "category_talk": 15, "widget": 274, "widget_talk": 275, "image": 6, "image_talk": 7},
+wgSiteName="DocWiki",
+wgCategories=["IOS Technology Handbook"],
+wgRestrictionEdit=[],
+wgRestrictionMove=[];
+</script><style type="text/css"></style><style type="text/css"></style><script src="./Asynchronous Transfer Mode Switching - DocWiki_files/wikibits.js"></script>
+<script src="./Asynchronous Transfer Mode Switching - DocWiki_files/ajax.js"></script>
+<script src="./Asynchronous Transfer Mode Switching - DocWiki_files/index.php"></script>
+
+<style>[touch-action="none"]{ -ms-touch-action: none; touch-action: none; }[touch-action="pan-x"]{ -ms-touch-action: pan-x; touch-action: pan-x; }[touch-action="pan-y"]{ -ms-touch-action: pan-y; touch-action: pan-y; }[touch-action="scroll"],[touch-action="pan-x pan-y"],[touch-action="pan-y pan-x"]{ -ms-touch-action: pan-x pan-y; touch-action: pan-x pan-y; }</style><style id="clearly_highlighting_css" type="text/css">/* selection */ html.clearly_highlighting_enabled ::-moz-selection { background: rgba(246, 238, 150, 0.99); } html.clearly_highlighting_enabled ::selection { background: rgba(246, 238, 150, 0.99); } /* cursor */ html.clearly_highlighting_enabled {    /* cursor and hot-spot position -- requires a default cursor, after the URL one */    cursor: url("chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/clearly/images/highlight--cursor.png") 14 16, text; } /* highlight tag */ em.clearly_highlight_element {    font-style: inherit !important; font-weight: inherit !important;    background-image: url("chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/clearly/images/highlight--yellow.png");    background-repeat: repeat-x; background-position: top left; background-size: 100% 100%; } /* the delete-buttons are positioned relative to this */ em.clearly_highlight_element.clearly_highlight_first { position: relative; } /* delete buttons */ em.clearly_highlight_element a.clearly_highlight_delete_element {    display: none; cursor: pointer;    padding: 0; margin: 0; line-height: 0;    position: absolute; width: 34px; height: 34px; left: -17px; top: -17px;    background-image: url("chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/clearly/images/highlight--delete-sprite.png"); background-repeat: no-repeat; background-position: 0px 0px; } em.clearly_highlight_element a.clearly_highlight_delete_element:hover { background-position: -34px 0px; } /* retina */ @media (min--moz-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2) {    em.clearly_highlight_element { background-image: url("chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/clearly/images/highlight--yellow@2x.png"); }    em.clearly_highlight_element a.clearly_highlight_delete_element { background-image: url("chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/clearly/images/highlight--delete-sprite@2x.png"); background-size: 68px 34px; } } </style></head>
+<body class="mediawiki ltr ns-0 ns-subject page-Asynchronous_Transfer_Mode_Switching skin-monobook">
+<div id="globalWrapper">
+<div id="column-content"><div id="content">
+	<a id="top"></a>
+	
+	<h1 id="firstHeading" class="firstHeading">Asynchronous Transfer Mode Switching</h1>
+	<div id="bodyContent">
+		<h3 id="siteSub">From DocWiki</h3>
+		<div id="contentSub"></div>
+		<div id="jump-to-nav">Jump to: <a href="http://docwiki.cisco.com/wiki/Asynchronous_Transfer_Mode_Switching#column-one">navigation</a>, <a href="http://docwiki.cisco.com/wiki/Asynchronous_Transfer_Mode_Switching#searchInput">search</a></div>
+		<!-- start content -->
+<p><!-- name=accessLevel content=R3Vlc3Q= -->
+<!-- name=accessLevel content=Q3VzdG9tZXI= -->
+<!-- name=accessLevel content=UGFydG5lcg== -->
+<!-- name=country content=VVM= -->
+<!-- name=language content=ZW4= -->
+<!-- name=keywords content=YXRtIHN3aXRjaGluZywgaW50ZXJuZXR3b3JraW5n -->
+Asynchronous Transfer Mode (ATM) is an International Telecommunication Union-Telecommunications Standards Section (ITU-T) standard for cell relay wherein information for multiple service types, such as voice, video, or data, is conveyed in small, fixed-size cells. ATM networks are connection-oriented. This article provides summaries of ATM protocols, services, and operation. 
+</p><p><a href="http://docwiki.cisco.com/wiki/Asynchronous_Transfer_Mode_Switching#Figure:_A_Private_ATM_Network_and_a_Public_ATM_Network_Both_Can_Carry_Voice.2C_Video.2C_and_Data_Traffic" title="Asynchronous Transfer Mode Switching">Figure: A Private ATM Network and a Public ATM Network Both Can Carry Voice, Video, and Data Traffic</a> illustrates a private ATM network and a public ATM network carrying voice, video, and data traffic.
+</p>
+<table align="right" border="1">
+<tbody><tr>
+<td align="center"><b>Guide Contents</b>
+</td></tr>
+<tr>
+<td><a href="http://docwiki.cisco.com/wiki/Internetworking_Technology_Handbook#_Internetworking_Basics" title="Internetworking Technology Handbook"> Internetworking Basics</a><br><a href="http://docwiki.cisco.com/wiki/Internetworking_Technology_Handbook#_LAN_Technologies" title="Internetworking Technology Handbook"> LAN Technologies</a><br><a href="http://docwiki.cisco.com/wiki/Internetworking_Technology_Handbook#_WAN_Technologies" title="Internetworking Technology Handbook"> WAN Technologies</a><br><a href="http://docwiki.cisco.com/wiki/Internetworking_Technology_Handbook#_Internet_Protocols" title="Internetworking Technology Handbook"> Internet Protocols</a><br><a href="http://docwiki.cisco.com/wiki/Internetworking_Technology_Handbook#_Bridging_and_Switching" title="Internetworking Technology Handbook"> Bridging and Switching</a><br><a href="http://docwiki.cisco.com/wiki/Internetworking_Technology_Handbook#_Routing" title="Internetworking Technology Handbook"> Routing</a><br><a href="http://docwiki.cisco.com/wiki/Internetworking_Technology_Handbook#_Network_Management" title="Internetworking Technology Handbook"> Network Management</a> <br><a href="http://docwiki.cisco.com/wiki/Internetworking_Technology_Handbook#_Voice.2FData_Integration_Technologies" title="Internetworking Technology Handbook"> Voice/Data Integration Technologies</a> <br><a href="http://docwiki.cisco.com/wiki/Internetworking_Technology_Handbook#_Wireless_Technologies" title="Internetworking Technology Handbook"> Wireless Technologies</a> <br><a href="http://docwiki.cisco.com/wiki/Internetworking_Technology_Handbook#_Cable_Access_Technologies" title="Internetworking Technology Handbook"> Cable Access Technologies</a> <br><a href="http://docwiki.cisco.com/wiki/Internetworking_Technology_Handbook#_Dial-up_Technology" title="Internetworking Technology Handbook"> Dial-up Technology</a> <br><a href="http://docwiki.cisco.com/wiki/Internetworking_Technology_Handbook#_Security_Technologies" title="Internetworking Technology Handbook"> Security Technologies</a> <br><a href="http://docwiki.cisco.com/wiki/Internetworking_Technology_Handbook#_Quality_of_Service_Networking" title="Internetworking Technology Handbook"> Quality of Service Networking</a> <br><a href="http://docwiki.cisco.com/wiki/Internetworking_Technology_Handbook#_Network_Caching_Technologies" title="Internetworking Technology Handbook"> Network Caching Technologies</a> <br><a href="http://docwiki.cisco.com/wiki/Internetworking_Technology_Handbook#_IBM_Network_Management" title="Internetworking Technology Handbook"> IBM Network Management</a> <br><a href="http://docwiki.cisco.com/wiki/Internetworking_Technology_Handbook#_Multiservice_Access_Technologies" title="Internetworking Technology Handbook"> Multiservice Access Technologies</a>
+</td></tr></tbody></table>
+<p><br>
+</p>
+<table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2> <span class="toctoggle">[<a id="togglelink" class="internal" href="javascript:toggleToc()">hide</a>]</span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="http://docwiki.cisco.com/wiki/Asynchronous_Transfer_Mode_Switching#Figure:_A_Private_ATM_Network_and_a_Public_ATM_Network_Both_Can_Carry_Voice.2C_Video.2C_and_Data_Traffic"><span class="tocnumber">1</span> <span class="toctext">Figure: A Private ATM Network and a Public ATM Network Both Can Carry Voice, Video, and Data Traffic</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="http://docwiki.cisco.com/wiki/Asynchronous_Transfer_Mode_Switching#Standards"><span class="tocnumber">2</span> <span class="toctext">Standards</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="http://docwiki.cisco.com/wiki/Asynchronous_Transfer_Mode_Switching#ATM_Devices_and_the_Network_Environment"><span class="tocnumber">3</span> <span class="toctext">ATM Devices and the Network Environment</span></a>
+<ul>
+<li class="toclevel-2 tocsection-4"><a href="http://docwiki.cisco.com/wiki/Asynchronous_Transfer_Mode_Switching#ATM_Cell_Basic_Format"><span class="tocnumber">3.1</span> <span class="toctext">ATM Cell Basic Format</span></a>
+<ul>
+<li class="toclevel-3 tocsection-5"><a href="http://docwiki.cisco.com/wiki/Asynchronous_Transfer_Mode_Switching#Figure:_An_ATM_Cell_Consists_of_a_Header_and_Payload_Data"><span class="tocnumber">3.1.1</span> <span class="toctext">Figure: An ATM Cell Consists of a Header and Payload Data</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-6"><a href="http://docwiki.cisco.com/wiki/Asynchronous_Transfer_Mode_Switching#ATM_Devices"><span class="tocnumber">3.2</span> <span class="toctext">ATM Devices</span></a>
+<ul>
+<li class="toclevel-3 tocsection-7"><a href="http://docwiki.cisco.com/wiki/Asynchronous_Transfer_Mode_Switching#Figure:_An_ATM_Network_Comprises_ATM_Switches_and_Endpoints"><span class="tocnumber">3.2.1</span> <span class="toctext">Figure: An ATM Network Comprises ATM Switches and Endpoints</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-8"><a href="http://docwiki.cisco.com/wiki/Asynchronous_Transfer_Mode_Switching#ATM_Network_Interfaces"><span class="tocnumber">3.3</span> <span class="toctext">ATM Network Interfaces</span></a>
+<ul>
+<li class="toclevel-3 tocsection-9"><a href="http://docwiki.cisco.com/wiki/Asynchronous_Transfer_Mode_Switching#Figure:_ATM_Interface_Specifications_Differ_for_Private_and_Public_Networks"><span class="tocnumber">3.3.1</span> <span class="toctext">Figure: ATM Interface Specifications Differ for Private and Public Networks</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-10"><a href="http://docwiki.cisco.com/wiki/Asynchronous_Transfer_Mode_Switching#ATM_Cell_Header_Format"><span class="tocnumber">4</span> <span class="toctext">ATM Cell Header Format</span></a>
+<ul>
+<li class="toclevel-2 tocsection-11"><a href="http://docwiki.cisco.com/wiki/Asynchronous_Transfer_Mode_Switching#Figure:_An_ATM_Cell.2C_ATM_UNI_Cell.2C_and_ATM_NNI_Cell_Header_Each_Contain_48_Bytes_of_Payload"><span class="tocnumber">4.1</span> <span class="toctext">Figure: An ATM Cell, ATM UNI Cell, and ATM NNI Cell Header Each Contain 48 Bytes of Payload</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="http://docwiki.cisco.com/wiki/Asynchronous_Transfer_Mode_Switching#ATM_Cell_Header_Fields"><span class="tocnumber">4.2</span> <span class="toctext">ATM Cell Header Fields</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-13"><a href="http://docwiki.cisco.com/wiki/Asynchronous_Transfer_Mode_Switching#ATM_Services"><span class="tocnumber">5</span> <span class="toctext">ATM Services</span></a>
+<ul>
+<li class="toclevel-2 tocsection-14"><a href="http://docwiki.cisco.com/wiki/Asynchronous_Transfer_Mode_Switching#ATM_Virtual_Connections"><span class="tocnumber">5.1</span> <span class="toctext">ATM Virtual Connections</span></a>
+<ul>
+<li class="toclevel-3 tocsection-15"><a href="http://docwiki.cisco.com/wiki/Asynchronous_Transfer_Mode_Switching#Figure:_VCs_Concatenate_to_Create_VPs"><span class="tocnumber">5.1.1</span> <span class="toctext">Figure: VCs Concatenate to Create VPs</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-16"><a href="http://docwiki.cisco.com/wiki/Asynchronous_Transfer_Mode_Switching#ATM_Switching_Operations"><span class="tocnumber">6</span> <span class="toctext">ATM Switching Operations</span></a></li>
+<li class="toclevel-1 tocsection-17"><a href="http://docwiki.cisco.com/wiki/Asynchronous_Transfer_Mode_Switching#ATM_Reference_Model"><span class="tocnumber">7</span> <span class="toctext">ATM Reference Model</span></a>
+<ul>
+<li class="toclevel-2 tocsection-18"><a href="http://docwiki.cisco.com/wiki/Asynchronous_Transfer_Mode_Switching#Figure:_The_ATM_Reference_Model_Relates_to_the_Lowest_Two_Layers_of_the_OSI_Reference_Model"><span class="tocnumber">7.1</span> <span class="toctext">Figure: The ATM Reference Model Relates to the Lowest Two Layers of the OSI Reference Model</span></a></li>
+<li class="toclevel-2 tocsection-19"><a href="http://docwiki.cisco.com/wiki/Asynchronous_Transfer_Mode_Switching#The_ATM_Physical_Layer"><span class="tocnumber">7.2</span> <span class="toctext">The ATM Physical Layer</span></a></li>
+<li class="toclevel-2 tocsection-20"><a href="http://docwiki.cisco.com/wiki/Asynchronous_Transfer_Mode_Switching#ATM_Adaptation_Layers:_AAL1"><span class="tocnumber">7.3</span> <span class="toctext">ATM Adaptation Layers: AAL1</span></a>
+<ul>
+<li class="toclevel-3 tocsection-21"><a href="http://docwiki.cisco.com/wiki/Asynchronous_Transfer_Mode_Switching#Figure:_AAL1_Prepares_a_Cell_for_Transmission_So_That_the_Cells_Retain_Their_Order"><span class="tocnumber">7.3.1</span> <span class="toctext">Figure: AAL1 Prepares a Cell for Transmission So That the Cells Retain Their Order</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-22"><a href="http://docwiki.cisco.com/wiki/Asynchronous_Transfer_Mode_Switching#ATM_Adaptation_Layers:_AAL2"><span class="tocnumber">7.4</span> <span class="toctext">ATM Adaptation Layers:  AAL2</span></a></li>
+<li class="toclevel-2 tocsection-23"><a href="http://docwiki.cisco.com/wiki/Asynchronous_Transfer_Mode_Switching#ATM_Adaptation_Layers:_AAL3.2F4"><span class="tocnumber">7.5</span> <span class="toctext">ATM Adaptation Layers: AAL3/4</span></a></li>
+<li class="toclevel-2 tocsection-24"><a href="http://docwiki.cisco.com/wiki/Asynchronous_Transfer_Mode_Switching#ATM_Adaptation_Layers:_AAL5"><span class="tocnumber">7.6</span> <span class="toctext">ATM Adaptation Layers: AAL5</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-25"><a href="http://docwiki.cisco.com/wiki/Asynchronous_Transfer_Mode_Switching#ATM_Addressing"><span class="tocnumber">8</span> <span class="toctext">ATM Addressing</span></a>
+<ul>
+<li class="toclevel-2 tocsection-26"><a href="http://docwiki.cisco.com/wiki/Asynchronous_Transfer_Mode_Switching#Subnetwork_Model_of_Addressing"><span class="tocnumber">8.1</span> <span class="toctext">Subnetwork Model of Addressing</span></a></li>
+<li class="toclevel-2 tocsection-27"><a href="http://docwiki.cisco.com/wiki/Asynchronous_Transfer_Mode_Switching#NSAP_Format_ATM_Addresses"><span class="tocnumber">8.2</span> <span class="toctext">NSAP Format ATM Addresses</span></a>
+<ul>
+<li class="toclevel-3 tocsection-28"><a href="http://docwiki.cisco.com/wiki/Asynchronous_Transfer_Mode_Switching#Figure:_Three_Formats_of_ATM_Addresses_Are_Used_for_Private_Networks"><span class="tocnumber">8.2.1</span> <span class="toctext">Figure: Three Formats of ATM Addresses Are Used for Private Networks</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-29"><a href="http://docwiki.cisco.com/wiki/Asynchronous_Transfer_Mode_Switching#ATM_Address_Fields"><span class="tocnumber">8.3</span> <span class="toctext">ATM Address Fields</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-30"><a href="http://docwiki.cisco.com/wiki/Asynchronous_Transfer_Mode_Switching#ATM_Connections"><span class="tocnumber">9</span> <span class="toctext">ATM Connections</span></a></li>
+<li class="toclevel-1 tocsection-31"><a href="http://docwiki.cisco.com/wiki/Asynchronous_Transfer_Mode_Switching#ATM_and_Multicasting"><span class="tocnumber">10</span> <span class="toctext">ATM and Multicasting</span></a></li>
+<li class="toclevel-1 tocsection-32"><a href="http://docwiki.cisco.com/wiki/Asynchronous_Transfer_Mode_Switching#ATM_Quality_of_Service"><span class="tocnumber">11</span> <span class="toctext">ATM Quality of Service</span></a></li>
+<li class="toclevel-1 tocsection-33"><a href="http://docwiki.cisco.com/wiki/Asynchronous_Transfer_Mode_Switching#ATM_Signaling_and_Connection_Establishment"><span class="tocnumber">12</span> <span class="toctext">ATM Signaling and Connection Establishment</span></a>
+<ul>
+<li class="toclevel-2 tocsection-34"><a href="http://docwiki.cisco.com/wiki/Asynchronous_Transfer_Mode_Switching#The_ATM_Connection-Establishment_Process"><span class="tocnumber">12.1</span> <span class="toctext">The ATM Connection-Establishment Process</span></a></li>
+<li class="toclevel-2 tocsection-35"><a href="http://docwiki.cisco.com/wiki/Asynchronous_Transfer_Mode_Switching#Connection-Request_Routing_and_Negotiation"><span class="tocnumber">12.2</span> <span class="toctext">Connection-Request Routing and Negotiation</span></a>
+<ul>
+<li class="toclevel-3 tocsection-36"><a href="http://docwiki.cisco.com/wiki/Asynchronous_Transfer_Mode_Switching#Figure:_ATM_Devices_Establish_Connections_Through_the_One-Pass_Method"><span class="tocnumber">12.2.1</span> <span class="toctext">Figure: ATM Devices Establish Connections Through the One-Pass Method</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-37"><a href="http://docwiki.cisco.com/wiki/Asynchronous_Transfer_Mode_Switching#ATM_Connection-Management_Messages"><span class="tocnumber">13</span> <span class="toctext">ATM Connection-Management Messages</span></a></li>
+<li class="toclevel-1 tocsection-38"><a href="http://docwiki.cisco.com/wiki/Asynchronous_Transfer_Mode_Switching#PNNI"><span class="tocnumber">14</span> <span class="toctext">PNNI</span></a></li>
+<li class="toclevel-1 tocsection-39"><a href="http://docwiki.cisco.com/wiki/Asynchronous_Transfer_Mode_Switching#Integrated_Local_Management_Interface"><span class="tocnumber">15</span> <span class="toctext">Integrated Local Management Interface</span></a>
+<ul>
+<li class="toclevel-2 tocsection-40"><a href="http://docwiki.cisco.com/wiki/Asynchronous_Transfer_Mode_Switching#Table:_Commonly_Used_VCI_Values"><span class="tocnumber">15.1</span> <span class="toctext">Table: Commonly Used VCI Values</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-41"><a href="http://docwiki.cisco.com/wiki/Asynchronous_Transfer_Mode_Switching#LAN_Emulation"><span class="tocnumber">16</span> <span class="toctext">LAN Emulation</span></a>
+<ul>
+<li class="toclevel-2 tocsection-42"><a href="http://docwiki.cisco.com/wiki/Asynchronous_Transfer_Mode_Switching#Figure:_ATM_Networks_Can_Emulate_a_Physical_LAN"><span class="tocnumber">16.1</span> <span class="toctext">Figure: ATM Networks Can Emulate a Physical LAN</span></a></li>
+<li class="toclevel-2 tocsection-43"><a href="http://docwiki.cisco.com/wiki/Asynchronous_Transfer_Mode_Switching#The_LANE_Protocol_Architecture"><span class="tocnumber">16.2</span> <span class="toctext">The LANE Protocol Architecture</span></a>
+<ul>
+<li class="toclevel-3 tocsection-44"><a href="http://docwiki.cisco.com/wiki/Asynchronous_Transfer_Mode_Switching#Figure:_LANE_Protocol_Architecture_Can_Be_Implemented_in_ATM_Network_Devices"><span class="tocnumber">16.2.1</span> <span class="toctext">Figure: LANE Protocol Architecture Can Be Implemented in ATM Network Devices</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-45"><a href="http://docwiki.cisco.com/wiki/Asynchronous_Transfer_Mode_Switching#LANE_Components"><span class="tocnumber">16.3</span> <span class="toctext">LANE Components</span></a>
+<ul>
+<li class="toclevel-3 tocsection-46"><a href="http://docwiki.cisco.com/wiki/Asynchronous_Transfer_Mode_Switching#Figure:_An_ELAN_Consists_of_Clients.2C_Servers.2C_and_Various_Intermediate_Nodes"><span class="tocnumber">16.3.1</span> <span class="toctext">Figure: An ELAN Consists of Clients, Servers, and Various Intermediate Nodes</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-47"><a href="http://docwiki.cisco.com/wiki/Asynchronous_Transfer_Mode_Switching#LAN_Emulation_Connection_Types"><span class="tocnumber">16.4</span> <span class="toctext">LAN Emulation Connection Types</span></a>
+<ul>
+<li class="toclevel-3 tocsection-48"><a href="http://docwiki.cisco.com/wiki/Asynchronous_Transfer_Mode_Switching#Figure:_LANE_Data_Connections_Use_a_Series_of_VCLs_to_Link_a_LAN_Switch_and_ATM_Hosts"><span class="tocnumber">16.4.1</span> <span class="toctext">Figure: LANE Data Connections Use a Series of VCLs to Link a LAN Switch and ATM Hosts</span></a></li>
+<li class="toclevel-3 tocsection-49"><a href="http://docwiki.cisco.com/wiki/Asynchronous_Transfer_Mode_Switching#Figure:_LANE_Control_Connections_Link_the_LES.2C_LECS.2C_LAN_Switch.2C_and_ATM_Host"><span class="tocnumber">16.4.2</span> <span class="toctext">Figure: LANE Control Connections Link the LES, LECS, LAN Switch, and ATM Host</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-50"><a href="http://docwiki.cisco.com/wiki/Asynchronous_Transfer_Mode_Switching#LANE_Operation"><span class="tocnumber">16.5</span> <span class="toctext">LANE Operation</span></a>
+<ul>
+<li class="toclevel-3 tocsection-51"><a href="http://docwiki.cisco.com/wiki/Asynchronous_Transfer_Mode_Switching#Initialization_and_Configuration"><span class="tocnumber">16.5.1</span> <span class="toctext">Initialization and Configuration</span></a></li>
+<li class="toclevel-3 tocsection-52"><a href="http://docwiki.cisco.com/wiki/Asynchronous_Transfer_Mode_Switching#Joining_and_Registering_with_the_LES"><span class="tocnumber">16.5.2</span> <span class="toctext">Joining and Registering with the LES</span></a></li>
+<li class="toclevel-3 tocsection-53"><a href="http://docwiki.cisco.com/wiki/Asynchronous_Transfer_Mode_Switching#Finding_and_Joining_the_BUS"><span class="tocnumber">16.5.3</span> <span class="toctext">Finding and Joining the BUS</span></a></li>
+<li class="toclevel-3 tocsection-54"><a href="http://docwiki.cisco.com/wiki/Asynchronous_Transfer_Mode_Switching#Data_Transfer"><span class="tocnumber">16.5.4</span> <span class="toctext">Data Transfer</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-55"><a href="http://docwiki.cisco.com/wiki/Asynchronous_Transfer_Mode_Switching#Multiprotocol_over_ATM"><span class="tocnumber">17</span> <span class="toctext">Multiprotocol over ATM</span></a>
+<ul>
+<li class="toclevel-2 tocsection-56"><a href="http://docwiki.cisco.com/wiki/Asynchronous_Transfer_Mode_Switching#Figure:_A_Comparison_of_Inter-ELAN_Communications_Without_.28Part_A.29_and_with_.28Part_B.29_MPOA"><span class="tocnumber">17.1</span> <span class="toctext">Figure: A Comparison of Inter-ELAN Communications Without (Part A) and with (Part B) MPOA</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-57"><a href="http://docwiki.cisco.com/wiki/Asynchronous_Transfer_Mode_Switching#Review_Questions"><span class="tocnumber">18</span> <span class="toctext">Review Questions</span></a></li>
+<li class="toclevel-1 tocsection-58"><a href="http://docwiki.cisco.com/wiki/Asynchronous_Transfer_Mode_Switching#For_More_Information"><span class="tocnumber">19</span> <span class="toctext">For More Information</span></a></li>
+</ul>
+</td></tr></tbody></table><script>if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } </script>
+<h5> <span class="mw-headline" id="Figure:_A_Private_ATM_Network_and_a_Public_ATM_Network_Both_Can_Carry_Voice.2C_Video.2C_and_Data_Traffic">Figure: A Private ATM Network and a Public ATM Network Both Can Carry Voice, Video, and Data Traffic</span></h5>
+<p><a href="http://docwiki.cisco.com/wiki/File:CT842701.jpg" class="image"><img alt="CT842701.jpg" src="./Asynchronous Transfer Mode Switching - DocWiki_files/CT842701.jpg" width="552" height="322"></a>
+</p>
+<h2> <span class="mw-headline" id="Standards"> Standards </span></h2>
+<p>ATM is based on the efforts of the ITU-T Broadband Integrated Services Digital Network (B-ISDN) standard. It was originally conceived as a high-speed transfer technology for voice, video, and data over public networks. The ATM Forum extended the ITU-T's vision of ATM for use over public and private networks. The ATM Forum has released work on the following specifications:
+</p>
+<ul><li> User-to-Network Interface (UNI) 2.0
+</li><li> UNI 3.0
+</li><li> UNI 3.1 
+</li><li> UNI 4.0
+</li><li> Public-Network Node Interface (P-NNI)
+</li><li> LAN Emulation (LANE) 
+</li><li> Multiprotocol over ATM
+</li></ul>
+<h2> <span class="mw-headline" id="ATM_Devices_and_the_Network_Environment"> ATM Devices and the Network Environment </span></h2>
+<p>ATM is a cell-switching and multiplexing technology that combines the benefits of circuit switching (guaranteed capacity and constant transmission delay) with those of packet switching (flexibility and efficiency for intermittent traffic). It provides scalable bandwidth from a few megabits per second (Mbps) to many gigabits per second (Gbps). Because of its asynchronous nature, ATM is more efficient than synchronous technologies, such as time-division multiplexing (TDM). 
+</p><p>With TDM, each user is assigned to a time slot, and no other station can send in that time slot. If a station has much data to send, it can send only when its time slot comes up, even if all other time slots are empty. However, if a station has nothing to transmit when its time slot comes up, the time slot is sent empty and is wasted. Because ATM is asynchronous, time slots are available on demand with information identifying the source of the transmission contained in the header of each ATM cell. 
+</p>
+<h3> <span class="mw-headline" id="ATM_Cell_Basic_Format"> ATM Cell Basic Format </span></h3>
+<p>ATM transfers information in fixed-size units called cells. Each cell consists of 53 octets, or bytes. The first 5 bytes contain cell-header information, and the remaining 48 contain the payload (user information). Small, fixed-length cells are well suited to transferring voice and video traffic because such traffic is intolerant of delays that result from having to wait for a large data packet to download, among other things. 
+</p><p><a href="http://docwiki.cisco.com/wiki/Asynchronous_Transfer_Mode_Switching#Figure:_An_ATM_Cell_Consists_of_a_Header_and_Payload_Data" title="Asynchronous Transfer Mode Switching">Figure: An ATM Cell Consists of a Header and Payload Data</a> illustrates the basic format of an ATM cell.
+</p>
+<h5> <span class="mw-headline" id="Figure:_An_ATM_Cell_Consists_of_a_Header_and_Payload_Data">Figure: An ATM Cell Consists of a Header and Payload Data</span></h5>
+<p><a href="http://docwiki.cisco.com/wiki/File:Technology_Handbook-26-2-02.jpg" class="image"><img alt="Technology Handbook-26-2-02.jpg" src="./Asynchronous Transfer Mode Switching - DocWiki_files/Technology_Handbook-26-2-02.jpg" width="552" height="171"></a>
+</p>
+<h3> <span class="mw-headline" id="ATM_Devices"> ATM Devices </span></h3>
+<p>An ATM network is made up of an ATM switch and ATM endpoints. An ATM switch is responsible for cell transit through an ATM network. The job of an ATM switch is well defined: It accepts the incoming cell from an ATM endpoint or another ATM switch. It then reads and updates the cell header information and quickly switches the cell to an output interface toward its destination. An ATM endpoint (or end system) contains an ATM network interface adapter. Examples of ATM endpoints are workstations, routers, digital service units (DSUs), LAN switches, and video coder-decoders (CODECs). 
+</p><p><a href="http://docwiki.cisco.com/wiki/Asynchronous_Transfer_Mode_Switching#Figure:_An_ATM_Network_Comprises_ATM_Switches_and_Endpoints" title="Asynchronous Transfer Mode Switching">Figure: An ATM Network Comprises ATM Switches and Endpoints</a> illustrates an ATM network made up of ATM switches and ATM endpoints.
+</p>
+<h5> <span class="mw-headline" id="Figure:_An_ATM_Network_Comprises_ATM_Switches_and_Endpoints">Figure: An ATM Network Comprises ATM Switches and Endpoints</span></h5>
+<p><a href="http://docwiki.cisco.com/wiki/File:Technology_Handbook-26-2-03.jpg" class="image"><img alt="Technology Handbook-26-2-03.jpg" src="./Asynchronous Transfer Mode Switching - DocWiki_files/Technology_Handbook-26-2-03.jpg" width="552" height="283"></a>
+</p>
+<h3> <span class="mw-headline" id="ATM_Network_Interfaces"> ATM Network Interfaces </span></h3>
+<p>An ATM network consists of a set of ATM switches interconnected by point-to-point ATM links or interfaces. ATM switches support two primary types of interfaces: UNI and NNI. The UNI connects ATM end systems (such as hosts and routers) to an ATM switch. The NNI connects two ATM switches.
+</p><p>Depending on whether the switch is owned and located at the customer's premises or is publicly owned and operated by the telephone company, UNI and NNI can be further subdivided into public and private UNIs and NNIs. A private UNI connects an ATM endpoint and a private ATM switch. Its public counterpart connects an ATM endpoint or private switch to a public switch. A private NNI connects two ATM switches within the same private organization. A public one connects two ATM switches within the same public organization.
+</p><p>An additional specification, the broadband intercarrier interface (B-ICI), connects two public switches from different service providers. 
+</p><p><a href="http://docwiki.cisco.com/wiki/Asynchronous_Transfer_Mode_Switching#Figure:_ATM_Interface_Specifications_Differ_for_Private_and_Public_Networks" title="Asynchronous Transfer Mode Switching">Figure: ATM Interface Specifications Differ for Private and Public Networks</a> illustrates the ATM interface specifications for private and public networks.
+</p>
+<h5> <span class="mw-headline" id="Figure:_ATM_Interface_Specifications_Differ_for_Private_and_Public_Networks">Figure: ATM Interface Specifications Differ for Private and Public Networks</span></h5>
+<p><a href="http://docwiki.cisco.com/wiki/File:CT842704.jpg" class="image"><img alt="CT842704.jpg" src="./Asynchronous Transfer Mode Switching - DocWiki_files/CT842704.jpg" width="552" height="219"></a>
+</p>
+<h2> <span class="mw-headline" id="ATM_Cell_Header_Format"> ATM Cell Header Format </span></h2>
+<p>An ATM cell header can be one of two formats: UNI or NNI. The UNI header is used for communication between ATM endpoints and ATM switches in private ATM networks. The NNI header is used for communication between ATM switches. 
+</p><p><a href="http://docwiki.cisco.com/wiki/Asynchronous_Transfer_Mode_Switching#Figure:_An_ATM_Cell.2C_ATM_UNI_Cell.2C_and_ATM_NNI_Cell_Header_Each_Contain_48_Bytes_of_Payload" title="Asynchronous Transfer Mode Switching">Figure: An ATM Cell, ATM UNI Cell, and ATM NNI Cell Header Each Contain 48 Bytes of Payload</a> depicts the basic ATM cell format, the ATM UNI cell header format, and the ATM NNI cell header format.
+</p>
+<h5> <span class="mw-headline" id="Figure:_An_ATM_Cell.2C_ATM_UNI_Cell.2C_and_ATM_NNI_Cell_Header_Each_Contain_48_Bytes_of_Payload">Figure: An ATM Cell, ATM UNI Cell, and ATM NNI Cell Header Each Contain 48 Bytes of Payload</span></h5>
+<p><a href="http://docwiki.cisco.com/wiki/File:CT842705.jpg" class="image"><img alt="CT842705.jpg" src="./Asynchronous Transfer Mode Switching - DocWiki_files/CT842705.jpg" width="552" height="351"></a>
+</p><p>Unlike the UNI, the NNI header does not include the Generic Flow Control (GFC) field. Additionally, the NNI header has a Virtual Path Identifier (VPI) field that occupies the first 12 bits, allowing for larger trunks between public ATM switches.
+</p>
+<h3> <span class="mw-headline" id="ATM_Cell_Header_Fields"> ATM Cell Header Fields </span></h3>
+<p>In addition to GFC and VPI header fields, several others are used in ATM cell header fields. The following descriptions summarize the ATM cell header fields illustrated in the above figure:
+</p>
+<ul><li> <b>Generic Flow Control (GFC)</b> - Provides local functions, such as identifying multiple stations that share a single ATM interface. This field is typically not used and is set to its default value of 0 (binary 0000).
+</li><li> <b>Virtual Path Identifier (VPI)</b> - In conjunction with the VCI, identifies the next destination of a cell as it passes through a series of ATM switches on the way to its destination.
+</li><li> <b>Virtual Channel Identifier (VCI)</b> - In conjunction with the VPI, identifies the next destination of a cell as it passes through a series of ATM switches on the way to its destination.
+</li><li> <b>Payload Type (PT)</b> - Indicates in the first bit whether the cell contains user data or control data. If the cell contains user data, the bit is set to 0.  If it contains control data, it is set to 1. The second bit indicates congestion (0 = no congestion, 1 = congestion), and the third bit indicates whether the cell is the last in a series of cells that represent a single AAL5 frame (1 = last cell for the frame).
+</li><li> <b>Cell Loss Priority (CLP)</b> - Indicates whether the cell should be discarded if it encounters extreme congestion as it moves through the network. If the CLP bit equals 1, the cell should be discarded in preference to cells with the CLP bit equal to 0.
+</li><li> <b>Header Error Control (HEC)</b> - Calculates checksum only on the first 4 bytes of the header. HEC can correct a single bit error in these bytes, thereby preserving the cell rather than discarding it.
+</li></ul>
+<h2> <span class="mw-headline" id="ATM_Services"> ATM Services </span></h2>
+<p>Three types of ATM services exist: permanent virtual circuits (PVC), switched virtual circuits (SVC), and connectionless service (which is similar to SMDS).
+</p><p>PVC allows direct connectivity between sites. In this way, a PVC is similar to a leased line. Among its advantages, PVC guarantees availability of a connection and does not require call setup procedures between switches. Disadvantages of PVCs include static connectivity and manual setup.  Each piece of equipment between the source and the destination must be manually provisioned for the PVC. Furthermore, no network resiliency is available with PVC.
+</p><p>An SVC is created and released dynamically and remains in use only as long as data is being transferred. In this sense, it is similar to a telephone call. Dynamic call control requires a signaling protocol between the ATM endpoint and the ATM switch. The advantages of SVCs include connection flexibility and call setup that can be handled automatically by a networking device. Disadvantages include the extra time and overhead required to set up the connection.
+</p>
+<h3> <span class="mw-headline" id="ATM_Virtual_Connections"> ATM Virtual Connections </span></h3>
+<p>ATM networks are fundamentally connection-oriented, which means that a virtual channel (VC) must be set up across the ATM network prior to any data transfer. (A virtual channel is roughly equivalent to a virtual circuit.)
+</p><p>Two types of ATM connections exist: virtual paths, which are identified by virtual path identifiers, and virtual channels, which are identified by the combination of a VPI and a virtual channel identifier (VCI).
+</p><p>A virtual path is a bundle of virtual channels, all of which are switched transparently across the ATM network based on the common VPI. All VPIs and VCIs, however, have only local significance across a particular link and are remapped, as appropriate, at each switch. 
+</p><p>A transmission path is the physical media that transports virtual channels and virtual paths. 
+</p><p><a href="http://docwiki.cisco.com/wiki/Asynchronous_Transfer_Mode_Switching#Figure:_VCs_Concatenate_to_Create_VPs" title="Asynchronous Transfer Mode Switching">Figure: VCs Concatenate to Create VPs</a> illustrates how VCs concatenate to create VPs, which, in turn, traverse the media or transmission path.
+</p>
+<h5> <span class="mw-headline" id="Figure:_VCs_Concatenate_to_Create_VPs">Figure: VCs Concatenate to Create VPs</span></h5>
+<p><a href="http://docwiki.cisco.com/wiki/File:CT842706.jpg" class="image"><img alt="CT842706.jpg" src="./Asynchronous Transfer Mode Switching - DocWiki_files/CT842706.jpg" width="552" height="90"></a>
+</p>
+<h2> <span class="mw-headline" id="ATM_Switching_Operations"> ATM Switching Operations </span></h2>
+<p>The basic operation of an ATM switch is straightforward: The cell is received across a  link on a known VCI or VPI value. The switch looks up the connection value in a local translation table to determine the outgoing port (or ports) of the connection and the new VPI/VCI value of the connection on that link. The switch then retransmits the cell on that outgoing link with the appropriate connection identifiers. Because all VCIs and VPIs have only local significance across a particular link, these values are remapped, as necessary, at each switch.
+</p>
+<h2> <span class="mw-headline" id="ATM_Reference_Model"> ATM Reference Model </span></h2>
+<p>The ATM architecture uses a logical model to describe the functionality that it supports. ATM functionality corresponds to the physical layer and part of the data link layer of the OSI reference model.
+</p><p>The ATM reference model is composed of the following planes, which span all layers:
+</p>
+<ul><li> <b>Control</b> - This plane is responsible for generating and managing signaling requests.
+</li><li> <b>User</b> - This plane is responsible for managing the transfer of data.
+</li><li> <b>Management</b> - This plane contains two components:
+<ul><li> Layer management manages layer-specific functions, such as the detection of failures and protocol problems.
+</li><li> Plane management manages and coordinates functions related to the complete system.
+</li></ul>
+</li></ul>
+<p>The ATM reference model is composed of the following ATM layers:
+</p>
+<ul><li> <b>Physical layer</b> - Analogous to the physical layer of the OSI reference model, the ATM physical layer manages the medium-dependent transmission.
+</li><li> <b>ATM layer</b> - Combined with the ATM adaptation layer, the ATM layer is roughly analogous to the data link layer of the OSI reference model. The ATM layer is responsible for the simultaneous sharing of virtual circuits over a physical link (cell multiplexing) and passing cells through the ATM network (cell relay). To do this, it uses the VPI and VCI information in the header of each ATM cell.
+</li><li> <b>ATM adaptation layer (AAL)</b> - Combined with the ATM layer, the AAL is roughly analogous to the data link layer of the OSI model. The AAL is responsible for isolating higher-layer protocols from the details of the ATM processes. The adaptation layer prepares user data for conversion into cells and segments the data into 48-byte cell payloads.
+</li></ul>
+<p>Finally, the higher layers residing above the AAL accept user data, arrange it into packets, and hand it to the AAL. 
+</p><p><a href="http://docwiki.cisco.com/wiki/Asynchronous_Transfer_Mode_Switching#Figure:_The_ATM_Reference_Model_Relates_to_the_Lowest_Two_Layers_of_the_OSI_Reference_Model" title="Asynchronous Transfer Mode Switching">Figure: The ATM Reference Model Relates to the Lowest Two Layers of the OSI Reference Model</a> illustrates the ATM reference model:
+</p>
+<h5> <span class="mw-headline" id="Figure:_The_ATM_Reference_Model_Relates_to_the_Lowest_Two_Layers_of_the_OSI_Reference_Model">Figure: The ATM Reference Model Relates to the Lowest Two Layers of the OSI Reference Model</span></h5>
+<p><a href="http://docwiki.cisco.com/wiki/File:CT842707.jpg" class="image"><img alt="CT842707.jpg" src="./Asynchronous Transfer Mode Switching - DocWiki_files/CT842707.jpg" width="552" height="377"></a>
+</p>
+<h3> <span class="mw-headline" id="The_ATM_Physical_Layer"> The ATM Physical Layer </span></h3>
+<p>The ATM physical layer has four functions: Cells are converted into a bitstream, the transmission and receipt of bits on the physical medium are controlled, ATM cell boundaries are tracked, and cells are packaged into the appropriate types of frames for the physical medium. For example, cells are packaged differently for SONET than for DS-3/E-3 media types.
+</p><p>The ATM physical layer is divided into two parts: the physical medium-dependent (PMD) sublayer and the transmission convergence (TC) sublayer.
+</p><p>The PMD sublayer provides two key functions. First, it synchronizes transmission and reception by sending and receiving a continuous flow of bits with associated timing information. Second, it specifies the physical media for the physical medium used, including connector types and cable. Examples of physical medium standards for ATM include Synchronous Digital Hierarchy/Synchronous Optical Network (SDH/SONET), DS-3/E3, 155 Mbps over multimode fiber (MMF) using the 8B/10B encoding scheme, and 155 Mbps 8B/10B over shielded twisted-pair (STP) cabling.
+</p><p>The TC sublayer has four functions: cell delineation, header error control (HEC) sequence generation and verification, cell-rate decoupling, and transmission frame adaptation. The cell delineation function maintains ATM cell boundaries, allowing devices to locate cells within a stream of bits. HEC sequence generation and verification generates and checks  the header error control code to ensure valid data. Cell-rate decoupling maintains synchronization and inserts or suppresses idle (unassigned) ATM cells to adapt the rate of valid ATM cells to the payload capacity of the transmission system. Transmission frame adaptation packages ATM cells into frames acceptable to the particular physical layer implementation.
+</p>
+<h3> <span class="mw-headline" id="ATM_Adaptation_Layers:_AAL1"> ATM Adaptation Layers: AAL1 </span></h3>
+<p>AAL1, a connection-oriented service, is suitable for handling constant bit rate sources (CBR), such as voice and videoconferencing. ATM transports CBR traffic using circuit-emulation services. Circuit-emulation service also accommodates the attachment of equipment currently using leased lines to an ATM backbone network. AAL1 requires timing synchronization between the source and the destination. For this reason, AAL1 depends on a medium, such as SONET, that supports clocking. 
+</p><p>The AAL1 process prepares a cell for transmission in three steps. First, synchronous samples (for example, 1 byte of data at a sampling rate of 125 microseconds) are inserted into the Payload field. Second, Sequence Number (SN) and Sequence Number Protection (SNP) fields are added to provide information that the receiving AAL1 uses to verify that it has received cells in the correct order. Third, the remainder of the Payload field is filled with enough single bytes to equal 48 bytes. 
+</p><p><a href="http://docwiki.cisco.com/wiki/Asynchronous_Transfer_Mode_Switching#Figure:_AAL1_Prepares_a_Cell_for_Transmission_So_That_the_Cells_Retain_Their_Order" title="Asynchronous Transfer Mode Switching">Figure: AAL1 Prepares a Cell for Transmission So That the Cells Retain Their Order</a> illustrates how AAL1 prepares a cell for transmission.
+</p>
+<h5> <span class="mw-headline" id="Figure:_AAL1_Prepares_a_Cell_for_Transmission_So_That_the_Cells_Retain_Their_Order">Figure: AAL1 Prepares a Cell for Transmission So That the Cells Retain Their Order</span></h5>
+<p><a href="http://docwiki.cisco.com/wiki/File:CT842708.jpg" class="image"><img alt="CT842708.jpg" src="./Asynchronous Transfer Mode Switching - DocWiki_files/CT842708.jpg" width="552" height="425"></a>
+</p>
+<h3> <span class="mw-headline" id="ATM_Adaptation_Layers:_AAL2"> ATM Adaptation Layers:  AAL2 </span></h3>
+<p>Another traffic type has timing requirements like CBR but tends to be bursty in nature. This is called variable bit rate (VBR) traffic. This typically includes services characterized as packetized voice or video that do not have a constant data transmission speed but that do have requirements similar to constant bit rate services. AAL2 is suitable for VBR traffic.  The AAL2 process uses 44 bytes of the cell payload for user data and reserves 4 bytes of the payload to support the AAL2 processes.
+</p><p>VBR traffic is characterized as either real-time (VBR-RT) or as non-real-time (VBR-NRT). AAL2 supports both types of VBR traffic.
+</p>
+<h3> <span class="mw-headline" id="ATM_Adaptation_Layers:_AAL3.2F4"> ATM Adaptation Layers: AAL3/4 </span></h3>
+<p>AAL3/4 supports both connection-oriented and connectionless data. It was designed for network service providers and is closely aligned with Switched Multimegabit Data Service (SMDS). AAL3/4 is used to transmit SMDS packets over an ATM network.
+</p><p>AAL3/4 prepares a cell for transmission in four steps. First, the convergence sublayer (CS) creates a protocol data unit (PDU) by prepending a beginning/end tag header to the frame and appending a length field as a trailer. Second, the segmentation and reassembly (SAR) sublayer fragments the PDU and prepends a header to it. Then the SAR sublayer appends a CRC-10 trailer to each PDU fragment for error control. Finally, the completed SAR PDU becomes the Payload field of an ATM cell to which the ATM layer prepends the standard ATM header.
+</p><p>An AAL 3/4 SAR PDU header consists of Type, Sequence Number, and Multiplexing Identifier fields. Type fields identify whether a cell is the beginning, continuation, or end of a message. Sequence number fields identify the order in which cells should be reassembled. The Multiplexing Identifier field determines which cells from different traffic sources are interleaved on the same virtual circuit connection (VCC) so that the correct cells are reassembled at the destination.
+</p>
+<h3> <span class="mw-headline" id="ATM_Adaptation_Layers:_AAL5"> ATM Adaptation Layers: AAL5 </span></h3>
+<p>AAL5 is the primary AAL for data and supports both connection-oriented and connectionless data. It is used to transfer most non-SMDS data, such as classical IP over ATM and LAN Emulation (LANE). AAL5 also is known as the simple and efficient adaptation layer (SEAL) because the SAR sublayer simply accepts the CS-PDU and segments it into 48-octet SAR-PDUs without reserving any bytes in each cell. 
+</p><p>AAL5 prepares a cell for transmission in three steps. First, the CS sublayer appends a variable-length pad and an 8-byte trailer to a frame. The pad ensures that the resulting PDU falls on the 48-byte boundary of an ATM cell. The trailer includes the length of the frame and a 32-bit cyclic redundancy check (CRC) computed across the entire PDU. This allows the AAL5 receiving process to detect bit errors, lost cells, or cells that are out of sequence. Second, the SAR sublayer segments the CS-PDU into 48-byte blocks. A header and trailer are not added (as is in AAL3/4), so messages cannot be interleaved. Finally, the ATM layer places each block into the Payload field of an ATM cell. For all cells except the last, a bit in the Payload Type (PT) field is set to 0 to indicate that the cell is not the last cell in a series that represents a single frame. For the last cell, the bit in the PT field is set to 1.
+</p>
+<h2> <span class="mw-headline" id="ATM_Addressing"> ATM Addressing </span></h2>
+<p>The ITU-T standard is based on the use of E.164 addresses (similar to telephone numbers) for public ATM (B-ISDN) networks. The ATM Forum extended ATM addressing to include private networks. It decided on the subnetwork or overlay model of addressing, in which the ATM layer is responsible for mapping network layer addresses to ATM addresses. This subnetwork model is an alternative to using network layer protocol addresses (such as IP and IPX) and existing routing protocols (such as IGRP and RIP). The ATM Forum defined an address format based on the structure of the OSI network service access point (NSAP) addresses.
+</p>
+<h3> <span class="mw-headline" id="Subnetwork_Model_of_Addressing"> Subnetwork Model of Addressing </span></h3>
+<p>The subnetwork model of addressing decouples the ATM layer from any existing higher-layer protocols, such as IP or IPX. Therefore, it requires an entirely new addressing scheme and routing protocol. Each ATM system must be assigned an ATM address, in addition to any higher-layer protocol addresses. This requires an ATM address resolution protocol (ATM ARP) to map higher-layer addresses to their corresponding ATM addresses.
+</p>
+<h3> <span class="mw-headline" id="NSAP_Format_ATM_Addresses"> NSAP Format ATM Addresses </span></h3>
+<p>The 20-byte NSAP-format ATM addresses are designed for use within private ATM networks, whereas public networks typically use E.164 addresses, which are formatted as defined by ITU-T. The ATM Forum has specified an NSAP encoding for E.164 addresses, which is used for encoding E.164 addresses within private networks, but this address can also be used by some private networks. 
+</p><p>Such private networks can base their own (NSAP format) addressing on the E.164 address of the public UNI to which they are connected and can take the address prefix from the E.164 number, identifying local nodes by the lower-order bits.
+</p><p>All NSAP-format ATM addresses consist of three components: the authority and format identifier (AFI), the initial domain identifier (IDI), and the domain-specific part (DSP). The AFI identifies the type and format of the IDI, which, in turn, identifies the address allocation and administrative authority. The DSP contains actual routing information.
+</p>
+<table cellspacing="0" cellpadding="0" border="0" style="background: transparent;"><tbody><tr><td nowrap="true" valign="top"><a href="http://docwiki.cisco.com/wiki/File:NotePencil.gif" class="image" title="Note"><img alt="Note" src="./Asynchronous Transfer Mode Switching - DocWiki_files/NotePencil.gif" width="18" height="18"></a></td><td valign="top" style="padding-left:0.5em;"> <b>Note</b>: </td><td valign="top" style="padding-left:0.5em;">Summarized another way, the first 13 bytes form the NSAP prefix that answers the question, "Which switch?" Each switch must have a prefix value to uniquely identify it. Devices attached to the switch inherit the prefix value from the switch as part of their NSAP address. The prefix is used by switches to support ATM routing.  The next 6 bytes, called the end station identifier (ESI), identify the ATM element attached to the switch. Each device attached to the switch must have a unique ESI value.  The last byte, called the selector (SEL) byte, identifies the intended process within the device that the connection targets.</td></tr></tbody></table>
+<p>Three formats of private ATM addressing differ by the nature of the AFI and IDI. In the NSAP-encoded E.164 format, the IDI is an E.164 number. In the DCC format, the IDI is a data country code (DCC), which identifies particular countries, as specified in ISO 3166. Such addresses are administered by the ISO National Member Body in each country. In the ICD format, the IDI is an international code designator (ICD), which is allocated by the ISO 6523 registration authority (the British Standards Institute). ICD codes identify particular international organizations. 
+</p><p>The ATM Forum recommends that organizations or private network service providers use either the DCC or the ICD formats to form their own numbering plan. 
+</p><p><a href="http://docwiki.cisco.com/wiki/Asynchronous_Transfer_Mode_Switching#Figure:_Three_Formats_of_ATM_Addresses_Are_Used_for_Private_Networks" title="Asynchronous Transfer Mode Switching">Figure: Three Formats of ATM Addresses Are Used for Private Networks</a> illustrates the three formats of ATM addresses used for private networks.
+</p>
+<h5> <span class="mw-headline" id="Figure:_Three_Formats_of_ATM_Addresses_Are_Used_for_Private_Networks">Figure: Three Formats of ATM Addresses Are Used for Private Networks</span></h5>
+<p><a href="http://docwiki.cisco.com/wiki/File:CT842709.jpg" class="image"><img alt="CT842709.jpg" src="./Asynchronous Transfer Mode Switching - DocWiki_files/CT842709.jpg" width="552" height="440"></a>
+</p>
+<h3> <span class="mw-headline" id="ATM_Address_Fields"> ATM Address Fields </span></h3>
+<p>The following descriptions summarize the fields illustrated in the above figure:
+</p>
+<ul><li> <b>AFI</b> - Identifies the type and format of the address (E.164, ICD, or DCC).
+</li><li> <b>DCC</b> - Identifies particular countries.
+</li><li> <b>High-Order Domain-Specific Part (HO-DSP)</b> - Combines the routing domain (RD) and the area identifier (AREA) of the NSAP addresses. The ATM Forum combined these fields to support a flexible, multilevel addressing hierarchy for prefix-based routing protocols.
+</li><li> <b>End System Identifier (ESI)</b> - Specifies the 48-bit MAC address, as administered by the Institute of Electrical and Electronic Engineers (IEEE).
+</li><li> <b>Selector (SEL)</b> - Is used for local multiplexing within end stations and has no network significance.
+</li><li> <b>ICD</b> - Identifies particular international organizations.
+</li><li> <b>E.164</b> - Indicates the BISDN E.164 address.
+</li></ul>
+<h2> <span class="mw-headline" id="ATM_Connections"> ATM Connections </span></h2>
+<p>ATM supports two types of connections: point-to-point and point-to-multipoint.
+</p><p>Point-to-point connects two ATM end systems and can be unidirectional (one-way communication) or bidirectional (two-way communication). Point-to-multipoint connects a single-source end system (known as the root node) to multiple destination end systems (known as leaves). Such connections are unidirectional only. Root nodes can transmit to leaves, but leaves cannot transmit to the root or to each other on the same connection. Cell replication is done within the ATM network by the ATM switches where the connection splits into two or more branches. 
+</p><p>It would be desirable in ATM networks to have bidirectional multipoint-to-multipoint connections. Such connections are analogous to the broadcasting or multicasting capabilities of shared-media LANs, such as Ethernet and Token Ring. A broadcasting capability is easy to implement in shared-media LANs, where all nodes on a single LAN segment must process all packets sent on that segment. 
+</p><p>Unfortunately, a multipoint-to-multipoint capability cannot be implemented by using AAL5, which is the most common AAL to transmit data across an ATM network. Unlike AAL3/4, with its Message Identifier (MID) field, AAL5 does not provide a way within its cell format to interleave cells from different AAL5 packets on a single connection. This means that all AAL5 packets sent to a particular destination across a particular connection must be received in sequence; otherwise, the destination reassembly process will be incapable of reconstructing the packets. 
+</p><p>This is why AAL5 point-to-multipoint connections can be only unidirectional. If a leaf node were to transmit an AAL5 packet onto the connection, for example, it would be received by both the root node and all other leaf nodes. At these nodes, the packet sent by the leaf could be interleaved with packets sent by the root and possibly other leaf nodes, precluding the reassembly of any of the interleaved packets.
+</p>
+<h2> <span class="mw-headline" id="ATM_and_Multicasting"> ATM and Multicasting </span></h2>
+<p>ATM requires some form of multicast capability. AAL5 (which is the most common  AAL for data) currently does not support interleaving packets, so it does not support multicasting. 
+</p><p>If a leaf node transmitted a packet onto an AAL5 connection, the packet could be intermixed with other packets and be improperly reassembled. Three methods have been proposed for solving this problem: VP multicasting, multicast server, and overlaid point-to-multipoint connection.
+</p><p>Under the first solution, a multipoint-to-multipoint VP links all nodes in the multicast group, and each node is given a unique VCI value within the VP. Interleaved packets hence can be identified by the unique VCI value of the source. Unfortunately, this mechanism would require a protocol to uniquely allocate VCI values to nodes, and such a protocol mechanism currently does not exist. It is also unclear whether current SAR devices could easily support such a mode of operation.
+</p><p>A multicast server is another potential solution to the problem of multicasting over an ATM network. In this scenario, all nodes wanting to transmit onto a multicast group set up a point-to-point connection with an external device known as a multicast server (perhaps better described as a resequencer or serializer). The multicast server, in turn, is connected to all nodes wanting to receive the multicast packets through a point-to-multipoint connection. The multicast server receives packets across the point-to-point connections and then retransmits them across the point-to-multipoint connection-but only after ensuring that the packets are serialized (that is, one packet is fully transmitted before the next is sent). In this way, cell interleaving is precluded.
+</p><p>An overlaid point-to-multipoint connection is the third potential solution to the problem of multicasting over an ATM network. In this scenario, all nodes in the multicast group establish a point-to-multipoint connection with each other node in the group and, in turn, become leaves in the equivalent connections of all other nodes. Hence, all nodes can both transmit to and receive from all other nodes. This solution requires each node to maintain a connection for each transmitting member of the group, whereas the multicast-server mechanism requires only two connections. This type of connection also requires a registration process for informing the nodes that join a group of the other nodes in the group so that the new nodes can form the point-to-multipoint connection. The other nodes must know about the new node so that they can add the new node to their own point-to-multipoint connections. The multicast-server mechanism is more scalable in terms of connection resources but has the problem of requiring a centralized resequencer, which is both a potential bottleneck and a single point of failure.
+</p>
+<h2> <span class="mw-headline" id="ATM_Quality_of_Service"> ATM Quality of Service </span></h2>
+<p>ATM supports QoS guarantees comprising traffic contract, traffic shaping, and traffic policing.
+</p><p>A traffic contract specifies an envelope that describes the intended data flow. This envelope specifies values for peak bandwidth, average sustained bandwidth, and burst size, among others. When an ATM end system connects to an ATM network, it enters a contract with the network, based on QoS parameters. 
+</p><p>Traffic shaping is the use of queues to constrain data bursts, limit peak data rate, and smooth jitters so that traffic will fit within the promised envelope. ATM devices are responsible for adhering to the contract by means of traffic shaping. ATM switches can use traffic policing to enforce the contract. The switch can measure the actual traffic flow and compare it against the agreed-upon traffic envelope. If the switch finds that traffic is outside of the agreed-upon parameters, it can set the cell-loss priority (CLP) bit of the offending cells. Setting the CLP bit makes the cell discard eligible, which means that any switch handling the cell is allowed to drop the cell during periods of congestion.
+</p>
+<h2> <span class="mw-headline" id="ATM_Signaling_and_Connection_Establishment"> ATM Signaling and Connection Establishment </span></h2>
+<p>When an ATM device wants to establish a connection with another ATM device, it sends a signaling-request packet to its directly connected ATM switch. This request contains the ATM address of the desired ATM endpoint, as well as any QoS parameters required for the connection.
+</p><p>ATM signaling protocols vary by the type of ATM link, which can be either UNI signals or NNI signals. UNI is used between an ATM end system and ATM switch across ATM UNI, and NNI is used across NNI links.
+</p><p>The ATM Forum UNI 3.1 specification is the current standard for ATM UNI signaling. The UNI 3.1 specification is based on the Q.2931 public network signaling protocol developed by the ITU-T. UNI signaling requests are carried in a well-known default connection:  VPI = 0, VPI = 5.
+</p>
+<h3> <span class="mw-headline" id="The_ATM_Connection-Establishment_Process"> The ATM Connection-Establishment Process </span></h3>
+<p>ATM signaling uses the one-pass method of connection setup that is used in all modern telecommunication networks, such as the telephone network. An ATM connection setup proceeds in the following manner. First, the source end system sends a connection-signaling request. The connection request is propagated through the network. As a result, connections are set up through the network. The connection request reaches the final destination, which either accepts or rejects the connection request.
+</p>
+<h3> <span class="mw-headline" id="Connection-Request_Routing_and_Negotiation"> Connection-Request Routing and Negotiation </span></h3>
+<p>Routing of the connection request is governed by an ATM routing protocol (Private Network-Network Interface [PNNI], which routes connections based on destination and source addresses), traffic, and the QoS parameters requested by the source end system. Negotiating a connection request that is rejected by the destination is limited because call routing is based on parameters of initial connection; changing parameters might affect the connection routing. 
+</p><p><a href="http://docwiki.cisco.com/wiki/Asynchronous_Transfer_Mode_Switching#Figure:_ATM_Devices_Establish_Connections_Through_the_One-Pass_Method" title="Asynchronous Transfer Mode Switching">Figure: ATM Devices Establish Connections Through the One-Pass Method</a> highlights the one-pass method of ATM connection establishment.
+</p>
+<h5> <span class="mw-headline" id="Figure:_ATM_Devices_Establish_Connections_Through_the_One-Pass_Method">Figure: ATM Devices Establish Connections Through the One-Pass Method</span></h5>
+<p><a href="http://docwiki.cisco.com/wiki/File:CT842710.jpg" class="image"><img alt="CT842710.jpg" src="./Asynchronous Transfer Mode Switching - DocWiki_files/CT842710.jpg" width="552" height="279"></a>
+</p>
+<h2> <span class="mw-headline" id="ATM_Connection-Management_Messages"> ATM Connection-Management Messages </span></h2>
+<p>A number of connection-management message types, including setup, call proceeding, connect, and release, are used to establish and tear down an ATM connection. The source end system sends a setup message (including the address of the destination end system and any traffic QoS parameters) when it wants to set up a connection. The ingress switch sends a call proceeding message back to the source in response to the setup message. The destination end system next sends a connect message if the connection is accepted.  The destination end system sends a release message back to the source end system if the connection is rejected, thereby clearing the connection.
+</p><p>Connection-management messages are used to establish an ATM connection in the following manner. First, a source end system sends a setup message, which is forwarded to the first ATM switch (ingress switch) in the network. This switch sends a call proceeding message and invokes an ATM routing protocol. The signaling request is propagated across the network. The exit switch (called the egress switch) that is attached to the destination end system receives the setup message. The egress switch forwards the setup message to the end system across its UNI, and the ATM end system sends a connect message if the connection is accepted. The connect message traverses back through the network along the same path to the source end system, which sends a connect acknowledge message back to the destination to acknowledge the connection. Data transfer can then begin.
+</p>
+<h2> <span class="mw-headline" id="PNNI"> PNNI </span></h2>
+<p>PNNI provides two significant services: ATM topology discovery and call establishment. For switches to build connections between end points, the switch must know the ATM network topology. PNNI is the ATM routing protocol that enables switches to automatically discover the topology and the characteristics of the links interconnecting the switches. A link-state protocol much like OSPF, PNNI tracks things such as bandwidth on links. When a significant event occurs that changes the characteristics of a link, PNNI announces the change to the other switches.
+</p><p>When a station sends a call setup request to its local switch, the ingress switch references the PNNI routing table to determine a path between the source and the intended destination that meets the QoS requirements specified by the source. The switch attached to the source then builds a list defining each switch hop to support the circuit to the destination. This is called the designated transit list (DTL).
+</p><p>VCI = 18 is reserved for PNNI.
+</p>
+<h2> <span class="mw-headline" id="Integrated_Local_Management_Interface"> Integrated Local Management Interface </span></h2>
+<p>Integrated Local Management Interface (ILMI) enables devices to determine status of components at the other end of a physical link and to negotiate a common set of operational parameters to ensure interoperability. ILMI operates over a reserved VCC of VPI = X, VCI = 16.
+</p><p>Administrators may enable or disable ILMI at will, but it is highly recommended to enable it. Doing so allows the devices to determine the highest UNI interface level to operate (3.0, 3.1, 4.0), UNI vs. NNI, as well as numerous other items. Furthermore, ILMI allows devices to share information such as NSAP addresses, peer interface names, and IP addresses. Without ILMI, many of these parameters must be manually configured for the ATM attached devices to operate correctly.
+</p>
+<table cellspacing="0" cellpadding="0" border="0" style="background: transparent;"><tbody><tr><td nowrap="true" valign="top"><a href="http://docwiki.cisco.com/wiki/File:NotePencil.gif" class="image" title="Note"><img alt="Note" src="./Asynchronous Transfer Mode Switching - DocWiki_files/NotePencil.gif" width="18" height="18"></a></td><td valign="top" style="padding-left:0.5em;"> <b>Note</b>: </td><td valign="top" style="padding-left:0.5em;">The VCI values of 0 through 31 are reserved and should not be used for user traffic. Three frequently encountered VCI values are shown in <a href="http://docwiki.cisco.com/wiki/Asynchronous_Transfer_Mode_Switching#Table:_Commonly_Used_VCI_Values" title="Asynchronous Transfer Mode Switching">Table: Commonly Used VCI Values</a>.</td></tr></tbody></table>
+<h5> <span class="mw-headline" id="Table:_Commonly_Used_VCI_Values"> Table: Commonly Used VCI Values</span></h5>
+<table border="1">
+
+<tbody><tr>
+<td>VCI
+</td><td>Function
+</td></tr>
+<tr>
+<td>
+<p>5
+</p>
+</td><td>
+<p>Signaling from an edge device to its switch (ingress switch)
+</p>
+</td></tr>
+<tr>
+<td>
+<p>16
+</p>
+</td><td>
+<p>ILMI for link parameter exchanges
+</p>
+</td></tr>
+<tr>
+<td>
+<p>18
+</p>
+</td><td>
+<p>PNNI for ATM routing
+</p>
+</td></tr></tbody></table>
+<h2> <span class="mw-headline" id="LAN_Emulation"> LAN Emulation </span></h2>
+<p>LAN Emulation (LANE) is a standard defined by the ATM Forum that gives to stations attached via ATM the same capabilities that they normally obtain from legacy LANs, such as Ethernet and Token Ring. As the name suggests, the function of the LANE protocol is to emulate a LAN on top of an ATM network. Specifically, the LANE protocol defines mechanisms for emulating either an IEEE 802.3 Ethernet or an 802.5 Token Ring LAN. The current LANE protocol does not define a separate encapsulation for FDDI. (FDDI packets must be mapped into either Ethernet or Token Ring-emulated LANs [ELANs] by using existing translational bridging techniques.) Fast Ethernet (100BaseT) and IEEE 802.12 (100VG-AnyLAN) both can be mapped unchanged because they use the same packet formats. 
+</p><p><a href="http://docwiki.cisco.com/wiki/Asynchronous_Transfer_Mode_Switching#Figure:_ATM_Networks_Can_Emulate_a_Physical_LAN" title="Asynchronous Transfer Mode Switching">Figure: ATM Networks Can Emulate a Physical LAN</a> compares a physical LAN and an ELAN:
+</p>
+<h5> <span class="mw-headline" id="Figure:_ATM_Networks_Can_Emulate_a_Physical_LAN">Figure: ATM Networks Can Emulate a Physical LAN</span></h5>
+<p><a href="http://docwiki.cisco.com/wiki/File:CT842711.jpg" class="image"><img alt="CT842711.jpg" src="./Asynchronous Transfer Mode Switching - DocWiki_files/CT842711.jpg" width="552" height="255"></a>
+</p><p>The LANE protocol defines a service interface for higher-layer (that is, network layer) protocols that is identical to that of existing LANs. Data sent across the ATM network is encapsulated in the appropriate LAN MAC packet format. Simply put, the LANE protocols make an ATM network look and behave like an Ethernet or Token Ring LAN-albeit one operating much faster than an actual Ethernet or Token Ring LAN network.
+</p><p>It is important to note that LANE does not attempt to emulate the actual MAC protocol of the specific LAN concerned (that is, CSMA/CD for Ethernet or token passing for IEEE 802.5). LANE requires no modifications to higher-layer protocols to enable their operation over an ATM network. Because the LANE service presents the same service interface of existing MAC protocols to network layer drivers (such as an NDIS- or ODI-like driver interface), no changes are required in those drivers.
+</p>
+<h3> <span class="mw-headline" id="The_LANE_Protocol_Architecture"> The LANE Protocol Architecture </span></h3>
+<p>The basic function of the LANE protocol is to resolve MAC addresses to ATM addresses. The goal is to resolve such address mappings so that LANE end systems can set up direct connections between themselves and then forward data. The LANE protocol is deployed  in two types of ATM-attached equipment: ATM network interface cards (NICs) and internetworking and LAN switching equipment.
+</p><p>ATM NICs implement the LANE protocol and interface to the ATM network but present the current LAN service interface to the higher-level protocol drivers within the attached end system. The network layer protocols on the end system continue to communicate as if they were on a known LAN by using known procedures. However, they are capable of using the vastly greater bandwidth of ATM networks.
+</p><p>The second class of network gear to implement LANE consists of ATM-attached LAN switches and routers. These devices, together with directly attached ATM hosts equipped with ATM NICs, are used to provide a virtual LAN (VLAN) service in which ports on the LAN switches are assigned to particular VLANs independently of physical location. 
+</p><p><a href="http://docwiki.cisco.com/wiki/Asynchronous_Transfer_Mode_Switching#Figure:_LANE_Protocol_Architecture_Can_Be_Implemented_in_ATM_Network_Devices" title="Asynchronous Transfer Mode Switching">Figure: LANE Protocol Architecture Can Be Implemented in ATM Network Devices</a> shows the LANE protocol architecture implemented in ATM network devices.
+</p>
+<h5> <span class="mw-headline" id="Figure:_LANE_Protocol_Architecture_Can_Be_Implemented_in_ATM_Network_Devices">Figure: LANE Protocol Architecture Can Be Implemented in ATM Network Devices</span></h5>
+<p><a href="http://docwiki.cisco.com/wiki/File:CT842712.jpg" class="image"><img alt="CT842712.jpg" src="./Asynchronous Transfer Mode Switching - DocWiki_files/CT842712.jpg" width="552" height="450"></a>
+</p><p>{{note:The LANE protocol does not directly affect ATM switches. As with most of the other ATM internetworking protocols, LANE builds on the overlay model. As such, the LANE protocols operate transparently over and through ATM switches, using only standard ATM signaling procedures.}}
+</p>
+<h3> <span class="mw-headline" id="LANE_Components"> LANE Components  </span></h3>
+<p>The LANE protocol defines the operation of a single ELAN or VLAN. Although multiple ELANs can simultaneously exist on a single ATM network, an ELAN emulates either an Ethernet or a Token Ring and consists of the following components:
+</p>
+<ul><li> <b>LAN Emulation client (LEC)</b> - The LEC is an entity in an end system that performs data forwarding, address resolution, and registration of MAC addresses with the LAN Emulation Server (LES). The LEC also provides a standard LAN interface to higher-level protocols on legacy LANs. An ATM end system that connects to multiple ELANs has one LEC per ELAN.
+</li><li> <b>LES</b> - The LES provides a central control point for LECs to forward registration and control information. (Only one LES exists per ELAN.) The LES maintains a list of MAC addresses in the ELAN and the corresponding NSAP addresses.
+</li><li> <b>Broadcast and Unknown Server (BUS)</b> - The BUS is a multicast server that is used to flood unknown destination address traffic and to forward multicast and broadcast traffic to clients within a particular ELAN. Each LEC is associated with only one BUS per ELAN.
+</li><li> <b>LAN Emulation Configuration Server (LECS)</b> - The LECS maintains a database of LECs and the ELANs to which they belong. This server accepts queries from LECs and responds with the appropriate ELAN identifier-namely, the ATM address of the LES that serves the appropriate ELAN. One LECS per administrative domain serves all ELANs within that domain.
+</li></ul>
+<p>Because single server components lack redundancy, Cisco has overcome this shortcoming by implementing a proprietary solution called Simple Server Redundancy Protocol. SSRP works with any vendors LECs; however, it requires the use of Cisco devices as server components. It allows up to 16 LECSs per ATM LANE network and an infinite number of LES/BUS pairs per ELAN. The ATM Forum also released a vendor-independent method of providing server redundancy: Lane Emulation Network-Network Interface (LNNI). Therefore, servers from different vendors can provide interoperable redundancy.
+</p><p><a href="http://docwiki.cisco.com/wiki/Asynchronous_Transfer_Mode_Switching#Figure:_An_ELAN_Consists_of_Clients.2C_Servers.2C_and_Various_Intermediate_Nodes" title="Asynchronous Transfer Mode Switching">Figure: An ELAN Consists of Clients, Servers, and Various Intermediate Nodes</a> illustrates the components of an ELAN.
+</p>
+<h5> <span class="mw-headline" id="Figure:_An_ELAN_Consists_of_Clients.2C_Servers.2C_and_Various_Intermediate_Nodes">Figure: An ELAN Consists of Clients, Servers, and Various Intermediate Nodes</span></h5>
+<p><a href="http://docwiki.cisco.com/wiki/File:CT842713.jpg" class="image"><img alt="CT842713.jpg" src="./Asynchronous Transfer Mode Switching - DocWiki_files/CT842713.jpg" width="552" height="252"></a>
+</p>
+<h3> <span class="mw-headline" id="LAN_Emulation_Connection_Types"> LAN Emulation Connection Types </span></h3>
+<p>The Phase 1 LANE entities communicate with each other by using a series of ATM VCCs. LECs maintain separate connections for data transmission and control traffic. The LANE data connections are data-direct VCC, multicast send VCC, and multicast forward VCC. 
+</p><p>Data-direct VCC is a bidirectional point-to-point VCC set up between two LECs that want to exchange data. Two LECs typically use the same data-direct VCC to carry all packets between them rather than opening a new VCC for each MAC address pair. This technique conserves connection resources and connection setup latency.
+</p><p>Multicast send VCC is a bidirectional point-to-point VCC set up by the LEC to the BUS.
+</p><p>Multicast forward VCC is a unidirectional VCC set up to the LEC from the BUS. It typically is a point-to-multipoint connection, with each LEC as a leaf.
+</p><p>Control connections include configuration-direct VCC, control-direct VCC, and control-distribute VCC. Configuration-direct VCC is a bidirectional point-to-point VCC set up by the LEC to the LECS. Control-direct VCC is a bidirectional VCC set up by the LEC to the LES. Control-distribute VCC is a unidirectional VCC set up from the LES back to the LEC (this is typically a point-to-multipoint connection). 
+</p><p><a href="http://docwiki.cisco.com/wiki/Asynchronous_Transfer_Mode_Switching#Figure:_LANE_Data_Connections_Use_a_Series_of_VCLs_to_Link_a_LAN_Switch_and_ATM_Hosts" title="Asynchronous Transfer Mode Switching">Figure: LANE Data Connections Use a Series of VCLs to Link a LAN Switch and ATM Hosts</a> shows the LANE data connections.
+</p>
+<h5> <span class="mw-headline" id="Figure:_LANE_Data_Connections_Use_a_Series_of_VCLs_to_Link_a_LAN_Switch_and_ATM_Hosts">Figure: LANE Data Connections Use a Series of VCLs to Link a LAN Switch and ATM Hosts</span></h5>
+<p><a href="http://docwiki.cisco.com/wiki/File:CT842714.jpg" class="image"><img alt="CT842714.jpg" src="./Asynchronous Transfer Mode Switching - DocWiki_files/CT842714.jpg" width="552" height="287"></a>
+</p><p><a href="http://docwiki.cisco.com/wiki/Asynchronous_Transfer_Mode_Switching#Figure:_LANE_Control_Connections_Link_the_LES.2C_LECS.2C_LAN_Switch.2C_and_ATM_Host" title="Asynchronous Transfer Mode Switching">Figure: LANE Control Connections Link the LES, LECS, LAN Switch, and ATM Host</a> illustrates LANE control connections.
+</p>
+<h5> <span class="mw-headline" id="Figure:_LANE_Control_Connections_Link_the_LES.2C_LECS.2C_LAN_Switch.2C_and_ATM_Host">Figure: LANE Control Connections Link the LES, LECS, LAN Switch, and ATM Host</span></h5>
+<p><a href="http://docwiki.cisco.com/wiki/File:CT842715.jpg" class="image"><img alt="CT842715.jpg" src="./Asynchronous Transfer Mode Switching - DocWiki_files/CT842715.jpg" width="552" height="366"></a>
+</p>
+<h3> <span class="mw-headline" id="LANE_Operation"> LANE Operation </span></h3>
+<p>The operation of a LANE system and components is best understood by examining these stages of LEC operation: performing initialization and configuration, joining and registering with the LES, finding and joining the BUS, and performing data transfer.
+</p>
+<h4> <span class="mw-headline" id="Initialization_and_Configuration"> Initialization and Configuration </span></h4>
+<p>Upon initialization, an LEC finds the LECS to obtain required configuration information. It begins this process when the LEC obtains its own ATM address, which typically occurs through address registration. 
+</p><p>The LEC must then determine the location of the LECS. To do this, the LEC first must locate the LECS by one of the following methods: by using a defined ILMI procedure to determine the LECS address, by using a well-known LECS address, or by using a well-known permanent connection to the LECS (VPI = 0, VCI = 17). (The well-known permanent connection is not commonly used.)
+</p><p>After the LEC discovers the LECS's NSAP, the LEC sets up a configuration-direct VCC to the LECS and sends an LE_CONFIGURE_REQUEST message. If a matching entry is found, the LECS returns a LE_CONFIGURE_RESPONSE message to the LEC with the configuration information that it requires to connect to its target ELAN, including the following: ATM address of the LES, type of LAN being emulated, maximum packet size on the ELAN, and ELAN name (a text string for display purposes). 
+</p>
+<h4> <span class="mw-headline" id="Joining_and_Registering_with_the_LES"> Joining and Registering with the LES </span></h4>
+<p>When an LEC joins the LES and registers its own ATM and MAC addresses, it does so by following three steps:
+</p>
+<ol><li> After the LEC obtains the LES address, the LEC optionally clears the connec- tion to the LECS, sets up the control-direct VCC to the LES, and sends an LE_JOIN_REQUEST message on that VCC. This allows the LEC to register its own MAC and ATM addresses with the LES and (optionally) any other MAC addresses for which it is proxying. This information is maintained so that no two LECs will register the same MAC or ATM address.
+</li><li> After receipt of the LE_JOIN_REQUEST message, the LES checks with the LECS via its open connection, verifies the request, and confirms the client's membership.
+</li><li> Upon successful verification, the LES adds the LEC as a leaf of its point-to-multipoint control-distribute VCC and issues the LEC a successful LE_JOIN_RESPONSE message that contains a unique LAN Emulation client ID (LECID). The LECID is used by the LEC to filter its own broadcasts from the BUS.
+</li></ol>
+<h4> <span class="mw-headline" id="Finding_and_Joining_the_BUS"> Finding and Joining the BUS </span></h4>
+<p>After the LEC has successfully joined the LECS, its first task is to find the BUS's ATM address to join the broadcast group and become a member of the emulated LAN. 
+</p><p>First, the LEC creates an LE_ARP_REQUEST packet with the MAC address 0xFFFFFFFF. Then the LEC sends this special LE_ARP packet on the control-direct VCC to the LES. The LES recognizes that the LEC is looking for the BUS and responds with the BUS's ATM address on the control-distribute VCC.
+</p><p>When the LEC has the BUS's ATM address, it joins the BUS by first creating a signaling packet with the BUS's ATM address and setting up a multicast-send VCC with the BUS. Upon receipt of the signaling request, the BUS adds the LEC as a leaf on its point-to-multipoint multicast forward VCC. The LEC is now a member of the ELAN and is ready for data transfer.
+</p>
+<h4> <span class="mw-headline" id="Data_Transfer"> Data Transfer </span></h4>
+<p>The final state, data transfer, involves resolving the ATM address of the destination LEC and actual data transfer, which might include the flush procedure.
+</p><p>When a LEC has a data packet to send to an unknown destination MAC address, it must discover the ATM address of the destination LEC through which the particular address can be reached. To accomplish this, the LEC first sends the data frame to the BUS (via the multicast send VCC) for distribution to all LECs on the ELAN via the multicast forward VCC. This is done because resolving the ATM address might take some time, and many network protocols are intolerant of delays.
+</p><p>The LEC then sends a LAN Emulation Address Resolution Protocol Request (LE_ARP_Request) control frame to the LES via a control-direct VCC.
+</p><p>If the LES knows the answer, it responds with the ATM address of the LEC that owns  the MAC address in question. If the LES does not know the answer, it floods the LE_ARP_REQUEST to some or all LECs (under rules that parallel the BUS's flooding of the actual data frame, but over control-direct and control-distribute VCCs instead of the multicast send or multicast forward VCCs used by the BUS). If bridge/switching  devices with LEC software participating in the ELAN exist, they respond to the LE_ARP_REQUEST if they service the LAN device with the requested MAC address.  This is called a proxy service.
+</p><p>In the case of actual data transfer, if an LE_ARP message is received, the LEC sets up a data-direct VCC to the destination LEC and uses this for data transfer rather than the BUS path. Before it can do this, however, the LEC might need to use the LANE flush procedure, which ensures that all packets previously sent to the BUS were delivered to the destination prior to the use of the data-direct VCC. In the flush procedure, a control frame is sent down the first transmission path following the last packet. The LEC then waits until the destination acknowledges receipt of the flush packet before using the second path to send packets.
+</p>
+<h2> <span class="mw-headline" id="Multiprotocol_over_ATM"> Multiprotocol over ATM </span></h2>
+<p>Multiprotocol over ATM (MPOA) provides a method of transmitting data between ELANs without needing to continuously pass through a router. Normally, data passes through at least one router to get from one ELAN to another. This is normal per-hop routing as experienced in LAN environments. MPOA, however, enables devices in different ELANs to communicate without needing to travel hop by hop.
+</p><p><a href="http://docwiki.cisco.com/wiki/Asynchronous_Transfer_Mode_Switching#Figure:_A_Comparison_of_Inter-ELAN_Communications_Without_.28Part_A.29_and_with_.28Part_B.29_MPOA" title="Asynchronous Transfer Mode Switching">Figure: A Comparison of Inter-ELAN Communications Without (Part A) and with (Part B) MPOA</a> illustrates the process without MPOA in part A and with MPOA in part B. With MPOA-enabled devices, only the first few frames between devices pass through routers. This is called the default path. The frames pass from ELAN to ELAN through appropriate routers. After a few frames follow the default path, the MPOA devices discover the NSAP address of the other device and then build a direct connection called the shortcut for the subsequent frames in the flow.
+</p><p>The edge devices that generate the ATM traffic are called multiprotocol clients (MPC) and may be an ATM-attached workstation, or a router. The inter-ELAN routers are called multiprotocol servers (MPS) and assist the MPCs in discovering how to build a shortcut. MPSs are always routers.
+</p><p>This reduces the load on routers because the routers do not need to sustain the continuous flow between devices. Furthermore, MPOA can reduce the number of ATM switches supporting a connection, freeing up virtual circuits and switch resources in the ATM network. 
+</p><p><a href="http://docwiki.cisco.com/wiki/Asynchronous_Transfer_Mode_Switching#Figure:_A_Comparison_of_Inter-ELAN_Communications_Without_.28Part_A.29_and_with_.28Part_B.29_MPOA" title="Asynchronous Transfer Mode Switching">Figure: A Comparison of Inter-ELAN Communications Without (Part A) and with (Part B) MPOA</a> illustrates the connection before and after the shortcut is established.
+</p><p>Note that MPOA does not replace LANE. In fact, MPOA requires LANE version 2.
+</p>
+<h5> <span class="mw-headline" id="Figure:_A_Comparison_of_Inter-ELAN_Communications_Without_.28Part_A.29_and_with_.28Part_B.29_MPOA">Figure: A Comparison of Inter-ELAN Communications Without (Part A) and with (Part B) MPOA</span></h5>
+<p><a href="http://docwiki.cisco.com/wiki/File:CT842716.jpg" class="image"><img alt="CT842716.jpg" src="./Asynchronous Transfer Mode Switching - DocWiki_files/CT842716.jpg" width="560" height="408"></a>
+</p>
+<h2> <span class="mw-headline" id="Review_Questions"> Review Questions </span></h2>
+<p><b>Q</b> - <i>Name the four components of LANE.</i>
+</p><p><b>A</b> - LAN Emulation client (LEC), LANE Configuration Server (LECS), LAN Emulation Server (LES), Broadcast and Unknown Server (BUS).
+</p><p><b>Q</b> - <i>Which LANE component maintains an ATM ARP table?</i>
+</p><p><b>A</b> - The LAN Emulation Server (LES) keeps a database of LEC MAC and NSAP addresses.
+</p><p><b>Q</b> - <i>Which LANE component maintains policy for ELAN membership?</i>
+</p><p><b>A</b> - The LANE Configuration Server (LECS) acts as a membership policy device.
+</p><p><b>Q</b> - <i>List two functions of PNNI.</i>
+</p><p><b>A</b> - ATM topology discovery and switched circuit establishment.
+</p><p><b>Q </b>- <i>Which field in the ATM header checks the header integrity?</i>
+</p><p><b>A</b> - The HEC field checks for header errors and can correct a single header bit error.
+</p><p><b>Q</b> - <i>What is the primary difference between the UNI header and the NNI header?</i>
+</p><p><b>A</b> - The UNI header has an 8-bit VPI field and a 4-bit GFC, while the NNI header absorbs the GFC field and expands the VPI field to 12 bits.
+</p><p><b>Q</b> - <i>Which adaptation mode is most appropriate to interconnect T1 signals from PBXs over ATM?</i>
+</p><p><b>A</b> - AAL1 is most suitable for constant bit rate traffic such as a T1 source.
+</p><p><b>Q</b> -<i>Which adaptation mode is most frequently implemented for data transport over ATM?</i>
+</p><p><b>A</b> -AAL5 provides an appropriate adaptation method for data traffic such as that produced by routers and ATM-attached workstations.
+</p><p><b>Q</b> -<i>What VCI value is reserved for call setup requests from an ATM edge device?</i>
+</p><p><b>A</b> -VCI = 5 is reserved for ATM edge devices to send a signaling request to the ingress ATM switch requesting a connection to another device.
+</p><p><b>Q</b> -<i>What ATM protocol simplifies the ATM administrator's life by automatically ensuring that certain ATM parameters are compatible between two devices connected to the same link?</i>
+</p><p><b>A</b> - ILMI enables two devices to communicate with each other and share ATM parameters that facilitate the link functionality.
+</p><p><b>Q</b> - <i>What ATM protocol communicates exclusively between ATM switches?</i>
+</p><p><b>A</b> - PNNI, the ATM routing protocol, occurs only between ATM switches.
+</p><p><b>Q</b> - <i>Describe the difference between PVC and SVC.</i>
+</p><p><b>A</b> - A PVC (permanent virtual circuit) must be manually provisioned. Every piece of equipment supporting the circuit between the source and destination must be configured. PVC does not provide any resiliency for media or equipment failures. SVC (switched virtual circuit) automatically establishes a connection between the source and the destination. The source indicates that it desires a connection, and the network builds the circuit.
+</p><p><b>Q</b> - <i>What is the purpose of the adaptation layer?</i>
+</p><p><b>A</b> - The adaptation layer converts user data into cell payloads.  Some adaptation modes use all 48 bytes of the payload, while others use extra bits from the payload for functional purposes resulting in lower than 48 bit user data/payload size.
+</p><p><b>Q</b> - <i>What advantage is there to implementing MPOA?</i>
+</p><p><b>A</b> - MPOA provides two advantages. First, it reduces the workload for routers because the routers will not need to support continuous flows of data. Second, MPOA can reduce the number of times that data must cross the ATM network. Without MPOA, the data must cross all necessary ELANs to get to the destination. With MPOA, a single circuit is built, allowing the data to traverse the network once.
+</p>
+<h2> <span class="mw-headline" id="For_More_Information"> For More Information </span></h2>
+<p>Clark, Kennedy, and Kevin Hamilton. <i>CCIE Professional Development: Cisco LAN Switching</i>. Indianapolis: Cisco Press, 1999.
+</p><p>Ginsburg, David<i>. ATM: Solutions for Enterprise Internetworking. </i>Boston: Addison-Wesley Publishing Co, 1996.
+</p><p>McDysan, David E., and Darren L. Spohn<i>. ATM Theory and Application. </i>New York: McGraw-Hill, 1998
+</p><p><a href="http://www.atmforum.com/" class="external free" rel="nofollow">http://www.atmforum.com</a> for ATM standards document
+</p>
+<!-- 
+NewPP limit report
+Preprocessor node count: 299/1000000
+Post-expand include size: 2988/2097152 bytes
+Template argument size: 3480/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key wiki-dw_:pcache:idhash:7070-0!1!0!!en!2!edit=0 and timestamp 20140409163515 -->
+<script type="text/javascript" language="javascript" src="./Asynchronous Transfer Mode Switching - DocWiki_files/behavior.js"></script><script type="text/javascript" language="javascript" src="./Asynchronous Transfer Mode Switching - DocWiki_files/rating.js"></script><link rel="stylesheet" type="text/css" href="./Asynchronous Transfer Mode Switching - DocWiki_files/rating.css"><div class="ratingblock"><div id="unit_long7070">  <ul id="unit_ul7070" class="unit-rating" style="width:150px;">     <li class="current-rating" style="width:132.9px;">Currently 4.43/5</li><li><a href="http://docwiki.cisco.com/w/extensions/Ratings/db.php?j=1&q=7070&t=85.50.106.153&c=5" title="1 out of 5" class="r1-unit rater" rel="nofollow">1</a></li><li><a href="http://docwiki.cisco.com/w/extensions/Ratings/db.php?j=2&q=7070&t=85.50.106.153&c=5" title="2 out of 5" class="r2-unit rater" rel="nofollow">2</a></li><li><a href="http://docwiki.cisco.com/w/extensions/Ratings/db.php?j=3&q=7070&t=85.50.106.153&c=5" title="3 out of 5" class="r3-unit rater" rel="nofollow">3</a></li><li><a href="http://docwiki.cisco.com/w/extensions/Ratings/db.php?j=4&q=7070&t=85.50.106.153&c=5" title="4 out of 5" class="r4-unit rater" rel="nofollow">4</a></li><li><a href="http://docwiki.cisco.com/w/extensions/Ratings/db.php?j=5&q=7070&t=85.50.106.153&c=5" title="5 out of 5" class="r5-unit rater" rel="nofollow">5</a></li>  </ul>  <p>Rating: <strong> 4.4</strong>/5 (14 votes cast)  </p></div></div><div><iframe src="./Asynchronous Transfer Mode Switching - DocWiki_files/relateddisc.html" valign="top" frameborder="0" width="342" height="400"></iframe></div><div class="printfooter">
+Retrieved from "<a href="./Asynchronous Transfer Mode Switching - DocWiki_files/Asynchronous Transfer Mode Switching - DocWiki.html">http://docwiki.cisco.com/wiki/Asynchronous_Transfer_Mode_Switching</a>"</div>
+		<div id="catlinks" class="catlinks"><div id="mw-normal-catlinks"><a href="http://docwiki.cisco.com/wiki/Special:Categories" title="Special:Categories">Category</a>: <span dir="ltr"><a href="http://docwiki.cisco.com/wiki/Category:IOS_Technology_Handbook" title="Category:IOS Technology Handbook">IOS Technology Handbook</a></span></div></div>		<!-- end content -->
+				<div class="visualClear"></div>
+	</div>
+</div></div>
+<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<div class="pBody">
+			<ul>
+				 <li id="ca-nstab-main" class="selected"><a href="./Asynchronous Transfer Mode Switching - DocWiki_files/Asynchronous Transfer Mode Switching - DocWiki.html" title="View the content page [ctrl-alt-c]" accesskey="c">Page</a></li>
+				 <li id="ca-talk" class="new"><a href="http://docwiki.cisco.com/w/index.php?title=Talk:Asynchronous_Transfer_Mode_Switching&action=edit&redlink=1" title="Discussion about the content page [ctrl-alt-t]" accesskey="t">Leave a Comment</a></li>
+				 <li id="ca-viewsource"><a href="http://docwiki.cisco.com/w/index.php?title=Asynchronous_Transfer_Mode_Switching&action=edit" title="This page is protected.
+You can view its source [ctrl-alt-e]" accesskey="e">View Source</a></li>
+				 <li id="ca-history"><a href="http://docwiki.cisco.com/w/index.php?title=Asynchronous_Transfer_Mode_Switching&action=history" title="Past revisions of this page [ctrl-alt-h]" accesskey="h">History</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="http://docwiki.cisco.com/w/index.php?title=Special:UserLogin&returnto=Asynchronous_Transfer_Mode_Switching" title="You are encouraged to log in; however, it is not mandatory [ctrl-alt-o]" accesskey="o">Log in</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(/w/images/Cisco.gif);" href="http://docwiki.cisco.com/wiki/Main_Page" title="Visit the main page"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div class="generated-sidebar portlet" id="p-navigation">
+		<h5>Navigation</h5>
+		<div class="pBody">
+			<ul>
+				<li id="n-mainpage"><a href="http://docwiki.cisco.com/wiki/Main_Page" title="Visit the main page [ctrl-alt-z]" accesskey="z">Main Page</a></li>
+				<li id="n-recentchanges"><a href="http://docwiki.cisco.com/wiki/Special:RecentChanges" title="The list of recent changes in the wiki [ctrl-alt-r]" accesskey="r">Recent changes</a></li>
+				<li id="n-randompage"><a href="http://docwiki.cisco.com/wiki/Special:Random" title="Load a random page [ctrl-alt-x]" accesskey="x">Random page</a></li>
+				<li id="n-help"><a href="http://meta.wikimedia.org/wiki/Help:Contents" title="The place to find out">Help</a></li>
+				<li id="n-sitesupport"><a href="http://docwiki.cisco.com/wiki/DocWiki:Feedback">Feedback</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="http://docwiki.cisco.com/w/index.php" id="searchform">
+				<input type="hidden" name="title" value="Special:Search">
+				<input id="searchInput" title="Search DocWiki" accesskey="f" type="search" name="search">
+				<input type="submit" name="go" class="searchButton" id="searchGoButton" value="Go" title="Go to a page with this exact name if exists">&nbsp;
+				<input type="submit" name="fulltext" class="searchButton" id="mw-searchButton" value="Search" title="Search the pages for this text">
+			</form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="http://docwiki.cisco.com/wiki/Special:WhatLinksHere/Asynchronous_Transfer_Mode_Switching" title="List of all wiki pages that link here [ctrl-alt-j]" accesskey="j">What links here</a></li>
+				<li id="t-recentchangeslinked"><a href="http://docwiki.cisco.com/wiki/Special:RecentChangesLinked/Asynchronous_Transfer_Mode_Switching" title="Recent changes in pages linked from this page [ctrl-alt-k]" accesskey="k">Related changes</a></li>
+<li id="t-specialpages"><a href="http://docwiki.cisco.com/wiki/Special:SpecialPages" title="List of all special pages [ctrl-alt-q]" accesskey="q">Special pages</a></li>
+				<li id="t-print"><a href="http://docwiki.cisco.com/w/index.php?title=Asynchronous_Transfer_Mode_Switching&printable=yes" rel="alternate" title="Printable version of this page [ctrl-alt-p]" accesskey="p">Printable version</a></li>				<li id="t-permalink"><a href="http://docwiki.cisco.com/w/index.php?title=Asynchronous_Transfer_Mode_Switching&oldid=49094" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-pdf">
+<a href="http://docwiki.cisco.com/w/index.php?title=Special:Pdfprint&page=Asynchronous_Transfer_Mode_Switching">Print as PDF</a></li>			</ul>
+		</div>
+	</div>
+</div><!-- end of the left (by default at least) column -->
+<div class="visualClear"></div>
+<div id="footer">
+	<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="./Asynchronous Transfer Mode Switching - DocWiki_files/poweredby_mediawiki_88x31.png" height="31" width="88" alt="Powered by MediaWiki"></a></div>
+	<ul id="f-list">
+		<li id="lastmod"> This page was last modified on 16 October 2012, at 20:52.</li>
+		<li id="viewcount">This page has been accessed 40,041 times.<br></li>
+		<li id="copyright">© 1992-2012 Cisco Systems, Inc.  All rights reserved.   <a href="http://www.cisco.com/en/US/swassets/sw293/trademark_statement.html" class="external ">Trademarks</a></li>
+		<li id="privacy"><a href="http://docwiki.cisco.com/wiki/DocWiki:Privacy_policy" title="DocWiki:Privacy policy">Privacy policy</a></li>
+		<li id="about"><a href="http://docwiki.cisco.com/wiki/DocWiki:About" title="DocWiki:About">About DocWiki</a></li>
+		<li id="disclaimer"><a href="http://docwiki.cisco.com/wiki/DocWiki:Terms_of_use" title="DocWiki:Terms of use">Terms of Use</a></li>
+	</ul>
+</div>
+</div>
+
+<script>if (window.runOnloadHook) runOnloadHook();</script>
+<!-- Served in 0.143 secs. -->
+</body></html>

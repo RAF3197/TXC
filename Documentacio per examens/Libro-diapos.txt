@@ -1,0 +1,18 @@
+TXC 1R PARCIAL
+
+-Tema0: Operadors
+-Tema1: Introducció
+        
+            -ip (cap1)
+                    -model arquitefhpctonic internet (cap2)
+-Tema2: Elements tecnologic internet
+                    -medis transmisio (cap 3.1,3.2,3.3,3.4 i 4)
+                    -codificacio senyals(cap 5.1)
+                     -modulacio (cap 5.2)
+                     -multiplexacio (8.1,8.2)
+                     -commutacio (cap 9)
+                     -protocols control enllaç (cap 7)
+-Tema 3: Xarxes Troncals
+                     -Commutacio de trames frame Relay (cap 10.7)
+                     -Commutació de cel·les ATM (ed.8 Cap. 11//ed.10 cap:9.6)
+                    

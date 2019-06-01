@@ -1,0 +1,286 @@
+## MODEL OSI
+
+@En el disseny del model OSI es te en compte de:
++Minimitzar el volum d'informacio per interfases.
+-Augmentar el nombre de funcions a executar en el conjunt dels nivells.
+-Aconseguir que el nombre de nivells no passi de 7.
+-Distribuir el nombre de funcoins totalment equitatiu entre nivells.
+
+@Les comunicacions horitzontals:
+-Defineixen les caracteristiques de la interfase.
++Son virtuals i equivalen al protocol de comunicacions.
+- Enllacen nivells i subnivells entre si de forma creuada.
++Permeten Executar funcions al nivells afectats.
+
+@Els nivells
++ Executen funcions i proporcionen serveis als nivells superiors.
+
+@ Les capçaleres
+-Son sempre l'instrument per detectar errors.
+-Son l'instrument per executar protocols a les comunicacions verticals.
+-Nomes poden anar devant de les dades.
++Son la base per a la execucio dels protocols.
+
+## HDLC
+
+@En HDLC si es rep REJ 2 vol dir que
+-La trama 2 ha arribat abans que la 1
+-La trama 3 ha arriabat abans que la 4
+-Cal retransmetre la trama 1 exclusivament.
++Cal retransmetre la trama 2 i seguents.
+
+@En HDLC-NRM si el primer bit del camp d'adreça esta a 0
+-Vol dir que l'adreça te mes d'un octet.
+-Vol dir que es una trama U
++No te una significat especial.
+-Es una trama S
+
+
+@En HDLC si la trama I (Informacio) rebuda porta N(R)=4
+-Vol dir que valida la trama enviada amb N(S)=4 i anteriors
+-Vol dir que valida la trama enviada amb N(S)=4 i posteriors
++Vol dir que valida la trama enviada amb N(S)=3 i anteriors
+-Aixo nomes tindria significat si la trama fos S (Superisio)
+
+@Si en HDLS-ABM es rep una trama RR amb el bit P activat
+-Vol dir que ens estan fent Poll.
++Demana confirmacio tant aviat com sigui possible.
+-Es laresposta a un bit F activat.
+- Indica un error de sequencia de numeracio.
+
+@En relació al camp de control d'una trama HDLC
+-indica l'adreça de destinació en trames comandament.
++Conte les dades necessaries pel control de flux.
+-El bit P/F permet controlar prioritats.
+-El seu format es independent del modul de numeracio.
+
+@En relacio a l'adreça HDLC
+-Indica la destinacio en trames resposta.
+-Te logitud variable entre 8 i 16 bits.
+-Indica sempre la destinació.
+-El primer octet indica l'origen i el segon la destinacio.
++Cap de les anteriors.
+
+@En relacio a una adreça
+-Te longitud fixa.
+-Identifica la font i la destinacio de forma alternativa.
++Indica la destinacio en trames de comandament.
++Indica l'origen en les trames resposta.
+- En ABM no es da servir al haver nomes dues estacions.
+
+@ el bit P/F
++En ABM despres de rebre un bit P activat s'ha d'enviar un bit F activat.
+-En mode NRM si la primaria envia una trama amb el bit F activat vol dir que esta fent Poll a la secundaria.
++En mode ABM si una estacio envia una trama amb el bit P activat esta demanant confirmació.
+- en NRM sempre que s'envia una trama amb el bit F activat exigeix una trama amb el bit P activat.
+
+@Pel control de fulx i control d'errors
++Es fan servir els valors N(R) i N(S)
+-Si la finestra s'omple s'envia una trama amb N(R)=0 per tornar a començar el control de flux.
+-N(S) no pot ser mai mes gran que N(R)
+-N(R) no pot ser mai mes gram que N(S)
+
+@En relacio a les trames S
++REJ es fa servir quan hi ha una ruptura de la sequenciació.
+-RNR sempre inplica tornar a enviar tot allo no confirmat.
+-RR es fa servir per der Poll en ABM.
++RR es confirmacio positiva i per aixo implica l'actualitzacio de la ocupacio de la finestra.
+
+
+## Examen 2015-Q2
+@En relacio alcomportament d'una xarxa de paquets amb circuits virtuals:
+-Els paquets poden arribar desordenats.
++Tots els paquets de la mateixa comunicacio segueixen una ruta prefixada.
+-L'enviament de paquets entre nodes es mes rapid ja que les taules d'encaminament inclouen l'adreça de destinacio.
++Un circuit virtual es sempre bidireccional.
+
+@En una xarxa de paquets per reduir el delay d'un conjunt de paquets convé que:
++Els paquets siguin el mes petits possibles amb una proporcio adient a la capçalera.
+-Tots els nodes estiguin conectats amb la mateixa velocitat de transmissio.
+-La capçalera dels paquets sigui mes gran que el payload.
+
+@Els nivells en el model TCP/IP
++Executen funcions i proporcionen serveis als nivells superiors.
+
+@En ARQ Stop-and-Wait
+- No cal numerar.
+- La finestra sempre es 1.
+- La llargaria (en unitats de longitud) del paquet no pot afectar la seva eficiencia.
+- La finestra optima es 2^(K-1) essent K el modul.
++ Cap de les anteriors.
+
+@En protocols ARQ Go-Back-N el maxim valor de la finestra de transmissio es:
+-1.
++2^K -1 (K = nombre de bits per numerar)
+-La meitat del modul.
+-El mateix que el de la finestra optima.
+
+@La distorcio d'atenuacio:
+- Es produeix donat que les diferents components frequencials d'un senyal es desplaçen a diferents velocitats de propagació.
++Impedeix utilitzar fibres optiques en tot el seu ampla de banda disponible.
+-Es una perdua de potencia que es resol amb amplificadors en el recorregut.
+-Influeix en el nombre de frequencies que arriben a la destinacio.
+
+@En un sistem de transmissio de dades, el soroll
++Afecta el nombre de simbols diferents que es poden enviar.
++limita la velocitat de transmisso del sistema de transmissio de dades.
+-Ha d'estar sempre entre 20 i 50 dB per estabilitzar el sistema.
+-Es produeix exclusivament per afectacions externes al sistema.
+
+@Els diferents sistemes de codificacio poden permetre:
+-identificar la distorsio de fase.
+- detectar errors en base a l'ecriptacio.
++Mantenir el sincronisme a nivell de bit en base a garantir transicions.
+-Millora la relacio senyal/soroll.
+
+@En relacio al comportament d'una xarxa de paquets amb datagrames.
+-Els paquets arriben sempre ordenats.
+-Tots els paquets de la mateixa comunicacio segueixen una ruta prefixada.
++A cada node l'encaminament es decideix en funcio de l'adreça de destinacio.
+-Els datagrames formen un circuit virtual.
+
+@En el model aqruitectonic TCP/IP de nivells
+- Les comunicacions horitzontals son fisiques.
+- Les comunicacions verticals proporcionen serveis als nivells inferiors.
++ Els protocols son comunicacions horitzontals.
+-Les interficies verticals son protocols.
+
+@La finstra optima en protocols de paquets
+- Pot superar el valor maxim del modul de numeració.
+- En ARQ Stop&Wait depen de la llargaria del bit.
++ En ARQ Go-Back-n es el time-out dividit pel temps del paquet.
+- Es sempre la maxima finestra.
+
+@Els parells UTP
+- Estan protegits per una pantalla metal·lica per millorar el seu rendiment frequencial.
++ La categoria limita la maxima velocitat a la que es pot treballar.
+- Son conductor asimetrics.
+-Permetre transmetre senyals optiques a baixa velocitat.
+
+@La distorisio de retard
+-Es produeix donat que les dferents frequencies d'un senyal s'atenuen de forma diferent.
++Es deu a la diferent velocitat de propagacio de les diferents frequencies.
+-Es beneficiosa per a la atenuacio.
+-Implica un augment del delay.
+
+@La codificaio de senyals
+-Permet optimitzar la sincronitzacio a nivell de bit.
++ no influeix en al distribucio espectral del senyal.
+- modula el senyal.
+- Centra la distribucio frequencial del senyal en un ample de banda determinat.
+
+@En una xarxa ATM
+- Treballem en mode datagrama amb cel·les molt petites.
+- Durant una comunicacio el routing dels commutadors ATM es fa en funcio de l'adreça de destinacio.
++ El sincronisme de la cel·la es da utilitzant el CRC de la capçalera.
+-Els paquets IP enciats sobre cel·les no poden superar els 53 octets.
+
+@ En MPLS el label stacking
+-Es basa en apliar capçaleres ethernet.
+-Garanteix la reserva de recursos.
+-Fa swap exclusivament en tot el recorregut.
++ Permet separar LSP (circuit virtual ) que previament han estat ajuntats..
+
+@ La maxima velocitat de transmisso en un canal amb soroll depen de:
++ maxim nombre de simbols diferents que el receptot es capaç de discriminar.
+-La distancia fisica entre terminals.
+-La velocitat de propagacio.
+- El valor absolut del soroll.
+
+@ En relacio al model TCP/IP
+- Els paquets IP empaqueten trames ethernet.
++ Si un paquet IP es perd el segment TCP que transporta el payload  es pot recuperar.
+- El nivell 2 recupera els errors i controla el flux extrem a extrem.
++ Els ports relacionen una relacio TCP a nivell local.
+
+@ Per calcular la llargaria en metres d'un bit cal fer
++ Vp/Vt
+-Vt/Vp
+-VtxVp
+-Els bits no es mesuren en metres.
+
+@ Si K es el nobre de bits del modul de numeracio en un protocol Go-Back-N, la finestra maxima es:
++2^K -1 
+-2^(K-1)
+-2K/2
+-2^(K/2)
+
+@La velocitat de transmissio en presencia de soroll
+-Es pot augmentar tant com es vulgui incrementant el nombre de nivells.
+-Depen de l'ample de banda disponible exclusivament.
+-Varia amb l'atenuacio. A mes atenuacio, menys velocitat.
++Esta limitada per la relacio senyal/soroll i per l'ampla de banda del canal.
+
+@La codificacio de senyals
++ Pot permetre optimitzar la sincronitzacio a nivell de bit.
+- Es utilitzada quan es disposa d'un ample de banda determinat i concret.
+-Modula el senyal.
+-centra la distribucio frequencial del senyal en un ampla de banda determinat.
+
+@La distorsio de retard o de fase es deguda a que
+-Les diferents frequencies  d'un senyal s'atenuen de forma diferent en un canal
++ els components frequencials d'un senyal es propaguen a diferent velocitat pel canal.
+- No passen pel canal totes les frequencies del senyal.
+-El soroll es molt mes gran que el senyal.
+
+@ En QAM amb 8 nivells
+-Modulem un senyal variant la frequencia i la fase
++Modifiquem la fase i l'amplada de banda d'un senyal a una frequencia determinada.
+Multipliquem per 8 la velocitat de transmissio -> (es multiplica per 3)
+- utilitzem 3 bits per codificar la frequencia.
+
+@ en una xarxa que treballa en commutacio de paquets
+- El retard es mante constant per definicio.
+- Tant en mode Datagrama com en mode Circuit Virtual els paquets poden arribar desordenats.
++ En mode datagrama la taula d'encaminament s'aplica paquet a paquet.
+-Hi ha definits canals a 64kbps que son els que es commuten.
+
+@ En relacio al model TCP/IP d'OSI
+- Les comunicacions horitzontals a nivell ip tenen control d'errors i retransmissions.
+-Les comunicacions verticals entre IP i TCP tenen com a SAP (Service Access Point) les adreces IP.
++El nivell 2 pot controlar els errors i el flux a nivell local.
+- els ports relacionen una comunicacio TCP amb el nivell 2 extrem a extrem.
+
+@ En una linia de 1.5 Km a 3Mbps i transmeten a la velocitat de la llum (3x10^5 Km/s) la llargaria en kilometres d'un bit es:
++0.1
+-0.5
+-15
+-0.3
+
+@A nivell 2 en un protocol Go-Back-N, si el temps de transmissio dels paquets es t(t) el temps de propagacio es t(p) i el temps de transmissio de l'ack es t(ack) llavors la finestra optima es
++(t(t)+t(p)+t(ack)+t(p))/t(t)
+
+@La transmissio bada base(digital)
+-ocupa un ample de banda determinat.
++ es util si no hi ha limitacions d'ampla de banda fixats.
+-Utilitza modems per adaptar el senyal al canal.
+-es fa servir en medis de transmissio via radio.
+
+@ La codificacio pseudoternaria
+-Garanteix transicions  i per tant sincronisme.
++ es capaç de detectar errors
+-Permet linies de grans llargaries.
+-centra la distribucio frequencial del senyal en un ample de banda determinat.
+
+@ la modulacio QAM
+-Permet multinivell variant la frequencia.
++Pot incrementar la velocitat de transmissio augmentant el nombre de punts ( amplada-fase)
+-No es veu influenciada pel soroll.
+- Implica mostrejar al doble de la maxima frequencia.
+
+@ si la relacio Senyal/Soroll = 50db vol dir que el senyal es mes potent que el soroll en un factor
+-50
+-5
++10^5
+-10^2.5
+(SNR=10·log10(105/1) = 50db)
+
+@ en una xarxa que treballa en commutacio de paquets:
++El delay end to end per a cada paquet pot ser variable.
+- En mode Circuit virtual i sense congestio els paquets poden arribar desordenats.
+-En mode datagrama la taula de routing de nivell 3 s'aplica al circuit virtual.
+-El trhoughput no depen dels overflows dels buffers.
+
+
+
+
